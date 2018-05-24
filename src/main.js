@@ -1,4 +1,4 @@
 import React from "react";
 import { render } from "react-dom";
 
-render(<p>Hello world!</p>, document.getElementById("app"));
+render(<p>Something Else</p>, document.getElementById("app"));
