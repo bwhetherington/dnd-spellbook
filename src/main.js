@@ -1,11 +1,7 @@
 import React from "react";
 import { render } from "react-dom";
+import App from "./components/App";
 
-const App = (props) => (
-    <div>
-        <h1>Hello world!</h1>
-        <p>This is the D&D spellbook.</p>
-    </div>
-);
+import { sorted } from "./util/list";
 
 render(<App />, document.getElementById("app"));
