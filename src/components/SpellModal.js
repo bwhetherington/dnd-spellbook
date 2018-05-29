@@ -30,7 +30,7 @@ const materialComponents = (material) => material
     : "";
 
 const HigherLevel = (props) => props.higherLevel
-    ? <div><strong>At Higher Levels</strong> {ReactHtmlParser(props.higherLevel)}</div>
+    ? <span><strong>At Higher Levels</strong> {ReactHtmlParser(props.higherLevel)}</span>
     : <span />;
 
 const RITUAL_TAG = "Ritual";
@@ -68,7 +68,7 @@ const SpellModal = (props) => {
         <Modal show={props.show} onHide={props.onHide}>
             <Modal.Header>
                 <Modal.Title>
-                    {spell.name}<small><SpellTags ritual={spell.ritual} concentration={spell.concentration} /></small>
+                    <span className="really-big">{spell.name}</span><small><SpellTags ritual={spell.ritual} concentration={spell.concentration} /></small>
                     <br />
                     <small><i>{formatLevelAndSchool(spell.level, spell.school)}</i></small>
                 </Modal.Title>

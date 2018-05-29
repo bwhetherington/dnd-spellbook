@@ -1,5 +1,11 @@
 .spellDesc > h4 {
     text-align: center;
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+
+.really-big {
+    font-size: 150%;
 }
 
 table, th, td {
