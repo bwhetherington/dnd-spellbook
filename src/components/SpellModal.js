@@ -63,18 +63,21 @@ const SpellModal = (props) => {
                         <strong>Casting Time</strong>
                         <br />
                         {ReactHtmlParser(spell.casting_time)}
-                        <br />
-                        <br />
-                        <strong>Components</strong>
-                        <br />
-                        {ReactHtmlParser(spell.components)}{materialComponents(spell.material)}
                     </LeftColumn>
                     <RightColumn>
                         <strong>Range</strong>
                         <br />
                         {ReactHtmlParser(spell.range)}
+                    </RightColumn>
+                </Row>
+                <br />
+                <Row>
+                    <LeftColumn>
+                        <strong>Components</strong>
                         <br />
-                        <br />
+                        {ReactHtmlParser(spell.components)}{materialComponents(spell.material)}
+                    </LeftColumn>
+                    <RightColumn>
                         <strong>Duration</strong>
                         <br />
                         {ReactHtmlParser(spell.duration)}

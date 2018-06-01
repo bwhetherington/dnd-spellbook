@@ -45,9 +45,9 @@ const SpellRow = (props) => (
 );
 
 // Deprecated
-const levelCMP = (spellA, spellB) => spellA.level - spellB.level === 0
+const levelCMP = (spellA, spellB) => spellA.spell.level - spellB.spell.level === 0
     ? spellA.name.localeCompare(spellB.name)
-    : spellA.level - spellB.level;
+    : spellA.spell.level - spellB.spell.level;
 
 const levelCMPRow = (rowA, rowB) => rowA.spell.level - rowB.spell.level === 0
     ? rowA.spell.name.localeCompare(rowB.spell.name)
@@ -57,22 +57,31 @@ export default class SpellList extends React.Component {
     constructor(props, context) {
         super(props, context);
 
+        const renderedSpells = this.props.spells.map(spell => ({
+            name: spell.name.toLowerCase(),
+            spell: spell,
+            row: <SpellRow key={spell.name} onSpellClick={this.props.onSpellClick} spell={spell} />
+        }));
+
         this.state = {
             filterOptions: createFilterOptions({}),
             orderBy: Ordering.LEVEL,
             spells: this.props.spells,
             selectedSpell: null,
             showSpellModal: false,
+            renderedSpells: renderedSpells
         };
 
-        
-        this.renderSpells = this.renderSpells.bind(this);
+
+        // this.renderSpells = this.renderSpells.bind(this);
         this.selectSpell = this.selectSpell.bind(this);
     }
-    
+
     renderSpells() {
         // return sorted(this.props.spellRows, levelCMPRow);
-        return sorted(this.props.spells, levelCMP).map(spell => <SpellRow key={spell.name} onSpellClick={this.props.onSpellClick} spell={spell} />);
+        return sorted(this.state.renderedSpells, levelCMP)
+            .filter(spell => spell.name.indexOf(this.props.filterText.toLowerCase()) !== -1)
+            .map(spell => spell.row);
         // return this.state.spells.map(spell => <SpellRow spell={spell} />);
     }
 

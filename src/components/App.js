@@ -20,16 +20,24 @@ const filterText = (spells, text) => filtered(spells, spell => {
 })
 
 const SearchBar = styled.input`
-    background: rgb(32, 32, 32);
+    background: rgba(64, 0, 0, 0.2);
     color: white;
     border: 0px;
     padding: 5px;
+    border-radius: 5px;
+`;
+
+const NavbarLabel = styled.span`
+    color: white;
+    font-size: 150%;
+    font-weight: bold;
+    margin-right: 20px;
 `;
 
 const NavbarStyled = styled(Navbar) `
     border-radius: 0px;
     border: 0;
-    background: rgb(64, 64, 64);
+    background: #db4437;
     padding: 10px;
     text-align: left;
     margin: 0px;
@@ -45,6 +53,7 @@ const Content = styled.div`
     margin: auto;
     padding: 20px;
     margin-top: 40px;
+    background: white;
 `;
 
 export default class App extends React.Component {
@@ -80,11 +89,11 @@ export default class App extends React.Component {
         return (
             <span>
                 <NavbarStyled fixedTop>
-                    <SearchBar type="text" onChange={this.handleFilterTextChanged} />
+                    <NavbarLabel>D&D Spellbook</NavbarLabel><SearchBar type="text" onChange={this.handleFilterTextChanged} />
                 </NavbarStyled>
                 <Content>
                     {/* we should make the spell names all lowercase, and capitalize them only once for the row */}
-                    <SpellList spells={SpellData.filter(spell => spell.name.toLowerCase().indexOf(this.state.filterText.toLowerCase()) !== -1)} onSpellClick={this.selectSpell} />
+                    <SpellList spells={SpellData} onSpellClick={this.selectSpell} filterText={this.state.filterText} />
                 </Content>
                 <DisplayedSpell show={this.state.showSpellModal} onHide={this.hideModal} spell={this.state.selectedSpell} />
             </span>
