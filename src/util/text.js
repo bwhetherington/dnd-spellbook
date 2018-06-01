@@ -26,3 +26,11 @@ export const formatLevelAndSchool = (level, school) => {
         return `${formatLevel(level)} ${school}`;
     }
 }
+
+export const formatClasses = (classes) => {
+    if (classes.length === 0) {
+        return "No classes";
+    } else {
+        return capitalize(classes.join(", "));
+    }
+}

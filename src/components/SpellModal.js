@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { Modal, Label } from "react-bootstrap";
 import ReactHtmlParser from "react-html-parser";
 
-import { formatLevelAndSchool, formatLevel } from "../util/text";
+import { formatLevelAndSchool, formatLevel, formatClasses } from "../util/text";
 
 const LeftColumn = styled.div`
     float: left;
@@ -103,12 +103,14 @@ const SpellModal = (props) => {
                 </div>
             </Modal.Body>
             <Modal.Footer>
-                <Left>
-                    <strong>Available To:</strong> {spell.class}
-                </Left>
-                <Right>
-                    <strong>Source:</strong> {spell.page}
-                </Right>
+                <Row>
+                    <LeftColumn style={{ "text-align": "left" }}>
+                        <strong>Available To</strong><br />{formatClasses(spell.classes)}
+                    </LeftColumn>
+                    <RightColumn style={{ "text-align": "right" }}>
+                        <strong>Source</strong><br />{spell.page}
+                    </RightColumn>
+                </Row>
             </Modal.Footer>
         </Modal>
     );

@@ -8,16 +8,16 @@
     font-size: 150%;
 }
 
-table, th, td {
+.spellDesc > table, .spellDesc > table th, .spellDesc > table td {
     padding: 5px;
     text-align: center;
-    margin: auto;
 }
 
-table {
+.spellDesc > table {
+    margin: auto;
     margin-bottom: 10px;
 }
 
-td {
+.spellDesc > table td {
     border: 1px solid #d5d5d5;
 }
