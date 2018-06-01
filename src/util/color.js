@@ -1,0 +1,1 @@
+export const levelColor = (level) => `rgb(0, ${level * 25}, 0)`;

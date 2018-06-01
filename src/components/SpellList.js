@@ -4,6 +4,8 @@ import { Table } from "react-bootstrap";
 import SpellData from "./SpellData";
 import { SpellTags } from "./App";
 import { sorted } from "../util/list";
+import { formatJustLevel, capitalize } from "../util/text";
+import { levelColor } from "../util/color";
 
 const Ordering = {
     NAME: 0,
@@ -26,16 +28,25 @@ const createFilterOptions = ({
 
 const TagHolderList = styled.span``;
 
+const LevelCol = styled.td`
+    text-align: center;
+    color: ${props => levelColor(props.level)}
+`;
+
+const NameCol = styled.td`
+    text-align: left;
+`;
+
 const SpellRow = (props) => (
     <tr>
-        <td style={{ "text-align": "center" }}>{props.spell.level}</td>
-        <td style={{ "text-align": "left" }}>{props.spell.name}<small><SpellTags ritual={props.spell.ritual} concentration={props.spell.concentration} TagHolder={TagHolderList} /></small></td>
+        <LevelCol level={props.spell.level}>{capitalize(formatJustLevel(props.spell.level))}</LevelCol>
+        <NameCol>{props.spell.name}<small><SpellTags ritual={props.spell.ritual} concentration={props.spell.concentration} TagHolder={TagHolderList} /></small></NameCol>
     </tr>
 );
 
 const levelCMP = (spellA, spellB) => spellA.level - spellB.level === 0
-? spellA.name.localeCompare(spellB.name)
-: spellA.level - spellB.level;
+    ? spellA.name.localeCompare(spellB.name)
+    : spellA.level - spellB.level;
 
 export default class SpellList extends React.Component {
     constructor(props, context) {

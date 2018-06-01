@@ -1,5 +1,20 @@
 const CANTRIP = 0;
 
+export const formatJustLevel = (level) => {
+    switch (level) {
+        case CANTRIP:
+            return "cantrip";
+        case 1:
+            return "1st";
+        case 2:
+            return "2nd";
+        case 3:
+            return "3rd";
+        default:
+            return level + "th";
+    }
+}
+
 export const formatLevel = (level) => {
     switch (level) {
         case CANTRIP:
@@ -15,7 +30,7 @@ export const formatLevel = (level) => {
     }
 }
 
-const capitalize = (word) => word.length > 0
+export const capitalize = (word) => word.length > 0
     ? word.charAt(0).toUpperCase() + word.substring(1)
     : word;
 
@@ -34,3 +49,7 @@ export const formatClasses = (classes) => {
         return capitalize(classes.join(", "));
     }
 }
+
+// export const formatLevelList = (level) => level === 0
+//     ? "Cantrip"
+//     : "" + level;
