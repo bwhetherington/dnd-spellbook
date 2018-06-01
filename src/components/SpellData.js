@@ -107,7 +107,6 @@ const spellData = `[
         "school": "abjuration",
         "classes": [
             "rangers",
-            "ritual casters",
             "wizards"
         ]
     },
@@ -165,8 +164,7 @@ const spellData = `[
         "classes": [
             "bards",
             "druids",
-            "rangers",
-            "ritual casters"
+            "rangers"
         ]
     },
     {
@@ -395,8 +393,7 @@ const spellData = `[
         "level": 2,
         "school": "divination",
         "classes": [
-            "clerics",
-            "ritual casters"
+            "clerics"
         ]
     },
     {
@@ -588,8 +585,7 @@ const spellData = `[
         "school": "divination",
         "classes": [
             "druids",
-            "rangers",
-            "ritual casters"
+            "rangers"
         ]
     },
     {
@@ -949,8 +945,7 @@ const spellData = `[
         "school": "abjuration",
         "classes": [
             "clerics",
-            "paladins",
-            "ritual casters"
+            "paladins"
         ]
     },
     {
@@ -1231,8 +1226,7 @@ const spellData = `[
         "level": 5,
         "school": "divination",
         "classes": [
-            "clerics",
-            "ritual casters"
+            "clerics"
         ]
     },
     {
@@ -1249,8 +1243,7 @@ const spellData = `[
         "school": "divination",
         "classes": [
             "druids",
-            "rangers",
-            "ritual casters"
+            "rangers"
         ]
     },
     {
@@ -1284,7 +1277,6 @@ const spellData = `[
         "school": "divination",
         "classes": [
             "bards",
-            "ritual casters",
             "sorcerers",
             "warlocks",
             "wizards"
@@ -1502,7 +1494,6 @@ const spellData = `[
         "level": 5,
         "school": "divination",
         "classes": [
-            "ritual casters",
             "warlocks",
             "wizards"
         ]
@@ -2074,7 +2065,6 @@ const spellData = `[
             "druids",
             "paladins",
             "rangers",
-            "ritual casters",
             "sorcerers",
             "wizards"
         ]
@@ -2096,8 +2086,7 @@ const spellData = `[
             "clerics",
             "druids",
             "paladins",
-            "rangers",
-            "ritual casters"
+            "rangers"
         ]
     },
     {
@@ -2247,8 +2236,7 @@ const spellData = `[
         "level": 4,
         "school": "divination",
         "classes": [
-            "clerics",
-            "ritual casters"
+            "clerics"
         ]
     },
     {
@@ -2334,7 +2322,6 @@ const spellData = `[
         "level": 6,
         "school": "conjuration",
         "classes": [
-            "ritual casters",
             "wizards"
         ]
     },
@@ -2927,7 +2914,6 @@ const spellData = `[
             "bards",
             "clerics",
             "druids",
-            "ritual casters",
             "wizards"
         ]
     },
@@ -2945,7 +2931,6 @@ const spellData = `[
         "level": 1,
         "school": "conjuration",
         "classes": [
-            "ritual casters",
             "wizards"
         ]
     },
@@ -3254,8 +3239,7 @@ const spellData = `[
         "level": 6,
         "school": "abjuration",
         "classes": [
-            "clerics",
-            "ritual casters"
+            "clerics"
         ]
     },
     {
@@ -3430,7 +3414,6 @@ const spellData = `[
         "school": "necromancy",
         "classes": [
             "clerics",
-            "ritual casters",
             "wizards"
         ]
     },
@@ -3698,7 +3681,6 @@ const spellData = `[
             "bards",
             "clerics",
             "druids",
-            "ritual casters",
             "wizards"
         ]
     },
@@ -4193,7 +4175,6 @@ const spellData = `[
         "school": "divination",
         "classes": [
             "bards",
-            "ritual casters",
             "wizards"
         ]
     },
@@ -4228,7 +4209,6 @@ const spellData = `[
         "school": "illusion",
         "classes": [
             "bards",
-            "ritual casters",
             "warlocks",
             "wizards"
         ]
@@ -4564,7 +4544,6 @@ const spellData = `[
         "school": "evocation",
         "classes": [
             "bards",
-            "ritual casters",
             "wizards"
         ]
     },
@@ -4714,8 +4693,7 @@ const spellData = `[
         "classes": [
             "bards",
             "druids",
-            "rangers",
-            "ritual casters"
+            "rangers"
         ]
     },
     {
@@ -4926,7 +4904,6 @@ const spellData = `[
         "school": "illusion",
         "classes": [
             "bards",
-            "ritual casters",
             "wizards"
         ]
     },
@@ -5126,8 +5103,7 @@ const spellData = `[
         "school": "transmutation",
         "classes": [
             "clerics",
-            "druids",
-            "ritual casters"
+            "druids"
         ]
     },
     {
@@ -5720,7 +5696,6 @@ const spellData = `[
         "level": 3,
         "school": "illusion",
         "classes": [
-            "ritual casters",
             "wizards"
         ]
     },
@@ -6174,8 +6149,7 @@ const spellData = `[
         "classes": [
             "clerics",
             "druids",
-            "paladins",
-            "ritual casters"
+            "paladins"
         ]
     },
     {
@@ -6229,7 +6203,6 @@ const spellData = `[
         "level": 5,
         "school": "divination",
         "classes": [
-            "ritual casters",
             "wizards"
         ]
     },
@@ -6823,8 +6796,7 @@ const spellData = `[
         "classes": [
             "bards",
             "clerics",
-            "rangers",
-            "ritual casters"
+            "rangers"
         ]
     },
     {
@@ -6896,7 +6868,6 @@ const spellData = `[
         "classes": [
             "bards",
             "druids",
-            "ritual casters",
             "wizards"
         ]
     },
@@ -7044,8 +7015,7 @@ const spellData = `[
         "classes": [
             "bards",
             "druids",
-            "rangers",
-            "ritual casters"
+            "rangers"
         ]
     },
     {
@@ -7590,7 +7560,6 @@ const spellData = `[
         "level": 1,
         "school": "conjuration",
         "classes": [
-            "ritual casters",
             "wizards"
         ]
     },
@@ -7985,7 +7954,6 @@ const spellData = `[
         "school": "conjuration",
         "classes": [
             "bards",
-            "ritual casters",
             "warlocks",
             "wizards"
         ]
@@ -8259,7 +8227,6 @@ const spellData = `[
         "classes": [
             "druids",
             "rangers",
-            "ritual casters",
             "sorcerers",
             "wizards"
         ]
@@ -8280,7 +8247,6 @@ const spellData = `[
             "clerics",
             "druids",
             "rangers",
-            "ritual casters",
             "sorcerers"
         ]
     },
@@ -8370,8 +8336,7 @@ const spellData = `[
         "school": "transmutation",
         "classes": [
             "druids",
-            "rangers",
-            "ritual casters"
+            "rangers"
         ]
     },
     {
