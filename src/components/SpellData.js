@@ -1,3 +1,4 @@
+
 const spellData = `[
     {
         "name": "Abi-Dalzim's Horrid Wilting",
@@ -19,15 +20,15 @@ const spellData = `[
     },
     {
         "name": "Absorb Elements",
-        "desc": "<p>The spell captures some of the incoming energy, lessening its effect on you and storing it for your next melee attack. You have resistance to the triggering damage type until the start of your next turn. Also, the first time you hit with a melee attack on your next turn, the target takes an extra 1d6 damage of the triggering type, and the spell ends.</p><h2>Reaction</h2>When you take acid, cold, fire, lightning, or thunder damage.",
-        "higher_level": "<p>When you cast this spell using a spell slot of 2nd level or higher, the extra damage increases by 1d6 for each slot level above 1st.</p>",
+        "desc": "<p>The spell captures some of the incoming energy, lessening its effect on you and storing it for your next melee attack. You have resistance to the triggering damage type until the start of your next turn. Also, the first time you hit with a melee attack on your next turn, the target takes an extra 1d6 damage of the triggering type, and the spell ends.</p>",
+        "higher_level": "When you cast this spell using a spell slot of 2nd level or higher, the extra damage increases by 1d6 for each slot level above 1st.",
         "page": "EEPC 15, XGE 150",
         "range": "Self",
         "components": "S",
         "ritual": false,
         "duration": "1 round",
         "concentration": false,
-        "casting_time": "1 reaction",
+        "casting_time": "1 reaction, which you take when you take acid, cold, fire, lightning, or thunder damage",
         "level": 1,
         "school": "abjuration",
         "classes": [
@@ -1644,7 +1645,7 @@ const spellData = `[
     },
     {
         "name": "Counterspell",
-        "desc": "<p>You attempt to interrupt a creature in the process of casting a spell. If the creature is casting a spell of 3rd level or lower, its spell fails and has no effect. If it is casting a spell of 4th level or higher, make an ability check using your spellcasting ability. The DC equals 10 + the spell's level. On a success, the creature's spell fails and has no effect.</p><h2>Reaction</h2>When you see a creature within 60 feet of you casting a spell.",
+        "desc": "<p>You attempt to interrupt a creature in the process of casting a spell. If the creature is casting a spell of 3rd level or lower, its spell fails and has no effect. If it is casting a spell of 4th level or higher, make an ability check using your spellcasting ability. The DC equals 10 + the spell's level. On a success, the creature's spell fails and has no effect.</p>",
         "higher_level": "<p>When you cast this spell using a spell slot of 4th level or higher, the interrupted spell has no effect if its level is less than or equal to the level of the spell slot you used.</p>",
         "page": "PHB 228",
         "range": "60 feet",
@@ -1652,7 +1653,7 @@ const spellData = `[
         "ritual": false,
         "duration": "Instantaneous",
         "concentration": false,
-        "casting_time": "1 reaction",
+        "casting_time": "1 reaction, which you take when you see a creature within 60 feet of you casting a spell",
         "level": 3,
         "school": "abjuration",
         "classes": [
@@ -2860,7 +2861,7 @@ const spellData = `[
     },
     {
         "name": "Feather Fall",
-        "desc": "<p>Choose up to five falling creatures within range. A falling creature's rate of descent slows to 60 feet per round until the spell ends. If the creature lands before the spell ends, it takes no falling damage and can land on its feet, and the spell ends for that creature.</p><h2>Reaction</h2>When you or a creature within 60 feet of you falls.",
+        "desc": "<p>Choose up to five falling creatures within range. A falling creature's rate of descent slows to 60 feet per round until the spell ends. If the creature lands before the spell ends, it takes no falling damage and can land on its feet, and the spell ends for that creature.</p>",
         "page": "PHB 239",
         "range": "60 feet",
         "components": "V, M",
@@ -2868,7 +2869,7 @@ const spellData = `[
         "ritual": false,
         "duration": "1 minute",
         "concentration": false,
-        "casting_time": "1 reaction",
+        "casting_time": "1 reaction, which you take when you or a creature within 60 feet of you falls",
         "level": 1,
         "school": "transmutation",
         "classes": [
@@ -3920,7 +3921,7 @@ const spellData = `[
     },
     {
         "name": "Hellish Rebuke",
-        "desc": "<p>You point your finger, and the creature that damaged you is momentarily surrounded by hellish flames. The creature must make a Dexterity saving throw. It takes 2d10 fire damage on a failed save, or half as much damage on a successful one.</p><h2>Reaction</h2>In response to being damaged by a creature within 60 feet of you that you can see.",
+        "desc": "<p>You point your finger, and the creature that damaged you is momentarily surrounded by hellish flames. The creature must make a Dexterity saving throw. It takes 2d10 fire damage on a failed save, or half as much damage on a successful one.</p>",
         "higher_level": "<p>When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d10 for each slot level above 1st.</p>",
         "page": "PHB 250",
         "range": "60 feet",
@@ -3928,7 +3929,7 @@ const spellData = `[
         "ritual": false,
         "duration": "Instantaneous",
         "concentration": false,
-        "casting_time": "1 reaction",
+        "casting_time": "1 reaction, which you take in response to being damaged by a creature within 60 feet of you that you can see",
         "level": 1,
         "school": "evocation",
         "classes": [
@@ -6696,14 +6697,14 @@ const spellData = `[
     },
     {
         "name": "Shield",
-        "desc": "<p>An invisible barrier of magical force appears and protects you. Until the start of your next turn, you have a +5 bonus to AC, including against the triggering attack, and you take no damage from <i>magic missile</i>.</p><h2>Reaction</h2>When you are hit by an attack or targeted by the <i>magic missile</i> spell.",
+        "desc": "<p>An invisible barrier of magical force appears and protects you. Until the start of your next turn, you have a +5 bonus to AC, including against the triggering attack, and you take no damage from <i>magic missile</i>.</p>",
         "page": "PHB 275",
         "range": "Self",
         "components": "V, S",
         "ritual": false,
         "duration": "1 round",
         "concentration": false,
-        "casting_time": "1 reaction",
+        "casting_time": "1 reaction, which you take when you are hit by an attack or targeted by the <i>magic missile</i> spell",
         "level": 1,
         "school": "abjuration",
         "classes": [
@@ -6968,7 +6969,7 @@ const spellData = `[
     },
     {
         "name": "Soul Cage",
-        "desc": "<p>This spell snatches the soul of a humanoid as it dies and traps it inside the tiny cage you use for the material component. A stolen soul remains inside the cage until the spell ends or until you destroy the cage, which ends the spell. While you have a soul inside the cage, you can exploit it in any of the ways described below. You can use a trapped soul up to six times. Once you exploit a soul for the sixth time, it is released, and the spell ends. While a soul is trapped, the dead humanoid it came from can't be revived.</p><p><b>Steal Life.</b> You can use a bonus action to drain vigor from the soul and regain 2d8 hit points.</p><p><b>Query Soul.</b> You ask the soul a question (no action required) and receive a brief telepathic answer, which you can understand regardless of the language used. The soul knows only what it knew in life, but it must answer you truthfully and to the best of its ability. The answer is no more than a sentence or two and might be cryptic.</p><p><b>Borrow Experience.</b> You can use a bonus action to bolster yourself with the soul's life experience, making your next attack roll, ability check, or saving throw with advantage. If you don't use this benefit before the start of your next turn, it is lost.</p><p><b>Eyes of the Dead.</b> You can use an action to name a place the humanoid saw in life, which creates an invisible sensor somewhere in that place if it is on the plane of existence you're currently on. The sensor remains for as long as you concentrate, up to 10 minutes (as if you were concentrating on a spell). You receive visual and auditory information from the sensor as if you were in its space using your senses.</p><p>A creature that can see the sensor (such as one using <i>see invisibility</i> or truesight) sees a translucent image of the tormented humanoid whose soul you caged.</p><h2>Reaction</h2>When a humanoid you can see within 60 feet of you dies.",
+        "desc": "<p>This spell snatches the soul of a humanoid as it dies and traps it inside the tiny cage you use for the material component. A stolen soul remains inside the cage until the spell ends or until you destroy the cage, which ends the spell. While you have a soul inside the cage, you can exploit it in any of the ways described below. You can use a trapped soul up to six times. Once you exploit a soul for the sixth time, it is released, and the spell ends. While a soul is trapped, the dead humanoid it came from can't be revived.</p><p><b>Steal Life.</b> You can use a bonus action to drain vigor from the soul and regain 2d8 hit points.</p><p><b>Query Soul.</b> You ask the soul a question (no action required) and receive a brief telepathic answer, which you can understand regardless of the language used. The soul knows only what it knew in life, but it must answer you truthfully and to the best of its ability. The answer is no more than a sentence or two and might be cryptic.</p><p><b>Borrow Experience.</b> You can use a bonus action to bolster yourself with the soul's life experience, making your next attack roll, ability check, or saving throw with advantage. If you don't use this benefit before the start of your next turn, it is lost.</p><p><b>Eyes of the Dead.</b> You can use an action to name a place the humanoid saw in life, which creates an invisible sensor somewhere in that place if it is on the plane of existence you're currently on. The sensor remains for as long as you concentrate, up to 10 minutes (as if you were concentrating on a spell). You receive visual and auditory information from the sensor as if you were in its space using your senses.</p><p>A creature that can see the sensor (such as one using <i>see invisibility</i> or truesight) sees a translucent image of the tormented humanoid whose soul you caged.</p>",
         "page": "XGE 165",
         "range": "60 feet",
         "components": "V, S, M",
@@ -6976,7 +6977,7 @@ const spellData = `[
         "ritual": false,
         "duration": "8 hours",
         "concentration": false,
-        "casting_time": "1 reaction",
+        "casting_time": "1 reaction, which you take when a humanoid you can see within 60 feet of you dies",
         "level": 6,
         "school": "necromancy",
         "classes": [

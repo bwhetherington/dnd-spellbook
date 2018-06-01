@@ -27,7 +27,7 @@ const Row = styled.div`
 `;
 
 const materialComponents = (material) => material
-    ? ` (${material})`
+    ? ` (${ReactHtmlParser(material)})`
     : "";
 
 const HigherLevel = (props) => props.higherLevel
@@ -62,22 +62,22 @@ const SpellModal = (props) => {
                     <LeftColumn>
                         <strong>Casting Time</strong>
                         <br />
-                        {spell.casting_time}
+                        {ReactHtmlParser(spell.casting_time)}
                         <br />
                         <br />
                         <strong>Components</strong>
                         <br />
-                        {spell.components}{materialComponents(spell.material)}
+                        {ReactHtmlParser(spell.components)}{materialComponents(spell.material)}
                     </LeftColumn>
                     <RightColumn>
                         <strong>Range</strong>
                         <br />
-                        {spell.range}
+                        {ReactHtmlParser(spell.range)}
                         <br />
                         <br />
                         <strong>Duration</strong>
                         <br />
-                        {spell.duration}
+                        {ReactHtmlParser(spell.duration)}
                     </RightColumn>
                 </Row>
                 <hr />
@@ -92,7 +92,7 @@ const SpellModal = (props) => {
                         <strong>Available To</strong><br />{formatClasses(spell.classes)}
                     </LeftColumn>
                     <RightColumn style={{ "text-align": "right" }}>
-                        <strong>Source</strong><br />{spell.page}
+                        <strong>Source</strong><br />{ReactHtmlParser(spell.page)}
                     </RightColumn>
                 </Row>
             </Modal.Footer>

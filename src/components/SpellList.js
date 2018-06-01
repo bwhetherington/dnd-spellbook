@@ -44,9 +44,14 @@ const SpellRow = (props) => (
     </tr>
 );
 
+// Deprecated
 const levelCMP = (spellA, spellB) => spellA.level - spellB.level === 0
     ? spellA.name.localeCompare(spellB.name)
     : spellA.level - spellB.level;
+
+const levelCMPRow = (rowA, rowB) => rowA.spell.level - rowB.spell.level === 0
+    ? rowA.spell.name.localeCompare(rowB.spell.name)
+    : rowA.spell.level - rowB.spell.level;
 
 export default class SpellList extends React.Component {
     constructor(props, context) {
@@ -60,11 +65,13 @@ export default class SpellList extends React.Component {
             showSpellModal: false,
         };
 
+        
         this.renderSpells = this.renderSpells.bind(this);
         this.selectSpell = this.selectSpell.bind(this);
     }
-
+    
     renderSpells() {
+        // return sorted(this.props.spellRows, levelCMPRow);
         return sorted(this.props.spells, levelCMP).map(spell => <SpellRow key={spell.name} onSpellClick={this.props.onSpellClick} spell={spell} />);
         // return this.state.spells.map(spell => <SpellRow spell={spell} />);
     }

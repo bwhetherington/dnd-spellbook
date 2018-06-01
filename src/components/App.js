@@ -78,15 +78,16 @@ export default class App extends React.Component {
      */
     render() {
         return (
-            <div>
+            <span>
                 <NavbarStyled fixedTop>
                     <SearchBar type="text" onChange={this.handleFilterTextChanged} />
                 </NavbarStyled>
                 <Content>
-                    <SpellList spells={SpellData.filter(spell => spell.name.indexOf(this.state.filterText) !== -1)} onSpellClick={this.selectSpell} />
+                    {/* we should make the spell names all lowercase, and capitalize them only once for the row */}
+                    <SpellList spells={SpellData.filter(spell => spell.name.toLowerCase().indexOf(this.state.filterText.toLowerCase()) !== -1)} onSpellClick={this.selectSpell} />
                 </Content>
                 <DisplayedSpell show={this.state.showSpellModal} onHide={this.hideModal} spell={this.state.selectedSpell} />
-            </div>
+            </span>
         );
     }
 }
