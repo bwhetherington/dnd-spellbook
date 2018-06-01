@@ -100,7 +100,7 @@ export default class App extends React.Component {
     render() {
         return (
             <div>
-                <NavbarStyled>
+                <NavbarStyled fixedTop>
                     <SearchBar type="text" onChange={this.handleFilterTextChanged} />
                 </NavbarStyled>
                 <Content>
