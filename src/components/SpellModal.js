@@ -34,26 +34,9 @@ const HigherLevel = (props) => props.higherLevel
     ? <span><strong>At Higher Levels</strong> {ReactHtmlParser(props.higherLevel)}</span>
     : <span />;
 
-// const RITUAL_TAG = "Ritual";
-// const RitualTag = (props) => props.ritual
-//     ? <span> <Label bsStyle="primary">{RITUAL_TAG}</Label></span>
-//     : <span />;
-
-// const CONCENTRATION_TAG = "Concentration";
-// const ConcentrationTag = (props) => props.concentration
-//     ? <span> <Label bsStyle="danger">{CONCENTRATION_TAG}</Label></span>
-//     : <span />;
-
 const TagHolderModal = styled.span`
     float: right;
 `;
-
-// const SpellTags = (props) => (
-//     <TagHolder>
-//         <RitualTag ritual={props.ritual} />
-//         <ConcentrationTag concentration={props.concentration} />
-//     </TagHolder>
-// );
 
 const Left = styled.div`
     float: left;
