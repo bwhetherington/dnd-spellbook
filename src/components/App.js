@@ -1,16 +1,40 @@
 import React from "react";
 import styled from "styled-components";
-import { Navbar, Label } from "react-bootstrap";
+import { Glyphicon, Navbar, Label } from "react-bootstrap";
 import SpellList from "./SpellList";
 
 import SpellModal from "./SpellModal";
+import SpellData from "./SpellData";
+import { filtered } from "../util/list";
+
+const filterText = (spells, text) => filtered(spells, spell => {
+    console.log(text);
+    if (text) {
+        if (spell.name.contains(text)) {
+            return true;
+        } else {
+            return false;
+        }
+    } else {
+        return true;
+    }
+})
+
+const SearchBar = styled.input`
+    background: rgb(32, 32, 32);
+    color: white;
+    border: 0px;
+    padding: 5px;
+`;
 
 const NavbarStyled = styled(Navbar) `
     border-radius: 0px;
     border: 0;
     background: rgb(64, 64, 64);
-    text-align: center;
+    padding: 10px;
+    text-align: left;
     margin: 0px;
+    color: white;
 `;
 
 const SPELL = `
@@ -42,25 +66,33 @@ const DisplayedSpell = (props) => props.spell
 const Content = styled.div`
     width: 1000px;
     margin: auto;
+    padding: 20px;
 `;
 
 export default class App extends React.Component {
     constructor(props, context) {
         super(props, context);
         this.state = {
+            filterText: "",
             showSpellModal: false,
             selectedSpell: null
         };
         this.hideModal = this.hideModal.bind(this);
         this.selectSpell = this.selectSpell.bind(this);
+        this.handleFilterTextChanged = this.handleFilterTextChanged.bind(this);
     }
 
     selectSpell(spell) {
-        this.setState({ selectedSpell: spell, showSpellModal: true });
+        this.setState({ ...this.state, selectedSpell: spell, showSpellModal: true });
     }
 
     hideModal() {
-        this.setState({ selectedSpell: null, showSpellModal: false });
+        this.setState({ ...this.state, selectedSpell: null, showSpellModal: false });
+    }
+
+    handleFilterTextChanged(event) {
+        this.setState({ ...this.state, filterText: event.target.value });
+        console.log(this.state);
     }
 
     /**
@@ -69,11 +101,11 @@ export default class App extends React.Component {
     render() {
         return (
             <div>
-                <NavbarStyled />
+                <NavbarStyled>
+                    <SearchBar type="text" onChange={this.handleFilterTextChanged} />
+                </NavbarStyled>
                 <Content>
-                    <h1>Hello world!</h1>
-                    <p>This is the D&D spellbook.</p>
-                    <SpellList onSpellClick={this.selectSpell} />
+                    <SpellList spells={SpellData.filter(spell => spell.name.indexOf(this.state.filterText) !== -1)} onSpellClick={this.selectSpell} />
                 </Content>
                 <DisplayedSpell show={this.state.showSpellModal} onHide={this.hideModal} spell={this.state.selectedSpell} />
             </div>

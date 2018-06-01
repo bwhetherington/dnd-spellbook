@@ -1,11 +1,11 @@
 import React from "react";
 import styled from "styled-components";
 import { Table } from "react-bootstrap";
-import SpellData from "./SpellData";
 import { SpellTags } from "./App";
 import { sorted } from "../util/list";
 import { formatJustLevel, capitalize } from "../util/text";
 import { levelColor } from "../util/color";
+import SpellModal from "./SpellModal";
 
 const Ordering = {
     NAME: 0,
@@ -55,7 +55,7 @@ export default class SpellList extends React.Component {
         this.state = {
             filterOptions: createFilterOptions({}),
             orderBy: Ordering.LEVEL,
-            spells: SpellData,
+            spells: this.props.spells,
             selectedSpell: null,
             showSpellModal: false,
         };
@@ -65,7 +65,7 @@ export default class SpellList extends React.Component {
     }
 
     renderSpells() {
-        return sorted(this.state.spells, levelCMP).map(spell => <SpellRow key={spell.name} onSpellClick={this.props.onSpellClick} spell={spell} />);
+        return sorted(this.props.spells, levelCMP).map(spell => <SpellRow key={spell.name} onSpellClick={this.props.onSpellClick} spell={spell} />);
         // return this.state.spells.map(spell => <SpellRow spell={spell} />);
     }
 
@@ -75,7 +75,7 @@ export default class SpellList extends React.Component {
 
     render() {
         return (
-            <Table striped hover>
+            <Table striped bordered condensed hover>
                 <col width="80" />
                 <thead>
                     <tr>

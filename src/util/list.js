@@ -5,3 +5,5 @@
  * @param cmp The comparator
  */
 export const sorted = (list, cmp) => [].concat(list).sort(cmp);
+
+export const filtered = (list, filter) => [].concat(list).filter(filter);

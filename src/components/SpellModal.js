@@ -31,7 +31,7 @@ const materialComponents = (material) => material
     : "";
 
 const HigherLevel = (props) => props.higherLevel
-    ? <span><strong>At Higher Levels</strong> {ReactHtmlParser(props.higherLevel)}</span>
+    ? <span><b><i>At Higher Levels.</i></b> {ReactHtmlParser(props.higherLevel)}</span>
     : <span />;
 
 // const RITUAL_TAG = "Ritual";
