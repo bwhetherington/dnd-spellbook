@@ -2,7 +2,6 @@ import React from "react";
 import styled from "styled-components";
 import { Glyphicon, Navbar, Label } from "react-bootstrap";
 import SpellList from "./SpellList";
-
 import SpellModal from "./SpellModal";
 import SpellData from "./SpellData";
 import { filtered } from "../util/list";
