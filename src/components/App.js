@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { Navbar } from "react-bootstrap";
+import { Navbar, Label } from "react-bootstrap";
 import SpellList from "./SpellList";
 
 import SpellModal from "./SpellModal";
@@ -75,3 +75,26 @@ export default class App extends React.Component {
         );
     }
 }
+
+const RITUAL_TAG = "Ritual";
+const RitualTag = (props) => props.ritual
+    ? <span> <Label bsStyle="primary">{RITUAL_TAG}</Label></span>
+    : <span />;
+
+const CONCENTRATION_TAG = "Concentration";
+const ConcentrationTag = (props) => props.concentration
+    ? <span> <Label bsStyle="danger">{CONCENTRATION_TAG}</Label></span>
+    : <span />;
+
+const TagHolder = styled.span`
+    float: right;
+`;
+
+const SpellTags = (props) => (
+    <props.TagHolder>
+        <RitualTag ritual={props.ritual} />
+        <ConcentrationTag concentration={props.concentration} />
+    </props.TagHolder>
+);
+
+export { SpellTags };

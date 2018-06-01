@@ -1,6 +1,9 @@
 import React from "react";
+import styled from "styled-components";
 import { Table } from "react-bootstrap";
 import SpellData from "./SpellData";
+import { SpellTags } from "./App";
+import { sorted } from "../util/list";
 
 const Ordering = {
     NAME: 0,
@@ -21,12 +24,18 @@ const createFilterOptions = ({
     concentration: concentration
 });
 
+const TagHolderList = styled.span``;
+
 const SpellRow = (props) => (
     <tr>
         <td style={{ "text-align": "center" }}>{props.spell.level}</td>
-        <td style={{ "text-align": "left" }}>{props.spell.name}</td>
+        <td style={{ "text-align": "left" }}>{props.spell.name}<small><SpellTags ritual={props.spell.ritual} concentration={props.spell.concentration} TagHolder={TagHolderList} /></small></td>
     </tr>
 );
+
+const levelCMP = (spellA, spellB) => spellA.level - spellB.level === 0
+? spellA.name.localeCompare(spellB.name)
+: spellA.level - spellB.level;
 
 export default class SpellList extends React.Component {
     constructor(props, context) {
@@ -41,7 +50,8 @@ export default class SpellList extends React.Component {
     }
 
     renderSpells() {
-        return this.state.spells.map(spell => <SpellRow spell={spell} />);
+        return sorted(this.state.spells, levelCMP).map(spell => <SpellRow spell={spell} />);
+        // return this.state.spells.map(spell => <SpellRow spell={spell} />);
     }
 
     render() {
@@ -55,7 +65,7 @@ export default class SpellList extends React.Component {
                     </tr>
                 </thead>
                 <tbody>
-                    {this.renderSpells()};
+                    {this.renderSpells()}
                 </tbody>
             </Table>
         );

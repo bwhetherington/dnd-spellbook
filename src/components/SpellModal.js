@@ -1,7 +1,8 @@
 import React from "react";
 import styled from "styled-components";
-import { Modal, Label } from "react-bootstrap";
+import { Modal } from "react-bootstrap";
 import ReactHtmlParser from "react-html-parser";
+import { SpellTags } from "./App";
 
 import { formatLevelAndSchool, formatLevel, formatClasses } from "../util/text";
 
@@ -33,26 +34,26 @@ const HigherLevel = (props) => props.higherLevel
     ? <span><strong>At Higher Levels</strong> {ReactHtmlParser(props.higherLevel)}</span>
     : <span />;
 
-const RITUAL_TAG = "Ritual";
-const RitualTag = (props) => props.ritual
-    ? <span> <Label bsStyle="primary">{RITUAL_TAG}</Label></span>
-    : <span />;
+// const RITUAL_TAG = "Ritual";
+// const RitualTag = (props) => props.ritual
+//     ? <span> <Label bsStyle="primary">{RITUAL_TAG}</Label></span>
+//     : <span />;
 
-const CONCENTRATION_TAG = "Concentration";
-const ConcentrationTag = (props) => props.concentration
-    ? <span> <Label bsStyle="danger">{CONCENTRATION_TAG}</Label></span>
-    : <span />;
+// const CONCENTRATION_TAG = "Concentration";
+// const ConcentrationTag = (props) => props.concentration
+//     ? <span> <Label bsStyle="danger">{CONCENTRATION_TAG}</Label></span>
+//     : <span />;
 
-const TagHolder = styled.span`
+const TagHolderModal = styled.span`
     float: right;
 `;
 
-const SpellTags = (props) => (
-    <TagHolder>
-        <RitualTag ritual={props.ritual} />
-        <ConcentrationTag concentration={props.concentration} />
-    </TagHolder>
-);
+// const SpellTags = (props) => (
+//     <TagHolder>
+//         <RitualTag ritual={props.ritual} />
+//         <ConcentrationTag concentration={props.concentration} />
+//     </TagHolder>
+// );
 
 const Left = styled.div`
     float: left;
@@ -68,7 +69,7 @@ const SpellModal = (props) => {
         <Modal show={props.show} onHide={props.onHide}>
             <Modal.Header>
                 <Modal.Title>
-                    <span className="really-big">{spell.name}</span><small><SpellTags ritual={spell.ritual} concentration={spell.concentration} /></small>
+                    <span className="really-big">{spell.name}</span><small><SpellTags ritual={spell.ritual} concentration={spell.concentration} TagHolder={TagHolderModal} /></small>
                     <br />
                     <small><i>{formatLevelAndSchool(spell.level, spell.school)}</i></small>
                 </Modal.Title>

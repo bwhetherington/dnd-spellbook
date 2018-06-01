@@ -4,4 +4,4 @@
  * @param list The list to sort
  * @param cmp The comparator
  */
-export const sorted = (list, cmp) => [].concat(list).sort(tmp);
+export const sorted = (list, cmp) => [].concat(list).sort(cmp);
