@@ -38,7 +38,7 @@ const NameCol = styled.td`
 `;
 
 const SpellRow = (props) => (
-    <tr>
+    <tr onClick={() => props.onSpellClick(props.spell)} >
         <LevelCol level={props.spell.level}>{capitalize(formatJustLevel(props.spell.level))}</LevelCol>
         <NameCol>{props.spell.name}<small><SpellTags ritual={props.spell.ritual} concentration={props.spell.concentration} TagHolder={TagHolderList} /></small></NameCol>
     </tr>
@@ -51,18 +51,26 @@ const levelCMP = (spellA, spellB) => spellA.level - spellB.level === 0
 export default class SpellList extends React.Component {
     constructor(props, context) {
         super(props, context);
+
         this.state = {
             filterOptions: createFilterOptions({}),
             orderBy: Ordering.LEVEL,
-            spells: SpellData
+            spells: SpellData,
+            selectedSpell: null,
+            showSpellModal: false,
         };
 
         this.renderSpells = this.renderSpells.bind(this);
+        this.selectSpell = this.selectSpell.bind(this);
     }
 
     renderSpells() {
-        return sorted(this.state.spells, levelCMP).map(spell => <SpellRow spell={spell} />);
+        return sorted(this.state.spells, levelCMP).map(spell => <SpellRow key={spell.name} onSpellClick={this.props.onSpellClick} spell={spell} />);
         // return this.state.spells.map(spell => <SpellRow spell={spell} />);
+    }
+
+    selectSpell(spell) {
+        this.setState({ selectedSpell: spell, showSpellModal: true, ...this.state });
     }
 
     render() {

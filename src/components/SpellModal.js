@@ -27,7 +27,7 @@ const Row = styled.div`
 `;
 
 const materialComponents = (material) => material
-    ? ` (${material.substring(0, material.length - 1)})`
+    ? ` (${material})`
     : "";
 
 const HigherLevel = (props) => props.higherLevel

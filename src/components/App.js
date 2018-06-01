@@ -35,7 +35,7 @@ const SPELL = `
 }`;
 
 const obj = JSON.parse(SPELL);
-const DisplayedSpell = (props) => props.show
+const DisplayedSpell = (props) => props.spell
     ? <SpellModal show={props.show} onHide={props.onHide} spell={props.spell} />
     : <span />;
 
@@ -52,10 +52,15 @@ export default class App extends React.Component {
             selectedSpell: null
         };
         this.hideModal = this.hideModal.bind(this);
+        this.selectSpell = this.selectSpell.bind(this);
+    }
+
+    selectSpell(spell) {
+        this.setState({ selectedSpell: spell, showSpellModal: true });
     }
 
     hideModal() {
-        this.setState({ showSpellModal: false, ...this.state });
+        this.setState({ selectedSpell: null, showSpellModal: false });
     }
 
     /**
@@ -68,9 +73,9 @@ export default class App extends React.Component {
                 <Content>
                     <h1>Hello world!</h1>
                     <p>This is the D&D spellbook.</p>
-                    <SpellList />
+                    <SpellList onSpellClick={this.selectSpell} />
                 </Content>
-                <DisplayedSpell show={this.state.showSpellModal} onHide={() => { }} spell={this.state.selectedSpell} />
+                <DisplayedSpell show={this.state.showSpellModal} onHide={this.hideModal} spell={this.state.selectedSpell} />
             </div>
         );
     }
