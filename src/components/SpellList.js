@@ -23,8 +23,8 @@ const createFilterOptions = ({
 
 const SpellRow = (props) => (
     <tr>
-        <td>{props.spell.level}</td>
-        <td>{props.spell.name}</td>
+        <td style={{ "text-align": "center" }}>{props.spell.level}</td>
+        <td style={{ "text-align": "left" }}>{props.spell.name}</td>
     </tr>
 );
 
@@ -47,10 +47,10 @@ export default class SpellList extends React.Component {
     render() {
         return (
             <Table striped hover>
-                <col width="130" />
+                <col width="80" />
                 <thead>
                     <tr>
-                        <th>Level</th>
+                        <th style={{ "text-align": "center" }}>Level</th>
                         <th>Name</th>
                     </tr>
                 </thead>
