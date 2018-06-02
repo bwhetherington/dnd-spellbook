@@ -11,6 +11,7 @@ const StyledModal = styled(Modal) `
     -moz-user-select: none; /* Firefox */
     -ms-user-select: none; /* IE10+/Edge */
     user-select: none; /* Standard */
+    overflow: scroll;
 `;
 
 const LeftColumn = styled.div`
@@ -53,14 +54,18 @@ const Right = styled.div`
     float: right;
 `;
 
+const Break = styled.div`
+    height: 10px;
+`;
+
 const SpellModal = (props) => {
     const spell = props.spell;
     return (
-        <Modal show={props.show} onHide={props.onHide}>
+        <StyledModal show={props.show} onHide={props.onHide}>
             <Modal.Header>
                 <Modal.Title>
                     <span className="really-big">{spell.name}</span><small><SpellTags ritual={spell.ritual} concentration={spell.concentration} TagHolder={TagHolderModal} /></small>
-                    <br />
+                    <div />
                     <small><i>{formatLevelAndSchool(spell.level, spell.school)}</i></small>
                 </Modal.Title>
             </Modal.Header>
@@ -106,7 +111,7 @@ const SpellModal = (props) => {
                     </RightColumn>
                 </Row>
             </Modal.Footer>
-        </Modal>
+        </StyledModal>
     );
 };
 

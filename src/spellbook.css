@@ -13,8 +13,6 @@
     text-align: center;
 }
 
-
-
 .spellDesc > table {
     margin: auto;
     margin-bottom: 10px;
@@ -24,12 +22,6 @@
     border: 1px solid #d5d5d5;
 }
 
-body.modal-open-noscroll
-{
-    margin-right: 0!important;
-    overflow: hidden;
-}
-.modal-open-noscroll .navbar-fixed-top, .modal-open .navbar-fixed-bottom
-{
-    margin-right: 0!important;
+body {
+    overflow: scroll;
 }
