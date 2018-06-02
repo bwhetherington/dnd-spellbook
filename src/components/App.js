@@ -48,7 +48,6 @@ export default class App extends React.Component {
             filterText: "",
             filterRitual: false,
             filterConcentration: false,
-            filterNonRC: false,
             filterClass: "",
             filterSchool:"",
             showSpellModal: false,
@@ -59,7 +58,6 @@ export default class App extends React.Component {
         this.handleFilterTextChanged = this.handleFilterTextChanged.bind(this);
         this.handleFilterRitualChanged = this.handleFilterRitualChanged.bind(this);
         this.handleFilterConcentrationChanged = this.handleFilterConcentrationChanged.bind(this);
-        this.handleFilterNonRCChanged = this.handleFilterNonRCChanged.bind(this);
         this.handleFilterClassChanged = this.handleFilterClassChanged.bind(this);
         this.handleFilterSchoolChanged = this.handleFilterSchoolChanged.bind(this);
     }
@@ -85,10 +83,6 @@ export default class App extends React.Component {
         this.setState({ ...this.state, filterConcentration: !this.state.filterConcentration });
     }
 
-    handleFilterNonRCChanged(event) {
-        this.setState({ ...this.state, filterNonRC: !this.state.filterNonRC });
-    }
-
     handleFilterClassChanged(event) {
         this.setState({ ...this.state, filterClass: event.target.value });
     }
@@ -107,7 +101,6 @@ export default class App extends React.Component {
                     handleFilterTextChanged={this.handleFilterTextChanged}
                     handleFilterRitualChanged={this.handleFilterRitualChanged}
                     handleFilterConcentrationChanged={this.handleFilterConcentrationChanged}
-                    handleFilterNonRCChanged={this.handleFilterConcentrationChanged}
                     handleFilterClassChanged={this.handleFilterClassChanged}
                     handleFilterSchoolChanged={this.handleFilterSchoolChanged}
                 />
@@ -118,7 +111,6 @@ export default class App extends React.Component {
                         filterText={this.state.filterText}
                         filterRitual={this.state.filterRitual}
                         filterConcentration={this.state.filterConcentration}
-                        filterNonRC={this.state.filterNonRC}
                         filterClass={this.state.filterClass}
                         filterSchool={this.state.filterSchool}
                     />

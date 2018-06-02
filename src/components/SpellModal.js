@@ -34,6 +34,22 @@ const Row = styled.div`
     }
 `;
 
+const SpellTagHolder = styled.small`
+float: right;
+`;
+
+const Left = styled.div`
+float: left;
+`;
+
+const Right = styled.div`
+float: right;
+`;
+
+const Break = styled.div`
+height: 10px;
+`;
+
 const materialComponents = (material) => material
     ? ` (${ReactHtmlParser(material)})`
     : "";
@@ -41,22 +57,6 @@ const materialComponents = (material) => material
 const HigherLevel = (props) => props.higherLevel
     ? <span><b><i>At Higher Levels.</i></b> {ReactHtmlParser(props.higherLevel)}</span>
     : <span />;
-
-const SpellTagHolder = styled.small`
-    float: right;
-`;
-
-const Left = styled.div`
-    float: left;
-`;
-
-const Right = styled.div`
-    float: right;
-`;
-
-const Break = styled.div`
-    height: 10px;
-`;
 
 const SpellModal = (props) => {
     const spell = props.spell;

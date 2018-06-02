@@ -2,32 +2,10 @@ import React from "react";
 import styled from "styled-components";
 import { Navbar } from "react-bootstrap";
 import Checkbox from "./Checkbox";
+import SearchBar from "./SearchBar";
 
 const Logo = styled.span`
     
-
-`;
-
-const SearchBar = styled.input`
-    background: #c53023;
-    color: white;
-    border: 0px;
-    padding: 5px;
-    border-radius: 5px;
-    margin-right: 10px;
-
-    &::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-        color: #ea9088;
-        opacity: 1; /* Firefox */
-    }
-
-    &:-ms-input-placeholder { /* Internet Explorer 10-11 */
-        color: #ea9088;
-    }
-
-    &::-ms-input-placeholder { /* Microsoft Edge */
-        color: #ea9088;
-    }
 `;
 
 // const Select = styled.select`
@@ -86,13 +64,12 @@ const SpellNav = (props) => {
     return (
         <SpellNavbar fixedTop>
             <NavbarLabel>Spellbook</NavbarLabel>
-            <SearchBar type="text" placeholder="Spell name..." onChange={props.handleFilterTextChanged} />
-            <SearchBar type="text" placeholder="Classes..." onChange={props.handleFilterClassChanged} />
-            <SearchBar type="text" placeholder="Schools..." onChange={props.handleFilterSchoolChanged} />
+            <SearchBar placeholder="Spell name..." onChange={props.handleFilterTextChanged} />
+            <SearchBar placeholder="Classes..." onChange={props.handleFilterClassChanged} />
+            <SearchBar placeholder="Schools..." onChange={props.handleFilterSchoolChanged} />
             <br />
-            <Checkbox label="Include Rituals" onChange={props.handleFilterRitualChanged} />
-            <Checkbox label="Include Concentration" onChange={props.handleFilterConcentrationChanged} />
-            <Checkbox label="Include Other" onChange={props.handleFilterNonRCChanged} />
+            <Checkbox label="Require Ritual" onChange={props.handleFilterRitualChanged} />
+            <Checkbox label="Exclude Concentration" onChange={props.handleFilterConcentrationChanged} />
             {/* <StyledCheckbox inline onChange={props.handleFilterRitualChanged} >Rituals only</StyledCheckbox>
             <StyledCheckbox inline onChange={props.handleFilterConcentrationChanged} >Exclude concentration</StyledCheckbox> */}
         </SpellNavbar>

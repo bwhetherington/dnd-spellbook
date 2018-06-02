@@ -14,8 +14,8 @@ const spellsJSON = `[
         "level": 8,
         "school": "necromancy",
         "classes": [
-            "sorcerers",
-            "wizards"
+            "sorcerer",
+            "wizard"
         ]
     },
     {
@@ -32,10 +32,10 @@ const spellsJSON = `[
         "level": 1,
         "school": "abjuration",
         "classes": [
-            "druids",
-            "rangers",
-            "sorcerers",
-            "wizards"
+            "druid",
+            "ranger",
+            "sorcerer",
+            "wizard"
         ]
     },
     {
@@ -51,8 +51,8 @@ const spellsJSON = `[
         "level": 0,
         "school": "conjuration",
         "classes": [
-            "sorcerers",
-            "wizards"
+            "sorcerer",
+            "wizard"
         ]
     },
     {
@@ -70,8 +70,8 @@ const spellsJSON = `[
         "level": 2,
         "school": "evocation",
         "classes": [
-            "sorcerers",
-            "wizards"
+            "sorcerer",
+            "wizard"
         ]
     },
     {
@@ -89,8 +89,8 @@ const spellsJSON = `[
         "level": 2,
         "school": "abjuration",
         "classes": [
-            "clerics",
-            "paladins"
+            "cleric",
+            "paladin"
         ]
     },
     {
@@ -107,8 +107,8 @@ const spellsJSON = `[
         "level": 1,
         "school": "abjuration",
         "classes": [
-            "rangers",
-            "wizards"
+            "ranger",
+            "wizard"
         ]
     },
     {
@@ -124,8 +124,8 @@ const spellsJSON = `[
         "level": 2,
         "school": "transmutation",
         "classes": [
-            "sorcerers",
-            "wizards"
+            "sorcerer",
+            "wizard"
         ]
     },
     {
@@ -143,9 +143,9 @@ const spellsJSON = `[
         "level": 1,
         "school": "enchantment",
         "classes": [
-            "bards",
-            "druids",
-            "rangers"
+            "bard",
+            "druid",
+            "ranger"
         ]
     },
     {
@@ -163,9 +163,9 @@ const spellsJSON = `[
         "level": 2,
         "school": "enchantment",
         "classes": [
-            "bards",
-            "druids",
-            "rangers"
+            "bard",
+            "druid",
+            "ranger"
         ]
     },
     {
@@ -181,7 +181,7 @@ const spellsJSON = `[
         "level": 8,
         "school": "transmutation",
         "classes": [
-            "druids"
+            "druid"
         ]
     },
     {
@@ -199,8 +199,8 @@ const spellsJSON = `[
         "level": 3,
         "school": "necromancy",
         "classes": [
-            "clerics",
-            "wizards"
+            "cleric",
+            "wizard"
         ]
     },
     {
@@ -217,9 +217,9 @@ const spellsJSON = `[
         "level": 5,
         "school": "transmutation",
         "classes": [
-            "bards",
-            "sorcerers",
-            "wizards"
+            "bard",
+            "sorcerer",
+            "wizard"
         ]
     },
     {
@@ -235,7 +235,7 @@ const spellsJSON = `[
         "level": 5,
         "school": "abjuration",
         "classes": [
-            "druids"
+            "druid"
         ]
     },
     {
@@ -252,8 +252,8 @@ const spellsJSON = `[
         "level": 8,
         "school": "abjuration",
         "classes": [
-            "clerics",
-            "wizards"
+            "cleric",
+            "wizard"
         ]
     },
     {
@@ -270,8 +270,8 @@ const spellsJSON = `[
         "level": 8,
         "school": "enchantment",
         "classes": [
-            "druids",
-            "wizards"
+            "druid",
+            "wizard"
         ]
     },
     {
@@ -288,7 +288,7 @@ const spellsJSON = `[
         "level": 4,
         "school": "divination",
         "classes": [
-            "wizards"
+            "wizard"
         ]
     },
     {
@@ -304,9 +304,9 @@ const spellsJSON = `[
         "level": 6,
         "school": "conjuration",
         "classes": [
-            "sorcerers",
-            "warlocks",
-            "wizards"
+            "sorcerer",
+            "warlock",
+            "wizard"
         ]
     },
     {
@@ -323,7 +323,7 @@ const spellsJSON = `[
         "level": 2,
         "school": "abjuration",
         "classes": [
-            "wizards"
+            "wizard"
         ]
     },
     {
@@ -341,7 +341,7 @@ const spellsJSON = `[
         "level": 1,
         "school": "abjuration",
         "classes": [
-            "warlocks"
+            "warlock"
         ]
     },
     {
@@ -358,7 +358,7 @@ const spellsJSON = `[
         "level": 1,
         "school": "conjuration",
         "classes": [
-            "warlocks"
+            "warlock"
         ]
     },
     {
@@ -375,9 +375,9 @@ const spellsJSON = `[
         "level": 9,
         "school": "necromancy",
         "classes": [
-            "clerics",
-            "warlocks",
-            "wizards"
+            "cleric",
+            "warlock",
+            "wizard"
         ]
     },
     {
@@ -394,7 +394,7 @@ const spellsJSON = `[
         "level": 2,
         "school": "divination",
         "classes": [
-            "clerics"
+            "cleric"
         ]
     },
     {
@@ -410,7 +410,7 @@ const spellsJSON = `[
         "level": 4,
         "school": "abjuration",
         "classes": [
-            "paladins"
+            "paladin"
         ]
     },
     {
@@ -426,7 +426,7 @@ const spellsJSON = `[
         "level": 4,
         "school": "abjuration",
         "classes": [
-            "paladins"
+            "paladin"
         ]
     },
     {
@@ -442,7 +442,7 @@ const spellsJSON = `[
         "level": 3,
         "school": "evocation",
         "classes": [
-            "paladins"
+            "paladin"
         ]
     },
     {
@@ -459,8 +459,8 @@ const spellsJSON = `[
         "level": 5,
         "school": "transmutation",
         "classes": [
-            "bards",
-            "druids"
+            "bard",
+            "druid"
         ]
     },
     {
@@ -478,8 +478,8 @@ const spellsJSON = `[
         "level": 1,
         "school": "enchantment",
         "classes": [
-            "bards",
-            "clerics"
+            "bard",
+            "cleric"
         ]
     },
     {
@@ -495,7 +495,7 @@ const spellsJSON = `[
         "level": 5,
         "school": "abjuration",
         "classes": [
-            "paladins"
+            "paladin"
         ]
     },
     {
@@ -513,11 +513,11 @@ const spellsJSON = `[
         "level": 4,
         "school": "abjuration",
         "classes": [
-            "clerics",
-            "paladins",
-            "sorcerers",
-            "warlocks",
-            "wizards"
+            "cleric",
+            "paladin",
+            "sorcerer",
+            "warlock",
+            "wizard"
         ]
     },
     {
@@ -534,8 +534,8 @@ const spellsJSON = `[
         "level": 2,
         "school": "transmutation",
         "classes": [
-            "druids",
-            "rangers"
+            "druid",
+            "ranger"
         ]
     },
     {
@@ -551,7 +551,7 @@ const spellsJSON = `[
         "level": 3,
         "school": "abjuration",
         "classes": [
-            "clerics"
+            "cleric"
         ]
     },
     {
@@ -568,8 +568,8 @@ const spellsJSON = `[
         "level": 1,
         "school": "divination",
         "classes": [
-            "druids",
-            "rangers"
+            "druid",
+            "ranger"
         ]
     },
     {
@@ -585,8 +585,8 @@ const spellsJSON = `[
         "level": 2,
         "school": "divination",
         "classes": [
-            "druids",
-            "rangers"
+            "druid",
+            "ranger"
         ]
     },
     {
@@ -603,9 +603,9 @@ const spellsJSON = `[
         "level": 3,
         "school": "necromancy",
         "classes": [
-            "bards",
-            "clerics",
-            "wizards"
+            "bard",
+            "cleric",
+            "wizard"
         ]
     },
     {
@@ -623,7 +623,7 @@ const spellsJSON = `[
         "level": 5,
         "school": "evocation",
         "classes": [
-            "wizards"
+            "wizard"
         ]
     },
     {
@@ -639,7 +639,7 @@ const spellsJSON = `[
         "level": 6,
         "school": "evocation",
         "classes": [
-            "clerics"
+            "cleric"
         ]
     },
     {
@@ -655,10 +655,10 @@ const spellsJSON = `[
         "level": 0,
         "school": "abjuration",
         "classes": [
-            "bards",
-            "sorcerers",
-            "warlocks",
-            "wizards"
+            "bard",
+            "sorcerer",
+            "warlock",
+            "wizard"
         ]
     },
     {
@@ -676,8 +676,8 @@ const spellsJSON = `[
         "level": 1,
         "school": "enchantment",
         "classes": [
-            "clerics",
-            "paladins"
+            "cleric",
+            "paladin"
         ]
     },
     {
@@ -694,10 +694,10 @@ const spellsJSON = `[
         "level": 4,
         "school": "necromancy",
         "classes": [
-            "druids",
-            "sorcerers",
-            "warlocks",
-            "wizards"
+            "druid",
+            "sorcerer",
+            "warlock",
+            "wizard"
         ]
     },
     {
@@ -713,7 +713,7 @@ const spellsJSON = `[
         "level": 3,
         "school": "evocation",
         "classes": [
-            "paladins"
+            "paladin"
         ]
     },
     {
@@ -730,10 +730,10 @@ const spellsJSON = `[
         "level": 2,
         "school": "necromancy",
         "classes": [
-            "bards",
-            "clerics",
-            "sorcerers",
-            "wizards"
+            "bard",
+            "cleric",
+            "sorcerer",
+            "wizard"
         ]
     },
     {
@@ -749,8 +749,8 @@ const spellsJSON = `[
         "level": 3,
         "school": "transmutation",
         "classes": [
-            "sorcerers",
-            "wizards"
+            "sorcerer",
+            "wizard"
         ]
     },
     {
@@ -766,8 +766,8 @@ const spellsJSON = `[
         "level": 2,
         "school": "illusion",
         "classes": [
-            "sorcerers",
-            "wizards"
+            "sorcerer",
+            "wizard"
         ]
     },
     {
@@ -784,7 +784,7 @@ const spellsJSON = `[
         "level": 6,
         "school": "transmutation",
         "classes": [
-            "druids"
+            "druid"
         ]
     },
     {
@@ -801,9 +801,9 @@ const spellsJSON = `[
         "level": 0,
         "school": "evocation",
         "classes": [
-            "sorcerers",
-            "warlocks",
-            "wizards"
+            "sorcerer",
+            "warlock",
+            "wizard"
         ]
     },
     {
@@ -820,7 +820,7 @@ const spellsJSON = `[
         "level": 2,
         "school": "evocation",
         "classes": [
-            "paladins"
+            "paladin"
         ]
     },
     {
@@ -837,8 +837,8 @@ const spellsJSON = `[
         "level": 1,
         "school": "evocation",
         "classes": [
-            "sorcerers",
-            "wizards"
+            "sorcerer",
+            "wizard"
         ]
     },
     {
@@ -855,7 +855,7 @@ const spellsJSON = `[
         "level": 3,
         "school": "conjuration",
         "classes": [
-            "druids"
+            "druid"
         ]
     },
     {
@@ -871,8 +871,8 @@ const spellsJSON = `[
         "level": 2,
         "school": "enchantment",
         "classes": [
-            "bards",
-            "clerics"
+            "bard",
+            "cleric"
         ]
     },
     {
@@ -889,8 +889,8 @@ const spellsJSON = `[
         "level": 1,
         "school": "transmutation",
         "classes": [
-            "sorcerers",
-            "wizards"
+            "sorcerer",
+            "wizard"
         ]
     },
     {
@@ -908,9 +908,9 @@ const spellsJSON = `[
         "level": 3,
         "school": "enchantment",
         "classes": [
-            "bards",
-            "sorcerers",
-            "wizards"
+            "bard",
+            "sorcerer",
+            "wizard"
         ]
     },
     {
@@ -927,8 +927,8 @@ const spellsJSON = `[
         "level": 1,
         "school": "necromancy",
         "classes": [
-            "warlocks",
-            "wizards"
+            "warlock",
+            "wizard"
         ]
     },
     {
@@ -945,8 +945,8 @@ const spellsJSON = `[
         "level": 1,
         "school": "abjuration",
         "classes": [
-            "clerics",
-            "paladins"
+            "cleric",
+            "paladin"
         ]
     },
     {
@@ -964,8 +964,8 @@ const spellsJSON = `[
         "level": 6,
         "school": "evocation",
         "classes": [
-            "sorcerers",
-            "wizards"
+            "sorcerer",
+            "wizard"
         ]
     },
     {
@@ -982,11 +982,11 @@ const spellsJSON = `[
         "level": 4,
         "school": "enchantment",
         "classes": [
-            "bards",
-            "druids",
-            "sorcerers",
-            "warlocks",
-            "wizards"
+            "bard",
+            "druid",
+            "sorcerer",
+            "warlock",
+            "wizard"
         ]
     },
     {
@@ -1003,11 +1003,11 @@ const spellsJSON = `[
         "level": 1,
         "school": "enchantment",
         "classes": [
-            "bards",
-            "druids",
-            "sorcerers",
-            "warlocks",
-            "wizards"
+            "bard",
+            "druid",
+            "sorcerer",
+            "warlock",
+            "wizard"
         ]
     },
     {
@@ -1024,7 +1024,7 @@ const spellsJSON = `[
         "level": 1,
         "school": "evocation",
         "classes": [
-            "sorcerers"
+            "sorcerer"
         ]
     },
     {
@@ -1040,9 +1040,9 @@ const spellsJSON = `[
         "level": 0,
         "school": "necromancy",
         "classes": [
-            "sorcerers",
-            "warlocks",
-            "wizards"
+            "sorcerer",
+            "warlock",
+            "wizard"
         ]
     },
     {
@@ -1060,8 +1060,8 @@ const spellsJSON = `[
         "level": 1,
         "school": "evocation",
         "classes": [
-            "sorcerers",
-            "wizards"
+            "sorcerer",
+            "wizard"
         ]
     },
     {
@@ -1079,9 +1079,9 @@ const spellsJSON = `[
         "level": 6,
         "school": "necromancy",
         "classes": [
-            "sorcerers",
-            "warlocks",
-            "wizards"
+            "sorcerer",
+            "warlock",
+            "wizard"
         ]
     },
     {
@@ -1097,7 +1097,7 @@ const spellsJSON = `[
         "level": 5,
         "school": "abjuration",
         "classes": [
-            "paladins"
+            "paladin"
         ]
     },
     {
@@ -1114,10 +1114,10 @@ const spellsJSON = `[
         "level": 3,
         "school": "divination",
         "classes": [
-            "bards",
-            "clerics",
-            "sorcerers",
-            "wizards"
+            "bard",
+            "cleric",
+            "sorcerer",
+            "wizard"
         ]
     },
     {
@@ -1134,7 +1134,7 @@ const spellsJSON = `[
         "level": 8,
         "school": "necromancy",
         "classes": [
-            "wizards"
+            "wizard"
         ]
     },
     {
@@ -1152,10 +1152,10 @@ const spellsJSON = `[
         "level": 2,
         "school": "conjuration",
         "classes": [
-            "bards",
-            "sorcerers",
-            "warlocks",
-            "wizards"
+            "bard",
+            "sorcerer",
+            "warlock",
+            "wizard"
         ]
     },
     {
@@ -1172,8 +1172,8 @@ const spellsJSON = `[
         "level": 5,
         "school": "conjuration",
         "classes": [
-            "sorcerers",
-            "wizards"
+            "sorcerer",
+            "wizard"
         ]
     },
     {
@@ -1191,8 +1191,8 @@ const spellsJSON = `[
         "level": 1,
         "school": "illusion",
         "classes": [
-            "sorcerers",
-            "wizards"
+            "sorcerer",
+            "wizard"
         ]
     },
     {
@@ -1209,8 +1209,8 @@ const spellsJSON = `[
         "level": 1,
         "school": "enchantment",
         "classes": [
-            "clerics",
-            "paladins"
+            "cleric",
+            "paladin"
         ]
     },
     {
@@ -1227,7 +1227,7 @@ const spellsJSON = `[
         "level": 5,
         "school": "divination",
         "classes": [
-            "clerics"
+            "cleric"
         ]
     },
     {
@@ -1243,8 +1243,8 @@ const spellsJSON = `[
         "level": 5,
         "school": "divination",
         "classes": [
-            "druids",
-            "rangers"
+            "druid",
+            "ranger"
         ]
     },
     {
@@ -1260,7 +1260,7 @@ const spellsJSON = `[
         "level": 1,
         "school": "enchantment",
         "classes": [
-            "paladins"
+            "paladin"
         ]
     },
     {
@@ -1277,10 +1277,10 @@ const spellsJSON = `[
         "level": 1,
         "school": "divination",
         "classes": [
-            "bards",
-            "sorcerers",
-            "warlocks",
-            "wizards"
+            "bard",
+            "sorcerer",
+            "warlock",
+            "wizard"
         ]
     },
     {
@@ -1296,7 +1296,7 @@ const spellsJSON = `[
         "level": 4,
         "school": "enchantment",
         "classes": [
-            "bards"
+            "bard"
         ]
     },
     {
@@ -1314,8 +1314,8 @@ const spellsJSON = `[
         "level": 5,
         "school": "evocation",
         "classes": [
-            "sorcerers",
-            "wizards"
+            "sorcerer",
+            "wizard"
         ]
     },
     {
@@ -1333,10 +1333,10 @@ const spellsJSON = `[
         "level": 4,
         "school": "enchantment",
         "classes": [
-            "bards",
-            "druids",
-            "sorcerers",
-            "wizards"
+            "bard",
+            "druid",
+            "sorcerer",
+            "wizard"
         ]
     },
     {
@@ -1353,8 +1353,8 @@ const spellsJSON = `[
         "level": 3,
         "school": "conjuration",
         "classes": [
-            "druids",
-            "rangers"
+            "druid",
+            "ranger"
         ]
     },
     {
@@ -1371,7 +1371,7 @@ const spellsJSON = `[
         "level": 3,
         "school": "conjuration",
         "classes": [
-            "rangers"
+            "ranger"
         ]
     },
     {
@@ -1388,7 +1388,7 @@ const spellsJSON = `[
         "level": 7,
         "school": "conjuration",
         "classes": [
-            "clerics"
+            "cleric"
         ]
     },
     {
@@ -1406,8 +1406,8 @@ const spellsJSON = `[
         "level": 5,
         "school": "conjuration",
         "classes": [
-            "druids",
-            "wizards"
+            "druid",
+            "wizard"
         ]
     },
     {
@@ -1424,8 +1424,8 @@ const spellsJSON = `[
         "level": 6,
         "school": "conjuration",
         "classes": [
-            "druids",
-            "warlocks"
+            "druid",
+            "warlock"
         ]
     },
     {
@@ -1442,8 +1442,8 @@ const spellsJSON = `[
         "level": 4,
         "school": "conjuration",
         "classes": [
-            "druids",
-            "wizards"
+            "druid",
+            "wizard"
         ]
     },
     {
@@ -1460,7 +1460,7 @@ const spellsJSON = `[
         "level": 5,
         "school": "conjuration",
         "classes": [
-            "rangers"
+            "ranger"
         ]
     },
     {
@@ -1478,8 +1478,8 @@ const spellsJSON = `[
         "level": 4,
         "school": "conjuration",
         "classes": [
-            "druids",
-            "rangers"
+            "druid",
+            "ranger"
         ]
     },
     {
@@ -1495,8 +1495,8 @@ const spellsJSON = `[
         "level": 5,
         "school": "divination",
         "classes": [
-            "warlocks",
-            "wizards"
+            "warlock",
+            "wizard"
         ]
     },
     {
@@ -1512,8 +1512,8 @@ const spellsJSON = `[
         "level": 5,
         "school": "necromancy",
         "classes": [
-            "clerics",
-            "druids"
+            "cleric",
+            "druid"
         ]
     },
     {
@@ -1530,7 +1530,7 @@ const spellsJSON = `[
         "level": 6,
         "school": "evocation",
         "classes": [
-            "wizards"
+            "wizard"
         ]
     },
     {
@@ -1547,8 +1547,8 @@ const spellsJSON = `[
         "level": 2,
         "school": "evocation",
         "classes": [
-            "clerics",
-            "wizards"
+            "cleric",
+            "wizard"
         ]
     },
     {
@@ -1564,9 +1564,9 @@ const spellsJSON = `[
         "level": 0,
         "school": "transmutation",
         "classes": [
-            "druids",
-            "sorcerers",
-            "wizards"
+            "druid",
+            "sorcerer",
+            "wizard"
         ]
     },
     {
@@ -1583,9 +1583,9 @@ const spellsJSON = `[
         "level": 4,
         "school": "transmutation",
         "classes": [
-            "clerics",
-            "druids",
-            "wizards"
+            "cleric",
+            "druid",
+            "wizard"
         ]
     },
     {
@@ -1602,9 +1602,9 @@ const spellsJSON = `[
         "level": 8,
         "school": "transmutation",
         "classes": [
-            "clerics",
-            "druids",
-            "wizards"
+            "cleric",
+            "druid",
+            "wizard"
         ]
     },
     {
@@ -1620,9 +1620,9 @@ const spellsJSON = `[
         "level": 5,
         "school": "transmutation",
         "classes": [
-            "druids",
-            "sorcerers",
-            "wizards"
+            "druid",
+            "sorcerer",
+            "wizard"
         ]
     },
     {
@@ -1640,7 +1640,7 @@ const spellsJSON = `[
         "level": 2,
         "school": "transmutation",
         "classes": [
-            "rangers"
+            "ranger"
         ]
     },
     {
@@ -1657,9 +1657,9 @@ const spellsJSON = `[
         "level": 3,
         "school": "abjuration",
         "classes": [
-            "sorcerers",
-            "warlocks",
-            "wizards"
+            "sorcerer",
+            "warlock",
+            "wizard"
         ]
     },
     {
@@ -1675,10 +1675,10 @@ const spellsJSON = `[
         "level": 0,
         "school": "conjuration",
         "classes": [
-            "druids",
-            "sorcerers",
-            "warlocks",
-            "wizards"
+            "druid",
+            "sorcerer",
+            "warlock",
+            "wizard"
         ]
     },
     {
@@ -1694,8 +1694,8 @@ const spellsJSON = `[
         "level": 3,
         "school": "conjuration",
         "classes": [
-            "clerics",
-            "paladins"
+            "cleric",
+            "paladin"
         ]
     },
     {
@@ -1712,7 +1712,7 @@ const spellsJSON = `[
         "level": 6,
         "school": "transmutation",
         "classes": [
-            "wizards"
+            "wizard"
         ]
     },
     {
@@ -1730,8 +1730,8 @@ const spellsJSON = `[
         "level": 1,
         "school": "transmutation",
         "classes": [
-            "clerics",
-            "druids"
+            "cleric",
+            "druid"
         ]
     },
     {
@@ -1749,9 +1749,9 @@ const spellsJSON = `[
         "level": 6,
         "school": "necromancy",
         "classes": [
-            "clerics",
-            "warlocks",
-            "wizards"
+            "cleric",
+            "warlock",
+            "wizard"
         ]
     },
     {
@@ -1769,8 +1769,8 @@ const spellsJSON = `[
         "level": 5,
         "school": "illusion",
         "classes": [
-            "sorcerers",
-            "wizards"
+            "sorcerer",
+            "wizard"
         ]
     },
     {
@@ -1786,10 +1786,10 @@ const spellsJSON = `[
         "level": 2,
         "school": "enchantment",
         "classes": [
-            "bards",
-            "sorcerers",
-            "warlocks",
-            "wizards"
+            "bard",
+            "sorcerer",
+            "warlock",
+            "wizard"
         ]
     },
     {
@@ -1806,9 +1806,9 @@ const spellsJSON = `[
         "level": 7,
         "school": "evocation",
         "classes": [
-            "sorcerers",
-            "warlocks",
-            "wizards"
+            "sorcerer",
+            "warlock",
+            "wizard"
         ]
     },
     {
@@ -1824,7 +1824,7 @@ const spellsJSON = `[
         "level": 3,
         "school": "evocation",
         "classes": [
-            "paladins"
+            "paladin"
         ]
     },
     {
@@ -1841,11 +1841,11 @@ const spellsJSON = `[
         "level": 1,
         "school": "evocation",
         "classes": [
-            "bards",
-            "clerics",
-            "druids",
-            "paladins",
-            "rangers"
+            "bard",
+            "cleric",
+            "druid",
+            "paladin",
+            "ranger"
         ]
     },
     {
@@ -1862,9 +1862,9 @@ const spellsJSON = `[
         "level": 0,
         "school": "evocation",
         "classes": [
-            "bards",
-            "sorcerers",
-            "wizards"
+            "bard",
+            "sorcerer",
+            "wizard"
         ]
     },
     {
@@ -1881,8 +1881,8 @@ const spellsJSON = `[
         "level": 5,
         "school": "necromancy",
         "classes": [
-            "warlocks",
-            "wizards"
+            "warlock",
+            "wizard"
         ]
     },
     {
@@ -1899,9 +1899,9 @@ const spellsJSON = `[
         "level": 2,
         "school": "evocation",
         "classes": [
-            "sorcerers",
-            "warlocks",
-            "wizards"
+            "sorcerer",
+            "warlock",
+            "wizard"
         ]
     },
     {
@@ -1918,10 +1918,10 @@ const spellsJSON = `[
         "level": 2,
         "school": "transmutation",
         "classes": [
-            "druids",
-            "rangers",
-            "sorcerers",
-            "wizards"
+            "druid",
+            "ranger",
+            "sorcerer",
+            "wizard"
         ]
     },
     {
@@ -1938,8 +1938,8 @@ const spellsJSON = `[
         "level": 5,
         "school": "evocation",
         "classes": [
-            "clerics",
-            "wizards"
+            "cleric",
+            "wizard"
         ]
     },
     {
@@ -1955,11 +1955,11 @@ const spellsJSON = `[
         "level": 3,
         "school": "evocation",
         "classes": [
-            "clerics",
-            "druids",
-            "paladins",
-            "rangers",
-            "sorcerers"
+            "cleric",
+            "druid",
+            "paladin",
+            "ranger",
+            "sorcerer"
         ]
     },
     {
@@ -1975,8 +1975,8 @@ const spellsJSON = `[
         "level": 4,
         "school": "abjuration",
         "classes": [
-            "clerics",
-            "paladins"
+            "cleric",
+            "paladin"
         ]
     },
     {
@@ -1994,8 +1994,8 @@ const spellsJSON = `[
         "level": 7,
         "school": "evocation",
         "classes": [
-            "sorcerers",
-            "wizards"
+            "sorcerer",
+            "wizard"
         ]
     },
     {
@@ -2011,8 +2011,8 @@ const spellsJSON = `[
         "level": 8,
         "school": "conjuration",
         "classes": [
-            "warlocks",
-            "wizards"
+            "warlock",
+            "wizard"
         ]
     },
     {
@@ -2028,7 +2028,7 @@ const spellsJSON = `[
         "level": 5,
         "school": "evocation",
         "classes": [
-            "paladins"
+            "paladin"
         ]
     },
     {
@@ -2044,8 +2044,8 @@ const spellsJSON = `[
         "level": 1,
         "school": "divination",
         "classes": [
-            "clerics",
-            "paladins"
+            "cleric",
+            "paladin"
         ]
     },
     {
@@ -2061,13 +2061,13 @@ const spellsJSON = `[
         "level": 1,
         "school": "divination",
         "classes": [
-            "bards",
-            "clerics",
-            "druids",
-            "paladins",
-            "rangers",
-            "sorcerers",
-            "wizards"
+            "bard",
+            "cleric",
+            "druid",
+            "paladin",
+            "ranger",
+            "sorcerer",
+            "wizard"
         ]
     },
     {
@@ -2084,10 +2084,10 @@ const spellsJSON = `[
         "level": 1,
         "school": "divination",
         "classes": [
-            "clerics",
-            "druids",
-            "paladins",
-            "rangers"
+            "cleric",
+            "druid",
+            "paladin",
+            "ranger"
         ]
     },
     {
@@ -2104,9 +2104,9 @@ const spellsJSON = `[
         "level": 2,
         "school": "divination",
         "classes": [
-            "bards",
-            "sorcerers",
-            "wizards"
+            "bard",
+            "sorcerer",
+            "wizard"
         ]
     },
     {
@@ -2122,10 +2122,10 @@ const spellsJSON = `[
         "level": 4,
         "school": "conjuration",
         "classes": [
-            "bards",
-            "sorcerers",
-            "warlocks",
-            "wizards"
+            "bard",
+            "sorcerer",
+            "warlock",
+            "wizard"
         ]
     },
     {
@@ -2141,9 +2141,9 @@ const spellsJSON = `[
         "level": 1,
         "school": "illusion",
         "classes": [
-            "bards",
-            "sorcerers",
-            "wizards"
+            "bard",
+            "sorcerer",
+            "wizard"
         ]
     },
     {
@@ -2161,8 +2161,8 @@ const spellsJSON = `[
         "level": 6,
         "school": "transmutation",
         "classes": [
-            "sorcerers",
-            "wizards"
+            "sorcerer",
+            "wizard"
         ]
     },
     {
@@ -2179,8 +2179,8 @@ const spellsJSON = `[
         "level": 5,
         "school": "abjuration",
         "classes": [
-            "clerics",
-            "paladins"
+            "cleric",
+            "paladin"
         ]
     },
     {
@@ -2197,13 +2197,13 @@ const spellsJSON = `[
         "level": 3,
         "school": "abjuration",
         "classes": [
-            "bards",
-            "clerics",
-            "druids",
-            "paladins",
-            "sorcerers",
-            "warlocks",
-            "wizards"
+            "bard",
+            "cleric",
+            "druid",
+            "paladin",
+            "sorcerer",
+            "warlock",
+            "wizard"
         ]
     },
     {
@@ -2220,7 +2220,7 @@ const spellsJSON = `[
         "level": 1,
         "school": "enchantment",
         "classes": [
-            "bards"
+            "bard"
         ]
     },
     {
@@ -2237,7 +2237,7 @@ const spellsJSON = `[
         "level": 4,
         "school": "divination",
         "classes": [
-            "clerics"
+            "cleric"
         ]
     },
     {
@@ -2253,7 +2253,7 @@ const spellsJSON = `[
         "level": 1,
         "school": "evocation",
         "classes": [
-            "paladins"
+            "paladin"
         ]
     },
     {
@@ -2269,7 +2269,7 @@ const spellsJSON = `[
         "level": 7,
         "school": "evocation",
         "classes": [
-            "clerics"
+            "cleric"
         ]
     },
     {
@@ -2286,8 +2286,8 @@ const spellsJSON = `[
         "level": 4,
         "school": "enchantment",
         "classes": [
-            "druids",
-            "sorcerers"
+            "druid",
+            "sorcerer"
         ]
     },
     {
@@ -2305,8 +2305,8 @@ const spellsJSON = `[
         "level": 2,
         "school": "transmutation",
         "classes": [
-            "sorcerers",
-            "wizards"
+            "sorcerer",
+            "wizard"
         ]
     },
     {
@@ -2323,7 +2323,7 @@ const spellsJSON = `[
         "level": 6,
         "school": "conjuration",
         "classes": [
-            "wizards"
+            "wizard"
         ]
     },
     {
@@ -2340,10 +2340,10 @@ const spellsJSON = `[
         "level": 8,
         "school": "enchantment",
         "classes": [
-            "bards",
-            "sorcerers",
-            "warlocks",
-            "wizards"
+            "bard",
+            "sorcerer",
+            "warlock",
+            "wizard"
         ]
     },
     {
@@ -2360,9 +2360,9 @@ const spellsJSON = `[
         "level": 5,
         "school": "enchantment",
         "classes": [
-            "bards",
-            "sorcerers",
-            "wizards"
+            "bard",
+            "sorcerer",
+            "wizard"
         ]
     },
     {
@@ -2379,9 +2379,9 @@ const spellsJSON = `[
         "level": 5,
         "school": "illusion",
         "classes": [
-            "bards",
-            "warlocks",
-            "wizards"
+            "bard",
+            "warlock",
+            "wizard"
         ]
     },
     {
@@ -2397,7 +2397,7 @@ const spellsJSON = `[
         "level": 0,
         "school": "transmutation",
         "classes": [
-            "druids"
+            "druid"
         ]
     },
     {
@@ -2414,7 +2414,7 @@ const spellsJSON = `[
         "level": 6,
         "school": "abjuration",
         "classes": [
-            "druids"
+            "druid"
         ]
     },
     {
@@ -2432,9 +2432,9 @@ const spellsJSON = `[
         "level": 2,
         "school": "conjuration",
         "classes": [
-            "druids",
-            "sorcerers",
-            "wizards"
+            "druid",
+            "sorcerer",
+            "wizard"
         ]
     },
     {
@@ -2451,10 +2451,10 @@ const spellsJSON = `[
         "level": 1,
         "school": "evocation",
         "classes": [
-            "bards",
-            "druids",
-            "sorcerers",
-            "wizards"
+            "bard",
+            "druid",
+            "sorcerer",
+            "wizard"
         ]
     },
     {
@@ -2470,10 +2470,10 @@ const spellsJSON = `[
         "level": 2,
         "school": "transmutation",
         "classes": [
-            "druids",
-            "sorcerers",
-            "warlocks",
-            "wizards"
+            "druid",
+            "sorcerer",
+            "warlock",
+            "wizard"
         ]
     },
     {
@@ -2490,9 +2490,9 @@ const spellsJSON = `[
         "level": 8,
         "school": "evocation",
         "classes": [
-            "clerics",
-            "druids",
-            "sorcerers"
+            "cleric",
+            "druid",
+            "sorcerer"
         ]
     },
     {
@@ -2508,7 +2508,7 @@ const spellsJSON = `[
         "level": 0,
         "school": "evocation",
         "classes": [
-            "warlocks"
+            "warlock"
         ]
     },
     {
@@ -2525,9 +2525,9 @@ const spellsJSON = `[
         "level": 4,
         "school": "transmutation",
         "classes": [
-            "druids",
-            "warlocks",
-            "wizards"
+            "druid",
+            "warlock",
+            "wizard"
         ]
     },
     {
@@ -2544,7 +2544,7 @@ const spellsJSON = `[
         "level": 3,
         "school": "transmutation",
         "classes": [
-            "paladins"
+            "paladin"
         ]
     },
     {
@@ -2560,10 +2560,10 @@ const spellsJSON = `[
         "level": 3,
         "school": "enchantment",
         "classes": [
-            "bards",
-            "sorcerers",
-            "warlocks",
-            "wizards"
+            "bard",
+            "sorcerer",
+            "warlock",
+            "wizard"
         ]
     },
     {
@@ -2580,9 +2580,9 @@ const spellsJSON = `[
         "level": 5,
         "school": "necromancy",
         "classes": [
-            "sorcerers",
-            "warlocks",
-            "wizards"
+            "sorcerer",
+            "warlock",
+            "wizard"
         ]
     },
     {
@@ -2600,10 +2600,10 @@ const spellsJSON = `[
         "level": 2,
         "school": "transmutation",
         "classes": [
-            "bards",
-            "clerics",
-            "druids",
-            "sorcerers"
+            "bard",
+            "cleric",
+            "druid",
+            "sorcerer"
         ]
     },
     {
@@ -2620,8 +2620,8 @@ const spellsJSON = `[
         "level": 2,
         "school": "transmutation",
         "classes": [
-            "sorcerers",
-            "wizards"
+            "sorcerer",
+            "wizard"
         ]
     },
     {
@@ -2638,7 +2638,7 @@ const spellsJSON = `[
         "level": 1,
         "school": "conjuration",
         "classes": [
-            "rangers"
+            "ranger"
         ]
     },
     {
@@ -2654,7 +2654,7 @@ const spellsJSON = `[
         "level": 1,
         "school": "conjuration",
         "classes": [
-            "druids"
+            "druid"
         ]
     },
     {
@@ -2670,8 +2670,8 @@ const spellsJSON = `[
         "level": 2,
         "school": "enchantment",
         "classes": [
-            "bards",
-            "warlocks"
+            "bard",
+            "warlock"
         ]
     },
     {
@@ -2689,9 +2689,9 @@ const spellsJSON = `[
         "level": 3,
         "school": "transmutation",
         "classes": [
-            "druids",
-            "sorcerers",
-            "wizards"
+            "druid",
+            "sorcerer",
+            "wizard"
         ]
     },
     {
@@ -2708,11 +2708,11 @@ const spellsJSON = `[
         "level": 7,
         "school": "transmutation",
         "classes": [
-            "bards",
-            "clerics",
-            "sorcerers",
-            "warlocks",
-            "wizards"
+            "bard",
+            "cleric",
+            "sorcerer",
+            "warlock",
+            "wizard"
         ]
     },
     {
@@ -2729,7 +2729,7 @@ const spellsJSON = `[
         "level": 4,
         "school": "conjuration",
         "classes": [
-            "wizards"
+            "wizard"
         ]
     },
     {
@@ -2745,9 +2745,9 @@ const spellsJSON = `[
         "level": 1,
         "school": "transmutation",
         "classes": [
-            "sorcerers",
-            "warlocks",
-            "wizards"
+            "sorcerer",
+            "warlock",
+            "wizard"
         ]
     },
     {
@@ -2763,10 +2763,10 @@ const spellsJSON = `[
         "level": 6,
         "school": "necromancy",
         "classes": [
-            "bards",
-            "sorcerers",
-            "warlocks",
-            "wizards"
+            "bard",
+            "sorcerer",
+            "warlock",
+            "wizard"
         ]
     },
     {
@@ -2782,7 +2782,7 @@ const spellsJSON = `[
         "level": 4,
         "school": "transmutation",
         "classes": [
-            "wizards"
+            "wizard"
         ]
     },
     {
@@ -2798,8 +2798,8 @@ const spellsJSON = `[
         "level": 1,
         "school": "evocation",
         "classes": [
-            "bards",
-            "druids"
+            "bard",
+            "druid"
         ]
     },
     {
@@ -2817,8 +2817,8 @@ const spellsJSON = `[
         "level": 1,
         "school": "necromancy",
         "classes": [
-            "sorcerers",
-            "wizards"
+            "sorcerer",
+            "wizard"
         ]
     },
     {
@@ -2834,9 +2834,9 @@ const spellsJSON = `[
         "level": 5,
         "school": "conjuration",
         "classes": [
-            "sorcerers",
-            "warlocks",
-            "wizards"
+            "sorcerer",
+            "warlock",
+            "wizard"
         ]
     },
     {
@@ -2853,10 +2853,10 @@ const spellsJSON = `[
         "level": 3,
         "school": "illusion",
         "classes": [
-            "bards",
-            "sorcerers",
-            "warlocks",
-            "wizards"
+            "bard",
+            "sorcerer",
+            "warlock",
+            "wizard"
         ]
     },
     {
@@ -2873,9 +2873,9 @@ const spellsJSON = `[
         "level": 1,
         "school": "transmutation",
         "classes": [
-            "bards",
-            "sorcerers",
-            "wizards"
+            "bard",
+            "sorcerer",
+            "wizard"
         ]
     },
     {
@@ -2892,10 +2892,10 @@ const spellsJSON = `[
         "level": 8,
         "school": "enchantment",
         "classes": [
-            "bards",
-            "druids",
-            "warlocks",
-            "wizards"
+            "bard",
+            "druid",
+            "warlock",
+            "wizard"
         ]
     },
     {
@@ -2912,10 +2912,10 @@ const spellsJSON = `[
         "level": 3,
         "school": "necromancy",
         "classes": [
-            "bards",
-            "clerics",
-            "druids",
-            "wizards"
+            "bard",
+            "cleric",
+            "druid",
+            "wizard"
         ]
     },
     {
@@ -2932,7 +2932,7 @@ const spellsJSON = `[
         "level": 1,
         "school": "conjuration",
         "classes": [
-            "wizards"
+            "wizard"
         ]
     },
     {
@@ -2948,7 +2948,7 @@ const spellsJSON = `[
         "level": 2,
         "school": "conjuration",
         "classes": [
-            "paladins"
+            "paladin"
         ]
     },
     {
@@ -2964,7 +2964,7 @@ const spellsJSON = `[
         "level": 4,
         "school": "conjuration",
         "classes": [
-            "paladins"
+            "paladin"
         ]
     },
     {
@@ -2981,9 +2981,9 @@ const spellsJSON = `[
         "level": 6,
         "school": "divination",
         "classes": [
-            "bards",
-            "clerics",
-            "druids"
+            "bard",
+            "cleric",
+            "druid"
         ]
     },
     {
@@ -2999,9 +2999,9 @@ const spellsJSON = `[
         "level": 2,
         "school": "divination",
         "classes": [
-            "clerics",
-            "druids",
-            "rangers"
+            "cleric",
+            "druid",
+            "ranger"
         ]
     },
     {
@@ -3017,9 +3017,9 @@ const spellsJSON = `[
         "level": 7,
         "school": "necromancy",
         "classes": [
-            "sorcerers",
-            "warlocks",
-            "wizards"
+            "sorcerer",
+            "warlock",
+            "wizard"
         ]
     },
     {
@@ -3037,8 +3037,8 @@ const spellsJSON = `[
         "level": 3,
         "school": "evocation",
         "classes": [
-            "sorcerers",
-            "wizards"
+            "sorcerer",
+            "wizard"
         ]
     },
     {
@@ -3054,8 +3054,8 @@ const spellsJSON = `[
         "level": 0,
         "school": "evocation",
         "classes": [
-            "sorcerers",
-            "wizards"
+            "sorcerer",
+            "wizard"
         ]
     },
     {
@@ -3072,7 +3072,7 @@ const spellsJSON = `[
         "level": 4,
         "school": "evocation",
         "classes": [
-            "wizards"
+            "wizard"
         ]
     },
     {
@@ -3088,9 +3088,9 @@ const spellsJSON = `[
         "level": 7,
         "school": "evocation",
         "classes": [
-            "clerics",
-            "druids",
-            "sorcerers"
+            "cleric",
+            "druid",
+            "sorcerer"
         ]
     },
     {
@@ -3107,10 +3107,10 @@ const spellsJSON = `[
         "level": 3,
         "school": "transmutation",
         "classes": [
-            "druids",
-            "rangers",
-            "sorcerers",
-            "wizards"
+            "druid",
+            "ranger",
+            "sorcerer",
+            "wizard"
         ]
     },
     {
@@ -3128,7 +3128,7 @@ const spellsJSON = `[
         "level": 2,
         "school": "evocation",
         "classes": [
-            "druids"
+            "druid"
         ]
     },
     {
@@ -3146,7 +3146,7 @@ const spellsJSON = `[
         "level": 5,
         "school": "evocation",
         "classes": [
-            "clerics"
+            "cleric"
         ]
     },
     {
@@ -3164,8 +3164,8 @@ const spellsJSON = `[
         "level": 2,
         "school": "conjuration",
         "classes": [
-            "druids",
-            "wizards"
+            "druid",
+            "wizard"
         ]
     },
     {
@@ -3182,8 +3182,8 @@ const spellsJSON = `[
         "level": 6,
         "school": "transmutation",
         "classes": [
-            "warlocks",
-            "wizards"
+            "warlock",
+            "wizard"
         ]
     },
     {
@@ -3201,9 +3201,9 @@ const spellsJSON = `[
         "level": 3,
         "school": "transmutation",
         "classes": [
-            "sorcerers",
-            "warlocks",
-            "wizards"
+            "sorcerer",
+            "warlock",
+            "wizard"
         ]
     },
     {
@@ -3220,10 +3220,10 @@ const spellsJSON = `[
         "level": 1,
         "school": "conjuration",
         "classes": [
-            "druids",
-            "rangers",
-            "sorcerers",
-            "wizards"
+            "druid",
+            "ranger",
+            "sorcerer",
+            "wizard"
         ]
     },
     {
@@ -3240,7 +3240,7 @@ const spellsJSON = `[
         "level": 6,
         "school": "abjuration",
         "classes": [
-            "clerics"
+            "cleric"
         ]
     },
     {
@@ -3257,9 +3257,9 @@ const spellsJSON = `[
         "level": 7,
         "school": "evocation",
         "classes": [
-            "bards",
-            "warlocks",
-            "wizards"
+            "bard",
+            "warlock",
+            "wizard"
         ]
     },
     {
@@ -3276,10 +3276,10 @@ const spellsJSON = `[
         "level": 9,
         "school": "divination",
         "classes": [
-            "bards",
-            "druids",
-            "warlocks",
-            "wizards"
+            "bard",
+            "druid",
+            "warlock",
+            "wizard"
         ]
     },
     {
@@ -3296,10 +3296,10 @@ const spellsJSON = `[
         "level": 4,
         "school": "abjuration",
         "classes": [
-            "bards",
-            "clerics",
-            "druids",
-            "rangers"
+            "bard",
+            "cleric",
+            "druid",
+            "ranger"
         ]
     },
     {
@@ -3316,10 +3316,10 @@ const spellsJSON = `[
         "level": 0,
         "school": "enchantment",
         "classes": [
-            "bards",
-            "sorcerers",
-            "warlocks",
-            "wizards"
+            "bard",
+            "sorcerer",
+            "warlock",
+            "wizard"
         ]
     },
     {
@@ -3335,10 +3335,10 @@ const spellsJSON = `[
         "level": 0,
         "school": "evocation",
         "classes": [
-            "druids",
-            "sorcerers",
-            "warlocks",
-            "wizards"
+            "druid",
+            "sorcerer",
+            "warlock",
+            "wizard"
         ]
     },
     {
@@ -3355,9 +3355,9 @@ const spellsJSON = `[
         "level": 3,
         "school": "transmutation",
         "classes": [
-            "sorcerers",
-            "warlocks",
-            "wizards"
+            "sorcerer",
+            "warlock",
+            "wizard"
         ]
     },
     {
@@ -3374,9 +3374,9 @@ const spellsJSON = `[
         "level": 9,
         "school": "conjuration",
         "classes": [
-            "clerics",
-            "sorcerers",
-            "wizards"
+            "cleric",
+            "sorcerer",
+            "wizard"
         ]
     },
     {
@@ -3393,11 +3393,11 @@ const spellsJSON = `[
         "level": 5,
         "school": "enchantment",
         "classes": [
-            "bards",
-            "clerics",
-            "druids",
-            "paladins",
-            "wizards"
+            "bard",
+            "cleric",
+            "druid",
+            "paladin",
+            "wizard"
         ]
     },
     {
@@ -3414,8 +3414,8 @@ const spellsJSON = `[
         "level": 2,
         "school": "necromancy",
         "classes": [
-            "clerics",
-            "wizards"
+            "cleric",
+            "wizard"
         ]
     },
     {
@@ -3431,7 +3431,7 @@ const spellsJSON = `[
         "level": 4,
         "school": "transmutation",
         "classes": [
-            "druids"
+            "druid"
         ]
     },
     {
@@ -3447,8 +3447,8 @@ const spellsJSON = `[
         "level": 8,
         "school": "transmutation",
         "classes": [
-            "bards",
-            "warlocks"
+            "bard",
+            "warlock"
         ]
     },
     {
@@ -3466,8 +3466,8 @@ const spellsJSON = `[
         "level": 6,
         "school": "abjuration",
         "classes": [
-            "sorcerers",
-            "wizards"
+            "sorcerer",
+            "wizard"
         ]
     },
     {
@@ -3485,9 +3485,9 @@ const spellsJSON = `[
         "level": 3,
         "school": "abjuration",
         "classes": [
-            "bards",
-            "clerics",
-            "wizards"
+            "bard",
+            "cleric",
+            "wizard"
         ]
     },
     {
@@ -3504,8 +3504,8 @@ const spellsJSON = `[
         "level": 1,
         "school": "transmutation",
         "classes": [
-            "druids",
-            "rangers"
+            "druid",
+            "ranger"
         ]
     },
     {
@@ -3521,8 +3521,8 @@ const spellsJSON = `[
         "level": 4,
         "school": "conjuration",
         "classes": [
-            "druids",
-            "rangers"
+            "druid",
+            "ranger"
         ]
     },
     {
@@ -3539,7 +3539,7 @@ const spellsJSON = `[
         "level": 1,
         "school": "conjuration",
         "classes": [
-            "wizards"
+            "wizard"
         ]
     },
     {
@@ -3555,9 +3555,9 @@ const spellsJSON = `[
         "level": 4,
         "school": "illusion",
         "classes": [
-            "bards",
-            "sorcerers",
-            "wizards"
+            "bard",
+            "sorcerer",
+            "wizard"
         ]
     },
     {
@@ -3574,9 +3574,9 @@ const spellsJSON = `[
         "level": 5,
         "school": "abjuration",
         "classes": [
-            "bards",
-            "clerics",
-            "druids"
+            "bard",
+            "cleric",
+            "druid"
         ]
     },
     {
@@ -3593,9 +3593,9 @@ const spellsJSON = `[
         "level": 0,
         "school": "evocation",
         "classes": [
-            "sorcerers",
-            "warlocks",
-            "wizards"
+            "sorcerer",
+            "warlock",
+            "wizard"
         ]
     },
     {
@@ -3611,7 +3611,7 @@ const spellsJSON = `[
         "level": 4,
         "school": "conjuration",
         "classes": [
-            "clerics"
+            "cleric"
         ]
     },
     {
@@ -3628,8 +3628,8 @@ const spellsJSON = `[
         "level": 6,
         "school": "abjuration",
         "classes": [
-            "bards",
-            "wizards"
+            "bard",
+            "wizard"
         ]
     },
     {
@@ -3645,8 +3645,8 @@ const spellsJSON = `[
         "level": 4,
         "school": "transmutation",
         "classes": [
-            "druids",
-            "rangers"
+            "druid",
+            "ranger"
         ]
     },
     {
@@ -3662,8 +3662,8 @@ const spellsJSON = `[
         "level": 0,
         "school": "divination",
         "classes": [
-            "clerics",
-            "druids"
+            "cleric",
+            "druid"
         ]
     },
     {
@@ -3679,10 +3679,10 @@ const spellsJSON = `[
         "level": 1,
         "school": "divination",
         "classes": [
-            "bards",
-            "clerics",
-            "druids",
-            "wizards"
+            "bard",
+            "cleric",
+            "druid",
+            "wizard"
         ]
     },
     {
@@ -3699,7 +3699,7 @@ const spellsJSON = `[
         "level": 1,
         "school": "evocation",
         "classes": [
-            "clerics"
+            "cleric"
         ]
     },
     {
@@ -3715,9 +3715,9 @@ const spellsJSON = `[
         "level": 0,
         "school": "transmutation",
         "classes": [
-            "druids",
-            "sorcerers",
-            "wizards"
+            "druid",
+            "sorcerer",
+            "wizard"
         ]
     },
     {
@@ -3734,9 +3734,9 @@ const spellsJSON = `[
         "level": 2,
         "school": "evocation",
         "classes": [
-            "druids",
-            "sorcerers",
-            "wizards"
+            "druid",
+            "sorcerer",
+            "wizard"
         ]
     },
     {
@@ -3753,7 +3753,7 @@ const spellsJSON = `[
         "level": 1,
         "school": "conjuration",
         "classes": [
-            "rangers"
+            "ranger"
         ]
     },
     {
@@ -3770,7 +3770,7 @@ const spellsJSON = `[
         "level": 5,
         "school": "evocation",
         "classes": [
-            "clerics"
+            "cleric"
         ]
     },
     {
@@ -3787,10 +3787,10 @@ const spellsJSON = `[
         "level": 4,
         "school": "illusion",
         "classes": [
-            "bards",
-            "druids",
-            "warlocks",
-            "wizards"
+            "bard",
+            "druid",
+            "warlock",
+            "wizard"
         ]
     },
     {
@@ -3806,7 +3806,7 @@ const spellsJSON = `[
         "level": 6,
         "school": "necromancy",
         "classes": [
-            "clerics"
+            "cleric"
         ]
     },
     {
@@ -3823,8 +3823,8 @@ const spellsJSON = `[
         "level": 3,
         "school": "transmutation",
         "classes": [
-            "sorcerers",
-            "wizards"
+            "sorcerer",
+            "wizard"
         ]
     },
     {
@@ -3841,8 +3841,8 @@ const spellsJSON = `[
         "level": 6,
         "school": "evocation",
         "classes": [
-            "clerics",
-            "druids"
+            "cleric",
+            "druid"
         ]
     },
     {
@@ -3859,8 +3859,8 @@ const spellsJSON = `[
         "level": 1,
         "school": "conjuration",
         "classes": [
-            "warlocks",
-            "wizards"
+            "warlock",
+            "wizard"
         ]
     },
     {
@@ -3877,9 +3877,9 @@ const spellsJSON = `[
         "level": 1,
         "school": "evocation",
         "classes": [
-            "bards",
-            "clerics",
-            "druids"
+            "bard",
+            "cleric",
+            "druid"
         ]
     },
     {
@@ -3896,8 +3896,8 @@ const spellsJSON = `[
         "level": 2,
         "school": "conjuration",
         "classes": [
-            "druids",
-            "rangers"
+            "druid",
+            "ranger"
         ]
     },
     {
@@ -3915,8 +3915,8 @@ const spellsJSON = `[
         "level": 2,
         "school": "transmutation",
         "classes": [
-            "bards",
-            "druids"
+            "bard",
+            "druid"
         ]
     },
     {
@@ -3933,7 +3933,7 @@ const spellsJSON = `[
         "level": 1,
         "school": "evocation",
         "classes": [
-            "warlocks"
+            "warlock"
         ]
     },
     {
@@ -3950,8 +3950,8 @@ const spellsJSON = `[
         "level": 6,
         "school": "conjuration",
         "classes": [
-            "clerics",
-            "druids"
+            "cleric",
+            "druid"
         ]
     },
     {
@@ -3967,8 +3967,8 @@ const spellsJSON = `[
         "level": 1,
         "school": "enchantment",
         "classes": [
-            "bards",
-            "paladins"
+            "bard",
+            "paladin"
         ]
     },
     {
@@ -3986,7 +3986,7 @@ const spellsJSON = `[
         "level": 1,
         "school": "enchantment",
         "classes": [
-            "warlocks"
+            "warlock"
         ]
     },
     {
@@ -4004,10 +4004,10 @@ const spellsJSON = `[
         "level": 5,
         "school": "enchantment",
         "classes": [
-            "bards",
-            "sorcerers",
-            "warlocks",
-            "wizards"
+            "bard",
+            "sorcerer",
+            "warlock",
+            "wizard"
         ]
     },
     {
@@ -4025,12 +4025,12 @@ const spellsJSON = `[
         "level": 2,
         "school": "enchantment",
         "classes": [
-            "bards",
-            "clerics",
-            "druids",
-            "sorcerers",
-            "warlocks",
-            "wizards"
+            "bard",
+            "cleric",
+            "druid",
+            "sorcerer",
+            "warlock",
+            "wizard"
         ]
     },
     {
@@ -4047,7 +4047,7 @@ const spellsJSON = `[
         "level": 8,
         "school": "abjuration",
         "classes": [
-            "clerics"
+            "cleric"
         ]
     },
     {
@@ -4063,8 +4063,8 @@ const spellsJSON = `[
         "level": 5,
         "school": "evocation",
         "classes": [
-            "clerics",
-            "paladins"
+            "cleric",
+            "paladin"
         ]
     },
     {
@@ -4081,7 +4081,7 @@ const spellsJSON = `[
         "level": 3,
         "school": "conjuration",
         "classes": [
-            "warlocks"
+            "warlock"
         ]
     },
     {
@@ -4098,7 +4098,7 @@ const spellsJSON = `[
         "level": 1,
         "school": "divination",
         "classes": [
-            "rangers"
+            "ranger"
         ]
     },
     {
@@ -4115,10 +4115,10 @@ const spellsJSON = `[
         "level": 3,
         "school": "illusion",
         "classes": [
-            "bards",
-            "sorcerers",
-            "warlocks",
-            "wizards"
+            "bard",
+            "sorcerer",
+            "warlock",
+            "wizard"
         ]
     },
     {
@@ -4136,9 +4136,9 @@ const spellsJSON = `[
         "level": 1,
         "school": "conjuration",
         "classes": [
-            "druids",
-            "sorcerers",
-            "wizards"
+            "druid",
+            "sorcerer",
+            "wizard"
         ]
     },
     {
@@ -4156,9 +4156,9 @@ const spellsJSON = `[
         "level": 4,
         "school": "evocation",
         "classes": [
-            "druids",
-            "sorcerers",
-            "wizards"
+            "druid",
+            "sorcerer",
+            "wizard"
         ]
     },
     {
@@ -4175,8 +4175,8 @@ const spellsJSON = `[
         "level": 1,
         "school": "divination",
         "classes": [
-            "bards",
-            "wizards"
+            "bard",
+            "wizard"
         ]
     },
     {
@@ -4192,7 +4192,7 @@ const spellsJSON = `[
         "level": 8,
         "school": "illusion",
         "classes": [
-            "wizards"
+            "wizard"
         ]
     },
     {
@@ -4209,9 +4209,9 @@ const spellsJSON = `[
         "level": 1,
         "school": "illusion",
         "classes": [
-            "bards",
-            "warlocks",
-            "wizards"
+            "bard",
+            "warlock",
+            "wizard"
         ]
     },
     {
@@ -4227,8 +4227,8 @@ const spellsJSON = `[
         "level": 5,
         "school": "evocation",
         "classes": [
-            "sorcerers",
-            "wizards"
+            "sorcerer",
+            "wizard"
         ]
     },
     {
@@ -4245,8 +4245,8 @@ const spellsJSON = `[
         "level": 9,
         "school": "abjuration",
         "classes": [
-            "warlocks",
-            "wizards"
+            "warlock",
+            "wizard"
         ]
     },
     {
@@ -4262,8 +4262,8 @@ const spellsJSON = `[
         "level": 8,
         "school": "conjuration",
         "classes": [
-            "sorcerers",
-            "wizards"
+            "sorcerer",
+            "wizard"
         ]
     },
     {
@@ -4281,8 +4281,8 @@ const spellsJSON = `[
         "level": 5,
         "school": "conjuration",
         "classes": [
-            "warlocks",
-            "wizards"
+            "warlock",
+            "wizard"
         ]
     },
     {
@@ -4299,10 +4299,10 @@ const spellsJSON = `[
         "level": 0,
         "school": "conjuration",
         "classes": [
-            "druids",
-            "sorcerers",
-            "warlocks",
-            "wizards"
+            "druid",
+            "sorcerer",
+            "warlock",
+            "wizard"
         ]
     },
     {
@@ -4319,7 +4319,7 @@ const spellsJSON = `[
         "level": 1,
         "school": "necromancy",
         "classes": [
-            "clerics"
+            "cleric"
         ]
     },
     {
@@ -4337,9 +4337,9 @@ const spellsJSON = `[
         "level": 5,
         "school": "conjuration",
         "classes": [
-            "clerics",
-            "druids",
-            "sorcerers"
+            "cleric",
+            "druid",
+            "sorcerer"
         ]
     },
     {
@@ -4355,10 +4355,10 @@ const spellsJSON = `[
         "level": 6,
         "school": "transmutation",
         "classes": [
-            "druids",
-            "sorcerers",
-            "warlocks",
-            "wizards"
+            "druid",
+            "sorcerer",
+            "warlock",
+            "wizard"
         ]
     },
     {
@@ -4374,10 +4374,10 @@ const spellsJSON = `[
         "level": 6,
         "school": "transmutation",
         "classes": [
-            "druids",
-            "sorcerers",
-            "warlocks",
-            "wizards"
+            "druid",
+            "sorcerer",
+            "warlock",
+            "wizard"
         ]
     },
     {
@@ -4393,10 +4393,10 @@ const spellsJSON = `[
         "level": 6,
         "school": "transmutation",
         "classes": [
-            "druids",
-            "sorcerers",
-            "warlocks",
-            "wizards"
+            "druid",
+            "sorcerer",
+            "warlock",
+            "wizard"
         ]
     },
     {
@@ -4412,10 +4412,10 @@ const spellsJSON = `[
         "level": 6,
         "school": "transmutation",
         "classes": [
-            "druids",
-            "sorcerers",
-            "warlocks",
-            "wizards"
+            "druid",
+            "sorcerer",
+            "warlock",
+            "wizard"
         ]
     },
     {
@@ -4433,10 +4433,10 @@ const spellsJSON = `[
         "level": 2,
         "school": "illusion",
         "classes": [
-            "bards",
-            "sorcerers",
-            "warlocks",
-            "wizards"
+            "bard",
+            "sorcerer",
+            "warlock",
+            "wizard"
         ]
     },
     {
@@ -4453,7 +4453,7 @@ const spellsJSON = `[
         "level": 9,
         "school": "abjuration",
         "classes": [
-            "wizards"
+            "wizard"
         ]
     },
     {
@@ -4470,10 +4470,10 @@ const spellsJSON = `[
         "level": 1,
         "school": "transmutation",
         "classes": [
-            "druids",
-            "rangers",
-            "sorcerers",
-            "wizards"
+            "druid",
+            "ranger",
+            "sorcerer",
+            "wizard"
         ]
     },
     {
@@ -4489,9 +4489,9 @@ const spellsJSON = `[
         "level": 2,
         "school": "transmutation",
         "classes": [
-            "bards",
-            "sorcerers",
-            "wizards"
+            "bard",
+            "sorcerer",
+            "wizard"
         ]
     },
     {
@@ -4508,9 +4508,9 @@ const spellsJSON = `[
         "level": 5,
         "school": "divination",
         "classes": [
-            "bards",
-            "clerics",
-            "wizards"
+            "bard",
+            "cleric",
+            "wizard"
         ]
     },
     {
@@ -4527,7 +4527,7 @@ const spellsJSON = `[
         "level": 4,
         "school": "conjuration",
         "classes": [
-            "wizards"
+            "wizard"
         ]
     },
     {
@@ -4544,8 +4544,8 @@ const spellsJSON = `[
         "level": 3,
         "school": "evocation",
         "classes": [
-            "bards",
-            "wizards"
+            "bard",
+            "wizard"
         ]
     },
     {
@@ -4561,11 +4561,11 @@ const spellsJSON = `[
         "level": 2,
         "school": "abjuration",
         "classes": [
-            "bards",
-            "clerics",
-            "druids",
-            "paladins",
-            "rangers"
+            "bard",
+            "cleric",
+            "druid",
+            "paladin",
+            "ranger"
         ]
     },
     {
@@ -4582,8 +4582,8 @@ const spellsJSON = `[
         "level": 2,
         "school": "transmutation",
         "classes": [
-            "sorcerers",
-            "wizards"
+            "sorcerer",
+            "wizard"
         ]
     },
     {
@@ -4600,8 +4600,8 @@ const spellsJSON = `[
         "level": 3,
         "school": "necromancy",
         "classes": [
-            "clerics",
-            "wizards"
+            "cleric",
+            "wizard"
         ]
     },
     {
@@ -4618,10 +4618,10 @@ const spellsJSON = `[
         "level": 0,
         "school": "evocation",
         "classes": [
-            "bards",
-            "clerics",
-            "sorcerers",
-            "wizards"
+            "bard",
+            "cleric",
+            "sorcerer",
+            "wizard"
         ]
     },
     {
@@ -4638,7 +4638,7 @@ const spellsJSON = `[
         "level": 3,
         "school": "transmutation",
         "classes": [
-            "rangers"
+            "ranger"
         ]
     },
     {
@@ -4656,8 +4656,8 @@ const spellsJSON = `[
         "level": 3,
         "school": "evocation",
         "classes": [
-            "sorcerers",
-            "wizards"
+            "sorcerer",
+            "wizard"
         ]
     },
     {
@@ -4673,9 +4673,9 @@ const spellsJSON = `[
         "level": 0,
         "school": "evocation",
         "classes": [
-            "sorcerers",
-            "warlocks",
-            "wizards"
+            "sorcerer",
+            "warlock",
+            "wizard"
         ]
     },
     {
@@ -4692,9 +4692,9 @@ const spellsJSON = `[
         "level": 2,
         "school": "divination",
         "classes": [
-            "bards",
-            "druids",
-            "rangers"
+            "bard",
+            "druid",
+            "ranger"
         ]
     },
     {
@@ -4711,12 +4711,12 @@ const spellsJSON = `[
         "level": 4,
         "school": "divination",
         "classes": [
-            "bards",
-            "clerics",
-            "druids",
-            "paladins",
-            "rangers",
-            "wizards"
+            "bard",
+            "cleric",
+            "druid",
+            "paladin",
+            "ranger",
+            "wizard"
         ]
     },
     {
@@ -4733,12 +4733,12 @@ const spellsJSON = `[
         "level": 2,
         "school": "divination",
         "classes": [
-            "bards",
-            "clerics",
-            "druids",
-            "paladins",
-            "rangers",
-            "wizards"
+            "bard",
+            "cleric",
+            "druid",
+            "paladin",
+            "ranger",
+            "wizard"
         ]
     },
     {
@@ -4756,10 +4756,10 @@ const spellsJSON = `[
         "level": 1,
         "school": "transmutation",
         "classes": [
-            "bards",
-            "druids",
-            "rangers",
-            "wizards"
+            "bard",
+            "druid",
+            "ranger",
+            "wizard"
         ]
     },
     {
@@ -4776,8 +4776,8 @@ const spellsJSON = `[
         "level": 8,
         "school": "evocation",
         "classes": [
-            "warlocks",
-            "wizards"
+            "warlock",
+            "wizard"
         ]
     },
     {
@@ -4794,7 +4794,7 @@ const spellsJSON = `[
         "level": 5,
         "school": "evocation",
         "classes": [
-            "druids"
+            "druid"
         ]
     },
     {
@@ -4811,8 +4811,8 @@ const spellsJSON = `[
         "level": 1,
         "school": "abjuration",
         "classes": [
-            "sorcerers",
-            "wizards"
+            "sorcerer",
+            "wizard"
         ]
     },
     {
@@ -4828,10 +4828,10 @@ const spellsJSON = `[
         "level": 0,
         "school": "conjuration",
         "classes": [
-            "bards",
-            "sorcerers",
-            "warlocks",
-            "wizards"
+            "bard",
+            "sorcerer",
+            "warlock",
+            "wizard"
         ]
     },
     {
@@ -4849,10 +4849,10 @@ const spellsJSON = `[
         "level": 3,
         "school": "abjuration",
         "classes": [
-            "clerics",
-            "paladins",
-            "warlocks",
-            "wizards"
+            "cleric",
+            "paladin",
+            "warlock",
+            "wizard"
         ]
     },
     {
@@ -4869,7 +4869,7 @@ const spellsJSON = `[
         "level": 6,
         "school": "necromancy",
         "classes": [
-            "wizards"
+            "wizard"
         ]
     },
     {
@@ -4886,8 +4886,8 @@ const spellsJSON = `[
         "level": 1,
         "school": "evocation",
         "classes": [
-            "sorcerers",
-            "wizards"
+            "sorcerer",
+            "wizard"
         ]
     },
     {
@@ -4904,8 +4904,8 @@ const spellsJSON = `[
         "level": 2,
         "school": "illusion",
         "classes": [
-            "bards",
-            "wizards"
+            "bard",
+            "wizard"
         ]
     },
     {
@@ -4921,8 +4921,8 @@ const spellsJSON = `[
         "level": 0,
         "school": "transmutation",
         "classes": [
-            "druids",
-            "warlocks"
+            "druid",
+            "warlock"
         ]
     },
     {
@@ -4939,8 +4939,8 @@ const spellsJSON = `[
         "level": 2,
         "school": "transmutation",
         "classes": [
-            "paladins",
-            "wizards"
+            "paladin",
+            "wizard"
         ]
     },
     {
@@ -4958,10 +4958,10 @@ const spellsJSON = `[
         "level": 3,
         "school": "illusion",
         "classes": [
-            "bards",
-            "sorcerers",
-            "warlocks",
-            "wizards"
+            "bard",
+            "sorcerer",
+            "warlock",
+            "wizard"
         ]
     },
     {
@@ -4978,9 +4978,9 @@ const spellsJSON = `[
         "level": 5,
         "school": "evocation",
         "classes": [
-            "bards",
-            "clerics",
-            "druids"
+            "bard",
+            "cleric",
+            "druid"
         ]
     },
     {
@@ -4996,7 +4996,7 @@ const spellsJSON = `[
         "level": 9,
         "school": "evocation",
         "classes": [
-            "clerics"
+            "cleric"
         ]
     },
     {
@@ -5013,7 +5013,7 @@ const spellsJSON = `[
         "level": 3,
         "school": "evocation",
         "classes": [
-            "clerics"
+            "cleric"
         ]
     },
     {
@@ -5031,10 +5031,10 @@ const spellsJSON = `[
         "level": 6,
         "school": "enchantment",
         "classes": [
-            "bards",
-            "sorcerers",
-            "warlocks",
-            "wizards"
+            "bard",
+            "sorcerer",
+            "warlock",
+            "wizard"
         ]
     },
     {
@@ -5051,9 +5051,9 @@ const spellsJSON = `[
         "level": 9,
         "school": "transmutation",
         "classes": [
-            "bards",
-            "sorcerers",
-            "wizards"
+            "bard",
+            "sorcerer",
+            "wizard"
         ]
     },
     {
@@ -5070,8 +5070,8 @@ const spellsJSON = `[
         "level": 2,
         "school": "transmutation",
         "classes": [
-            "sorcerers",
-            "wizards"
+            "sorcerer",
+            "wizard"
         ]
     },
     {
@@ -5087,7 +5087,7 @@ const spellsJSON = `[
         "level": 8,
         "school": "conjuration",
         "classes": [
-            "wizards"
+            "wizard"
         ]
     },
     {
@@ -5103,8 +5103,8 @@ const spellsJSON = `[
         "level": 3,
         "school": "transmutation",
         "classes": [
-            "clerics",
-            "druids"
+            "cleric",
+            "druid"
         ]
     },
     {
@@ -5122,7 +5122,7 @@ const spellsJSON = `[
         "level": 2,
         "school": "evocation",
         "classes": [
-            "wizards"
+            "wizard"
         ]
     },
     {
@@ -5140,8 +5140,8 @@ const spellsJSON = `[
         "level": 3,
         "school": "transmutation",
         "classes": [
-            "sorcerers",
-            "wizards"
+            "sorcerer",
+            "wizard"
         ]
     },
     {
@@ -5158,11 +5158,11 @@ const spellsJSON = `[
         "level": 0,
         "school": "transmutation",
         "classes": [
-            "clerics",
-            "bards",
-            "druids",
-            "sorcerers",
-            "wizards"
+            "cleric",
+            "bard",
+            "druid",
+            "sorcerer",
+            "wizard"
         ]
     },
     {
@@ -5178,9 +5178,9 @@ const spellsJSON = `[
         "level": 6,
         "school": "illusion",
         "classes": [
-            "sorcerers",
-            "warlocks",
-            "wizards"
+            "sorcerer",
+            "warlock",
+            "wizard"
         ]
     },
     {
@@ -5197,9 +5197,9 @@ const spellsJSON = `[
         "level": 0,
         "school": "transmutation",
         "classes": [
-            "bards",
-            "sorcerers",
-            "wizards"
+            "bard",
+            "sorcerer",
+            "wizard"
         ]
     },
     {
@@ -5215,8 +5215,8 @@ const spellsJSON = `[
         "level": 9,
         "school": "evocation",
         "classes": [
-            "sorcerers",
-            "wizards"
+            "sorcerer",
+            "wizard"
         ]
     },
     {
@@ -5233,7 +5233,7 @@ const spellsJSON = `[
         "level": 8,
         "school": "conjuration",
         "classes": [
-            "wizards"
+            "wizard"
         ]
     },
     {
@@ -5249,8 +5249,8 @@ const spellsJSON = `[
         "level": 8,
         "school": "abjuration",
         "classes": [
-            "bards",
-            "wizards"
+            "bard",
+            "wizard"
         ]
     },
     {
@@ -5267,9 +5267,9 @@ const spellsJSON = `[
         "level": 2,
         "school": "divination",
         "classes": [
-            "sorcerers",
-            "warlocks",
-            "wizards"
+            "sorcerer",
+            "warlock",
+            "wizard"
         ]
     },
     {
@@ -5286,10 +5286,10 @@ const spellsJSON = `[
         "level": 0,
         "school": "illusion",
         "classes": [
-            "bards",
-            "sorcerers",
-            "warlocks",
-            "wizards"
+            "bard",
+            "sorcerer",
+            "warlock",
+            "wizard"
         ]
     },
     {
@@ -5305,9 +5305,9 @@ const spellsJSON = `[
         "level": 7,
         "school": "illusion",
         "classes": [
-            "bards",
-            "druids",
-            "wizards"
+            "bard",
+            "druid",
+            "wizard"
         ]
     },
     {
@@ -5323,9 +5323,9 @@ const spellsJSON = `[
         "level": 2,
         "school": "illusion",
         "classes": [
-            "sorcerers",
-            "warlocks",
-            "wizards"
+            "sorcerer",
+            "warlock",
+            "wizard"
         ]
     },
     {
@@ -5341,8 +5341,8 @@ const spellsJSON = `[
         "level": 5,
         "school": "illusion",
         "classes": [
-            "bards",
-            "wizards"
+            "bard",
+            "wizard"
         ]
     },
     {
@@ -5358,9 +5358,9 @@ const spellsJSON = `[
         "level": 2,
         "school": "conjuration",
         "classes": [
-            "sorcerers",
-            "warlocks",
-            "wizards"
+            "sorcerer",
+            "warlock",
+            "wizard"
         ]
     },
     {
@@ -5377,8 +5377,8 @@ const spellsJSON = `[
         "level": 5,
         "school": "enchantment",
         "classes": [
-            "bards",
-            "wizards"
+            "bard",
+            "wizard"
         ]
     },
     {
@@ -5394,9 +5394,9 @@ const spellsJSON = `[
         "level": 0,
         "school": "transmutation",
         "classes": [
-            "druids",
-            "sorcerers",
-            "wizards"
+            "druid",
+            "sorcerer",
+            "wizard"
         ]
     },
     {
@@ -5414,7 +5414,7 @@ const spellsJSON = `[
         "level": 2,
         "school": "evocation",
         "classes": [
-            "druids"
+            "druid"
         ]
     },
     {
@@ -5431,7 +5431,7 @@ const spellsJSON = `[
         "level": 4,
         "school": "conjuration",
         "classes": [
-            "wizards"
+            "wizard"
         ]
     },
     {
@@ -5448,8 +5448,8 @@ const spellsJSON = `[
         "level": 7,
         "school": "conjuration",
         "classes": [
-            "bards",
-            "wizards"
+            "bard",
+            "wizard"
         ]
     },
     {
@@ -5467,7 +5467,7 @@ const spellsJSON = `[
         "level": 4,
         "school": "abjuration",
         "classes": [
-            "wizards"
+            "wizard"
         ]
     },
     {
@@ -5484,8 +5484,8 @@ const spellsJSON = `[
         "level": 7,
         "school": "evocation",
         "classes": [
-            "bards",
-            "wizards"
+            "bard",
+            "wizard"
         ]
     },
     {
@@ -5502,9 +5502,9 @@ const spellsJSON = `[
         "level": 6,
         "school": "transmutation",
         "classes": [
-            "druids",
-            "sorcerers",
-            "wizards"
+            "druid",
+            "sorcerer",
+            "wizard"
         ]
     },
     {
@@ -5521,8 +5521,8 @@ const spellsJSON = `[
         "level": 5,
         "school": "necromancy",
         "classes": [
-            "warlocks",
-            "wizards"
+            "warlock",
+            "wizard"
         ]
     },
     {
@@ -5539,9 +5539,9 @@ const spellsJSON = `[
         "level": 3,
         "school": "abjuration",
         "classes": [
-            "bards",
-            "rangers",
-            "wizards"
+            "bard",
+            "ranger",
+            "wizard"
         ]
     },
     {
@@ -5558,7 +5558,7 @@ const spellsJSON = `[
         "level": 2,
         "school": "illusion",
         "classes": [
-            "wizards"
+            "wizard"
         ]
     },
     {
@@ -5576,7 +5576,7 @@ const spellsJSON = `[
         "level": 6,
         "school": "evocation",
         "classes": [
-            "wizards"
+            "wizard"
         ]
     },
     {
@@ -5593,7 +5593,7 @@ const spellsJSON = `[
         "level": 4,
         "school": "evocation",
         "classes": [
-            "wizards"
+            "wizard"
         ]
     },
     {
@@ -5609,8 +5609,8 @@ const spellsJSON = `[
         "level": 6,
         "school": "enchantment",
         "classes": [
-            "bards",
-            "wizards"
+            "bard",
+            "wizard"
         ]
     },
     {
@@ -5627,8 +5627,8 @@ const spellsJSON = `[
         "level": 2,
         "school": "abjuration",
         "classes": [
-            "druids",
-            "rangers"
+            "druid",
+            "ranger"
         ]
     },
     {
@@ -5645,7 +5645,7 @@ const spellsJSON = `[
         "level": 5,
         "school": "transmutation",
         "classes": [
-            "wizards"
+            "wizard"
         ]
     },
     {
@@ -5662,9 +5662,9 @@ const spellsJSON = `[
         "level": 2,
         "school": "illusion",
         "classes": [
-            "bards",
-            "sorcerers",
-            "wizards"
+            "bard",
+            "sorcerer",
+            "wizard"
         ]
     },
     {
@@ -5681,7 +5681,7 @@ const spellsJSON = `[
         "level": 4,
         "school": "illusion",
         "classes": [
-            "wizards"
+            "wizard"
         ]
     },
     {
@@ -5697,7 +5697,7 @@ const spellsJSON = `[
         "level": 3,
         "school": "illusion",
         "classes": [
-            "wizards"
+            "wizard"
         ]
     },
     {
@@ -5713,7 +5713,7 @@ const spellsJSON = `[
         "level": 6,
         "school": "conjuration",
         "classes": [
-            "clerics"
+            "cleric"
         ]
     },
     {
@@ -5731,10 +5731,10 @@ const spellsJSON = `[
         "level": 5,
         "school": "abjuration",
         "classes": [
-            "bards",
-            "clerics",
-            "druids",
-            "wizards"
+            "bard",
+            "cleric",
+            "druid",
+            "wizard"
         ]
     },
     {
@@ -5751,11 +5751,11 @@ const spellsJSON = `[
         "level": 7,
         "school": "conjuration",
         "classes": [
-            "clerics",
-            "druids",
-            "sorcerers",
-            "warlocks",
-            "wizards"
+            "cleric",
+            "druid",
+            "sorcerer",
+            "warlock",
+            "wizard"
         ]
     },
     {
@@ -5771,9 +5771,9 @@ const spellsJSON = `[
         "level": 3,
         "school": "transmutation",
         "classes": [
-            "bards",
-            "druids",
-            "rangers"
+            "bard",
+            "druid",
+            "ranger"
         ]
     },
     {
@@ -5789,9 +5789,9 @@ const spellsJSON = `[
         "level": 0,
         "school": "conjuration",
         "classes": [
-            "sorcerers",
-            "warlocks",
-            "wizards"
+            "sorcerer",
+            "warlock",
+            "wizard"
         ]
     },
     {
@@ -5808,10 +5808,10 @@ const spellsJSON = `[
         "level": 4,
         "school": "transmutation",
         "classes": [
-            "bards",
-            "druids",
-            "sorcerers",
-            "wizards"
+            "bard",
+            "druid",
+            "sorcerer",
+            "wizard"
         ]
     },
     {
@@ -5827,7 +5827,7 @@ const spellsJSON = `[
         "level": 9,
         "school": "evocation",
         "classes": [
-            "bards"
+            "bard"
         ]
     },
     {
@@ -5843,10 +5843,10 @@ const spellsJSON = `[
         "level": 9,
         "school": "enchantment",
         "classes": [
-            "bards",
-            "sorcerers",
-            "warlocks",
-            "wizards"
+            "bard",
+            "sorcerer",
+            "warlock",
+            "wizard"
         ]
     },
     {
@@ -5862,9 +5862,9 @@ const spellsJSON = `[
         "level": 7,
         "school": "enchantment",
         "classes": [
-            "sorcerers",
-            "warlocks",
-            "wizards"
+            "sorcerer",
+            "warlock",
+            "wizard"
         ]
     },
     {
@@ -5880,10 +5880,10 @@ const spellsJSON = `[
         "level": 8,
         "school": "enchantment",
         "classes": [
-            "bards",
-            "sorcerers",
-            "warlocks",
-            "wizards"
+            "bard",
+            "sorcerer",
+            "warlock",
+            "wizard"
         ]
     },
     {
@@ -5900,7 +5900,7 @@ const spellsJSON = `[
         "level": 2,
         "school": "evocation",
         "classes": [
-            "clerics"
+            "cleric"
         ]
     },
     {
@@ -5916,10 +5916,10 @@ const spellsJSON = `[
         "level": 0,
         "school": "transmutation",
         "classes": [
-            "bards",
-            "sorcerers",
-            "warlocks",
-            "wizards"
+            "bard",
+            "sorcerer",
+            "warlock",
+            "wizard"
         ]
     },
     {
@@ -5935,7 +5935,7 @@ const spellsJSON = `[
         "level": 0,
         "school": "transmutation",
         "classes": [
-            "druids"
+            "druid"
         ]
     },
     {
@@ -5951,7 +5951,7 @@ const spellsJSON = `[
         "level": 6,
         "school": "abjuration",
         "classes": [
-            "druids"
+            "druid"
         ]
     },
     {
@@ -5967,8 +5967,8 @@ const spellsJSON = `[
         "level": 7,
         "school": "evocation",
         "classes": [
-            "sorcerers",
-            "wizards"
+            "sorcerer",
+            "wizard"
         ]
     },
     {
@@ -5984,7 +5984,7 @@ const spellsJSON = `[
         "level": 9,
         "school": "abjuration",
         "classes": [
-            "wizards"
+            "wizard"
         ]
     },
     {
@@ -6000,7 +6000,7 @@ const spellsJSON = `[
         "level": 0,
         "school": "conjuration",
         "classes": [
-            "druids"
+            "druid"
         ]
     },
     {
@@ -6017,8 +6017,8 @@ const spellsJSON = `[
         "level": 6,
         "school": "illusion",
         "classes": [
-            "bards",
-            "wizards"
+            "bard",
+            "wizard"
         ]
     },
     {
@@ -6035,8 +6035,8 @@ const spellsJSON = `[
         "level": 7,
         "school": "illusion",
         "classes": [
-            "bards",
-            "wizards"
+            "bard",
+            "wizard"
         ]
     },
     {
@@ -6052,11 +6052,11 @@ const spellsJSON = `[
         "level": 3,
         "school": "abjuration",
         "classes": [
-            "clerics",
-            "druids",
-            "rangers",
-            "sorcerers",
-            "wizards"
+            "cleric",
+            "druid",
+            "ranger",
+            "sorcerer",
+            "wizard"
         ]
     },
     {
@@ -6073,10 +6073,10 @@ const spellsJSON = `[
         "level": 1,
         "school": "abjuration",
         "classes": [
-            "clerics",
-            "paladins",
-            "warlocks",
-            "wizards"
+            "cleric",
+            "paladin",
+            "warlock",
+            "wizard"
         ]
     },
     {
@@ -6092,10 +6092,10 @@ const spellsJSON = `[
         "level": 2,
         "school": "abjuration",
         "classes": [
-            "clerics",
-            "druids",
-            "paladins",
-            "rangers"
+            "cleric",
+            "druid",
+            "paladin",
+            "ranger"
         ]
     },
     {
@@ -6111,10 +6111,10 @@ const spellsJSON = `[
         "level": 9,
         "school": "enchantment",
         "classes": [
-            "bards",
-            "sorcerers",
-            "warlocks",
-            "wizards"
+            "bard",
+            "sorcerer",
+            "warlock",
+            "wizard"
         ]
     },
     {
@@ -6130,9 +6130,9 @@ const spellsJSON = `[
         "level": 1,
         "school": "enchantment",
         "classes": [
-            "bards",
-            "warlocks",
-            "wizards"
+            "bard",
+            "warlock",
+            "wizard"
         ]
     },
     {
@@ -6148,9 +6148,9 @@ const spellsJSON = `[
         "level": 1,
         "school": "transmutation",
         "classes": [
-            "clerics",
-            "druids",
-            "paladins"
+            "cleric",
+            "druid",
+            "paladin"
         ]
     },
     {
@@ -6166,9 +6166,9 @@ const spellsJSON = `[
         "level": 2,
         "school": "transmutation",
         "classes": [
-            "bards",
-            "sorcerers",
-            "wizards"
+            "bard",
+            "sorcerer",
+            "wizard"
         ]
     },
     {
@@ -6185,9 +6185,9 @@ const spellsJSON = `[
         "level": 5,
         "school": "necromancy",
         "classes": [
-            "bards",
-            "clerics",
-            "paladins"
+            "bard",
+            "cleric",
+            "paladin"
         ]
     },
     {
@@ -6204,7 +6204,7 @@ const spellsJSON = `[
         "level": 5,
         "school": "divination",
         "classes": [
-            "wizards"
+            "wizard"
         ]
     },
     {
@@ -6220,8 +6220,8 @@ const spellsJSON = `[
         "level": 2,
         "school": "necromancy",
         "classes": [
-            "warlocks",
-            "wizards"
+            "warlock",
+            "wizard"
         ]
     },
     {
@@ -6237,8 +6237,8 @@ const spellsJSON = `[
         "level": 0,
         "school": "evocation",
         "classes": [
-            "sorcerers",
-            "wizards"
+            "sorcerer",
+            "wizard"
         ]
     },
     {
@@ -6255,8 +6255,8 @@ const spellsJSON = `[
         "level": 1,
         "school": "necromancy",
         "classes": [
-            "sorcerers",
-            "wizards"
+            "sorcerer",
+            "wizard"
         ]
     },
     {
@@ -6273,9 +6273,9 @@ const spellsJSON = `[
         "level": 7,
         "school": "transmutation",
         "classes": [
-            "bards",
-            "clerics",
-            "druids"
+            "bard",
+            "cleric",
+            "druid"
         ]
     },
     {
@@ -6292,7 +6292,7 @@ const spellsJSON = `[
         "level": 5,
         "school": "transmutation",
         "classes": [
-            "druids"
+            "druid"
         ]
     },
     {
@@ -6308,10 +6308,10 @@ const spellsJSON = `[
         "level": 3,
         "school": "abjuration",
         "classes": [
-            "clerics",
-            "paladins",
-            "warlocks",
-            "wizards"
+            "cleric",
+            "paladin",
+            "warlock",
+            "wizard"
         ]
     },
     {
@@ -6328,8 +6328,8 @@ const spellsJSON = `[
         "level": 0,
         "school": "abjuration",
         "classes": [
-            "clerics",
-            "druids"
+            "cleric",
+            "druid"
         ]
     },
     {
@@ -6346,8 +6346,8 @@ const spellsJSON = `[
         "level": 7,
         "school": "necromancy",
         "classes": [
-            "bards",
-            "clerics"
+            "bard",
+            "cleric"
         ]
     },
     {
@@ -6364,9 +6364,9 @@ const spellsJSON = `[
         "level": 7,
         "school": "transmutation",
         "classes": [
-            "druids",
-            "sorcerers",
-            "wizards"
+            "druid",
+            "sorcerer",
+            "wizard"
         ]
     },
     {
@@ -6383,8 +6383,8 @@ const spellsJSON = `[
         "level": 3,
         "school": "necromancy",
         "classes": [
-            "clerics",
-            "paladins"
+            "cleric",
+            "paladin"
         ]
     },
     {
@@ -6401,7 +6401,7 @@ const spellsJSON = `[
         "level": 2,
         "school": "transmutation",
         "classes": [
-            "wizards"
+            "wizard"
         ]
     },
     {
@@ -6417,7 +6417,7 @@ const spellsJSON = `[
         "level": 0,
         "school": "evocation",
         "classes": [
-            "clerics"
+            "cleric"
         ]
     },
     {
@@ -6434,7 +6434,7 @@ const spellsJSON = `[
         "level": 1,
         "school": "abjuration",
         "classes": [
-            "clerics"
+            "cleric"
         ]
     },
     {
@@ -6450,9 +6450,9 @@ const spellsJSON = `[
         "level": 6,
         "school": "conjuration",
         "classes": [
-            "sorcerers",
-            "warlocks",
-            "wizards"
+            "sorcerer",
+            "warlock",
+            "wizard"
         ]
     },
     {
@@ -6469,8 +6469,8 @@ const spellsJSON = `[
         "level": 2,
         "school": "evocation",
         "classes": [
-            "sorcerers",
-            "wizards"
+            "sorcerer",
+            "wizard"
         ]
     },
     {
@@ -6487,11 +6487,11 @@ const spellsJSON = `[
         "level": 5,
         "school": "divination",
         "classes": [
-            "bards",
-            "clerics",
-            "druids",
-            "warlocks",
-            "wizards"
+            "bard",
+            "cleric",
+            "druid",
+            "warlock",
+            "wizard"
         ]
     },
     {
@@ -6508,7 +6508,7 @@ const spellsJSON = `[
         "level": 1,
         "school": "evocation",
         "classes": [
-            "paladins"
+            "paladin"
         ]
     },
     {
@@ -6525,9 +6525,9 @@ const spellsJSON = `[
         "level": 2,
         "school": "divination",
         "classes": [
-            "bards",
-            "sorcerers",
-            "wizards"
+            "bard",
+            "sorcerer",
+            "wizard"
         ]
     },
     {
@@ -6543,9 +6543,9 @@ const spellsJSON = `[
         "level": 5,
         "school": "illusion",
         "classes": [
-            "bards",
-            "sorcerers",
-            "wizards"
+            "bard",
+            "sorcerer",
+            "wizard"
         ]
     },
     {
@@ -6562,9 +6562,9 @@ const spellsJSON = `[
         "level": 3,
         "school": "evocation",
         "classes": [
-            "bards",
-            "clerics",
-            "wizards"
+            "bard",
+            "cleric",
+            "wizard"
         ]
     },
     {
@@ -6580,9 +6580,9 @@ const spellsJSON = `[
         "level": 1,
         "school": "divination",
         "classes": [
-            "bards",
-            "warlocks",
-            "wizards"
+            "bard",
+            "warlock",
+            "wizard"
         ]
     },
     {
@@ -6599,7 +6599,7 @@ const spellsJSON = `[
         "level": 7,
         "school": "transmutation",
         "classes": [
-            "wizards"
+            "wizard"
         ]
     },
     {
@@ -6616,9 +6616,9 @@ const spellsJSON = `[
         "level": 2,
         "school": "illusion",
         "classes": [
-            "sorcerers",
-            "warlocks",
-            "wizards"
+            "sorcerer",
+            "warlock",
+            "wizard"
         ]
     },
     {
@@ -6635,7 +6635,7 @@ const spellsJSON = `[
         "level": 4,
         "school": "necromancy",
         "classes": [
-            "warlocks"
+            "warlock"
         ]
     },
     {
@@ -6651,9 +6651,9 @@ const spellsJSON = `[
         "level": 0,
         "school": "transmutation",
         "classes": [
-            "druids",
-            "sorcerers",
-            "wizards"
+            "druid",
+            "sorcerer",
+            "wizard"
         ]
     },
     {
@@ -6670,18 +6670,18 @@ const spellsJSON = `[
         "level": 9,
         "school": "transmutation",
         "classes": [
-            "druids",
-            "wizards"
+            "druid",
+            "wizard"
         ]
     },
     {
         "name": "Shatter",
-        "desc": "<p>A strong resonant sound painfully intense sounds of a desired point in the range of the spell. Each creature has a sphere with a 10-foot-radius sphere centered on that point must make a Constitution saving throw or it suffers 3d8 thunder damage. If successful, the damage is halved. A creature made of inorganic materials such as stone, crystal or metal, makes its saving throw with a disadvantage.</p><p>A non-magical item that is not worn or carried also suffers damage if it is in the area of ​​the spell.</p>",
-        "higher_level": "When you cast this spell using a 3 or higher level spell slot, the damage of the spell increases by 1d8 for each level of higher spell slot 2.",
+        "desc": "<p>A sudden loud ringing noise, painfully intense, erupts from a point of your choice within range. Each creature in a 10-foot-radius sphere centered on that point must make a Constitution saving throw. A creature takes 3d8 thunder damage on a failed save, or half as much damage on a successful one. A creature made of inorganic material such as stone, crystal, or metal has disadvantage on this saving throw.</p><p>A nonmagical object that isn’t being worn or carried also takes the damage if it’s in the spell's area.</p>",
+        "higher_level": "When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d8 for each slot level above 2nd.",
         "page": "PHB 275",
         "range": "60 feet",
         "components": "V, S, M",
-        "material": "a burst of mica",
+        "material": "a chip of mica",
         "ritual": false,
         "duration": "Instantaneous",
         "concentration": false,
@@ -6689,10 +6689,10 @@ const spellsJSON = `[
         "level": 2,
         "school": "evocation",
         "classes": [
-            "bards",
-            "sorcerers",
-            "warlocks",
-            "wizards"
+            "bard",
+            "sorcerer",
+            "warlock",
+            "wizard"
         ]
     },
     {
@@ -6708,8 +6708,8 @@ const spellsJSON = `[
         "level": 1,
         "school": "abjuration",
         "classes": [
-            "sorcerers",
-            "wizards"
+            "sorcerer",
+            "wizard"
         ]
     },
     {
@@ -6726,8 +6726,8 @@ const spellsJSON = `[
         "level": 1,
         "school": "abjuration",
         "classes": [
-            "clerics",
-            "paladins"
+            "cleric",
+            "paladin"
         ]
     },
     {
@@ -6744,7 +6744,7 @@ const spellsJSON = `[
         "level": 0,
         "school": "transmutation",
         "classes": [
-            "druids"
+            "druid"
         ]
     },
     {
@@ -6760,8 +6760,8 @@ const spellsJSON = `[
         "level": 0,
         "school": "evocation",
         "classes": [
-            "sorcerers",
-            "wizards"
+            "sorcerer",
+            "wizard"
         ]
     },
     {
@@ -6777,9 +6777,9 @@ const spellsJSON = `[
         "level": 4,
         "school": "evocation",
         "classes": [
-            "sorcerers",
-            "warlocks",
-            "wizards"
+            "sorcerer",
+            "warlock",
+            "wizard"
         ]
     },
     {
@@ -6795,9 +6795,9 @@ const spellsJSON = `[
         "level": 2,
         "school": "illusion",
         "classes": [
-            "bards",
-            "clerics",
-            "rangers"
+            "bard",
+            "cleric",
+            "ranger"
         ]
     },
     {
@@ -6814,9 +6814,9 @@ const spellsJSON = `[
         "level": 1,
         "school": "illusion",
         "classes": [
-            "bards",
-            "sorcerers",
-            "wizards"
+            "bard",
+            "sorcerer",
+            "wizard"
         ]
     },
     {
@@ -6833,7 +6833,7 @@ const spellsJSON = `[
         "level": 7,
         "school": "illusion",
         "classes": [
-            "wizards"
+            "wizard"
         ]
     },
     {
@@ -6849,9 +6849,9 @@ const spellsJSON = `[
         "level": 5,
         "school": "transmutation",
         "classes": [
-            "bards",
-            "sorcerers",
-            "wizards"
+            "bard",
+            "sorcerer",
+            "wizard"
         ]
     },
     {
@@ -6867,9 +6867,9 @@ const spellsJSON = `[
         "level": 2,
         "school": "transmutation",
         "classes": [
-            "bards",
-            "druids",
-            "wizards"
+            "bard",
+            "druid",
+            "wizard"
         ]
     },
     {
@@ -6887,9 +6887,9 @@ const spellsJSON = `[
         "level": 1,
         "school": "enchantment",
         "classes": [
-            "bards",
-            "sorcerers",
-            "wizards"
+            "bard",
+            "sorcerer",
+            "wizard"
         ]
     },
     {
@@ -6906,9 +6906,9 @@ const spellsJSON = `[
         "level": 3,
         "school": "conjuration",
         "classes": [
-            "druids",
-            "sorcerers",
-            "wizards"
+            "druid",
+            "sorcerer",
+            "wizard"
         ]
     },
     {
@@ -6925,8 +6925,8 @@ const spellsJSON = `[
         "level": 3,
         "school": "transmutation",
         "classes": [
-            "sorcerers",
-            "wizards"
+            "sorcerer",
+            "wizard"
         ]
     },
     {
@@ -6943,9 +6943,9 @@ const spellsJSON = `[
         "level": 1,
         "school": "abjuration",
         "classes": [
-            "druids",
-            "rangers",
-            "wizards"
+            "druid",
+            "ranger",
+            "wizard"
         ]
     },
     {
@@ -6963,8 +6963,8 @@ const spellsJSON = `[
         "level": 2,
         "school": "evocation",
         "classes": [
-            "sorcerers",
-            "wizards"
+            "sorcerer",
+            "wizard"
         ]
     },
     {
@@ -6981,8 +6981,8 @@ const spellsJSON = `[
         "level": 6,
         "school": "necromancy",
         "classes": [
-            "warlocks",
-            "wizards"
+            "warlock",
+            "wizard"
         ]
     },
     {
@@ -6998,7 +6998,7 @@ const spellsJSON = `[
         "level": 0,
         "school": "necromancy",
         "classes": [
-            "clerics"
+            "cleric"
         ]
     },
     {
@@ -7014,9 +7014,9 @@ const spellsJSON = `[
         "level": 1,
         "school": "divination",
         "classes": [
-            "bards",
-            "druids",
-            "rangers"
+            "bard",
+            "druid",
+            "ranger"
         ]
     },
     {
@@ -7033,8 +7033,8 @@ const spellsJSON = `[
         "level": 3,
         "school": "necromancy",
         "classes": [
-            "bards",
-            "clerics"
+            "bard",
+            "cleric"
         ]
     },
     {
@@ -7050,9 +7050,9 @@ const spellsJSON = `[
         "level": 3,
         "school": "transmutation",
         "classes": [
-            "bards",
-            "druids",
-            "rangers"
+            "bard",
+            "druid",
+            "ranger"
         ]
     },
     {
@@ -7069,9 +7069,9 @@ const spellsJSON = `[
         "level": 2,
         "school": "transmutation",
         "classes": [
-            "sorcerers",
-            "warlocks",
-            "wizards"
+            "sorcerer",
+            "warlock",
+            "wizard"
         ]
     },
     {
@@ -7088,8 +7088,8 @@ const spellsJSON = `[
         "level": 2,
         "school": "transmutation",
         "classes": [
-            "druids",
-            "rangers"
+            "druid",
+            "ranger"
         ]
     },
     {
@@ -7107,7 +7107,7 @@ const spellsJSON = `[
         "level": 3,
         "school": "conjuration",
         "classes": [
-            "clerics"
+            "cleric"
         ]
     },
     {
@@ -7124,7 +7124,7 @@ const spellsJSON = `[
         "level": 2,
         "school": "evocation",
         "classes": [
-            "clerics"
+            "cleric"
         ]
     },
     {
@@ -7140,7 +7140,7 @@ const spellsJSON = `[
         "level": 4,
         "school": "evocation",
         "classes": [
-            "paladins"
+            "paladin"
         ]
     },
     {
@@ -7157,8 +7157,8 @@ const spellsJSON = `[
         "level": 5,
         "school": "conjuration",
         "classes": [
-            "rangers",
-            "wizards"
+            "ranger",
+            "wizard"
         ]
     },
     {
@@ -7175,9 +7175,9 @@ const spellsJSON = `[
         "level": 3,
         "school": "conjuration",
         "classes": [
-            "bards",
-            "sorcerers",
-            "wizards"
+            "bard",
+            "sorcerer",
+            "wizard"
         ]
     },
     {
@@ -7194,9 +7194,9 @@ const spellsJSON = `[
         "level": 4,
         "school": "transmutation",
         "classes": [
-            "clerics",
-            "druids",
-            "wizards"
+            "cleric",
+            "druid",
+            "wizard"
         ]
     },
     {
@@ -7213,10 +7213,10 @@ const spellsJSON = `[
         "level": 4,
         "school": "abjuration",
         "classes": [
-            "druids",
-            "rangers",
-            "sorcerers",
-            "wizards"
+            "druid",
+            "ranger",
+            "sorcerer",
+            "wizard"
         ]
     },
     {
@@ -7232,7 +7232,7 @@ const spellsJSON = `[
         "level": 9,
         "school": "conjuration",
         "classes": [
-            "druids"
+            "druid"
         ]
     },
     {
@@ -7249,8 +7249,8 @@ const spellsJSON = `[
         "level": 4,
         "school": "evocation",
         "classes": [
-            "sorcerers",
-            "wizards"
+            "sorcerer",
+            "wizard"
         ]
     },
     {
@@ -7266,10 +7266,10 @@ const spellsJSON = `[
         "level": 1,
         "school": "enchantment",
         "classes": [
-            "bards",
-            "rangers",
-            "sorcerers",
-            "wizards"
+            "bard",
+            "ranger",
+            "sorcerer",
+            "wizard"
         ]
     },
     {
@@ -7286,10 +7286,10 @@ const spellsJSON = `[
         "level": 2,
         "school": "enchantment",
         "classes": [
-            "bards",
-            "sorcerers",
-            "warlocks",
-            "wizards"
+            "bard",
+            "sorcerer",
+            "warlock",
+            "wizard"
         ]
     },
     {
@@ -7307,8 +7307,8 @@ const spellsJSON = `[
         "level": 4,
         "school": "conjuration",
         "classes": [
-            "warlocks",
-            "wizards"
+            "warlock",
+            "wizard"
         ]
     },
     {
@@ -7326,8 +7326,8 @@ const spellsJSON = `[
         "level": 3,
         "school": "conjuration",
         "classes": [
-            "warlocks",
-            "wizards"
+            "warlock",
+            "wizard"
         ]
     },
     {
@@ -7344,9 +7344,9 @@ const spellsJSON = `[
         "level": 6,
         "school": "evocation",
         "classes": [
-            "druids",
-            "sorcerers",
-            "wizards"
+            "druid",
+            "sorcerer",
+            "wizard"
         ]
     },
     {
@@ -7363,9 +7363,9 @@ const spellsJSON = `[
         "level": 8,
         "school": "evocation",
         "classes": [
-            "druids",
-            "sorcerers",
-            "wizards"
+            "druid",
+            "sorcerer",
+            "wizard"
         ]
     },
     {
@@ -7382,7 +7382,7 @@ const spellsJSON = `[
         "level": 5,
         "school": "transmutation",
         "classes": [
-            "rangers"
+            "ranger"
         ]
     },
     {
@@ -7398,9 +7398,9 @@ const spellsJSON = `[
         "level": 0,
         "school": "conjuration",
         "classes": [
-            "sorcerers",
-            "warlocks",
-            "wizards"
+            "sorcerer",
+            "warlock",
+            "wizard"
         ]
     },
     {
@@ -7417,9 +7417,9 @@ const spellsJSON = `[
         "level": 7,
         "school": "abjuration",
         "classes": [
-            "bards",
-            "clerics",
-            "wizards"
+            "bard",
+            "cleric",
+            "wizard"
         ]
     },
     {
@@ -7435,10 +7435,10 @@ const spellsJSON = `[
         "level": 5,
         "school": "enchantment",
         "classes": [
-            "bards",
-            "sorcerers",
-            "warlocks",
-            "wizards"
+            "bard",
+            "sorcerer",
+            "warlock",
+            "wizard"
         ]
     },
     {
@@ -7455,8 +7455,8 @@ const spellsJSON = `[
         "level": 1,
         "school": "enchantment",
         "classes": [
-            "bards",
-            "wizards"
+            "bard",
+            "wizard"
         ]
     },
     {
@@ -7472,8 +7472,8 @@ const spellsJSON = `[
         "level": 5,
         "school": "transmutation",
         "classes": [
-            "sorcerers",
-            "wizards"
+            "sorcerer",
+            "wizard"
         ]
     },
     {
@@ -7490,7 +7490,7 @@ const spellsJSON = `[
         "level": 8,
         "school": "evocation",
         "classes": [
-            "wizards"
+            "wizard"
         ]
     },
     {
@@ -7506,9 +7506,9 @@ const spellsJSON = `[
         "level": 7,
         "school": "conjuration",
         "classes": [
-            "bards",
-            "sorcerers",
-            "wizards"
+            "bard",
+            "sorcerer",
+            "wizard"
         ]
     },
     {
@@ -7525,9 +7525,9 @@ const spellsJSON = `[
         "level": 5,
         "school": "conjuration",
         "classes": [
-            "bards",
-            "sorcerers",
-            "wizards"
+            "bard",
+            "sorcerer",
+            "wizard"
         ]
     },
     {
@@ -7544,7 +7544,7 @@ const spellsJSON = `[
         "level": 7,
         "school": "conjuration",
         "classes": [
-            "clerics"
+            "cleric"
         ]
     },
     {
@@ -7561,7 +7561,7 @@ const spellsJSON = `[
         "level": 1,
         "school": "conjuration",
         "classes": [
-            "wizards"
+            "wizard"
         ]
     },
     {
@@ -7578,7 +7578,7 @@ const spellsJSON = `[
         "level": 6,
         "school": "transmutation",
         "classes": [
-            "wizards"
+            "wizard"
         ]
     },
     {
@@ -7594,7 +7594,7 @@ const spellsJSON = `[
         "level": 0,
         "school": "transmutation",
         "classes": [
-            "clerics"
+            "cleric"
         ]
     },
     {
@@ -7611,7 +7611,7 @@ const spellsJSON = `[
         "level": 0,
         "school": "transmutation",
         "classes": [
-            "druids"
+            "druid"
         ]
     },
     {
@@ -7628,9 +7628,9 @@ const spellsJSON = `[
         "level": 3,
         "school": "conjuration",
         "classes": [
-            "sorcerers",
-            "warlocks",
-            "wizards"
+            "sorcerer",
+            "warlock",
+            "wizard"
         ]
     },
     {
@@ -7646,11 +7646,11 @@ const spellsJSON = `[
         "level": 0,
         "school": "evocation",
         "classes": [
-            "bards",
-            "druids",
-            "sorcerers",
-            "warlocks",
-            "wizards"
+            "bard",
+            "druid",
+            "sorcerer",
+            "warlock",
+            "wizard"
         ]
     },
     {
@@ -7666,7 +7666,7 @@ const spellsJSON = `[
         "level": 1,
         "school": "evocation",
         "classes": [
-            "paladins"
+            "paladin"
         ]
     },
     {
@@ -7683,10 +7683,10 @@ const spellsJSON = `[
         "level": 1,
         "school": "evocation",
         "classes": [
-            "bards",
-            "druids",
-            "sorcerers",
-            "wizards"
+            "bard",
+            "druid",
+            "sorcerer",
+            "wizard"
         ]
     },
     {
@@ -7703,9 +7703,9 @@ const spellsJSON = `[
         "level": 3,
         "school": "conjuration",
         "classes": [
-            "druids",
-            "sorcerers",
-            "wizards"
+            "druid",
+            "sorcerer",
+            "wizard"
         ]
     },
     {
@@ -7721,8 +7721,8 @@ const spellsJSON = `[
         "level": 9,
         "school": "transmutation",
         "classes": [
-            "sorcerers",
-            "wizards"
+            "sorcerer",
+            "wizard"
         ]
     },
     {
@@ -7738,7 +7738,7 @@ const spellsJSON = `[
         "level": 3,
         "school": "transmutation",
         "classes": [
-            "wizards"
+            "wizard"
         ]
     },
     {
@@ -7754,9 +7754,9 @@ const spellsJSON = `[
         "level": 0,
         "school": "necromancy",
         "classes": [
-            "clerics",
-            "warlocks",
-            "wizards"
+            "cleric",
+            "warlock",
+            "wizard"
         ]
     },
     {
@@ -7773,11 +7773,11 @@ const spellsJSON = `[
         "level": 3,
         "school": "divination",
         "classes": [
-            "bards",
-            "clerics",
-            "sorcerers",
-            "warlocks",
-            "wizards"
+            "bard",
+            "cleric",
+            "sorcerer",
+            "warlock",
+            "wizard"
         ]
     },
     {
@@ -7794,8 +7794,8 @@ const spellsJSON = `[
         "level": 5,
         "school": "transmutation",
         "classes": [
-            "druids",
-            "wizards"
+            "druid",
+            "wizard"
         ]
     },
     {
@@ -7811,7 +7811,7 @@ const spellsJSON = `[
         "level": 6,
         "school": "conjuration",
         "classes": [
-            "druids"
+            "druid"
         ]
     },
     {
@@ -7827,8 +7827,8 @@ const spellsJSON = `[
         "level": 5,
         "school": "conjuration",
         "classes": [
-            "druids",
-            "rangers"
+            "druid",
+            "ranger"
         ]
     },
     {
@@ -7845,9 +7845,9 @@ const spellsJSON = `[
         "level": 9,
         "school": "transmutation",
         "classes": [
-            "bards",
-            "warlocks",
-            "wizards"
+            "bard",
+            "warlock",
+            "wizard"
         ]
     },
     {
@@ -7864,8 +7864,8 @@ const spellsJSON = `[
         "level": 9,
         "school": "necromancy",
         "classes": [
-            "clerics",
-            "druids"
+            "cleric",
+            "druid"
         ]
     },
     {
@@ -7882,11 +7882,11 @@ const spellsJSON = `[
         "level": 6,
         "school": "divination",
         "classes": [
-            "bards",
-            "clerics",
-            "sorcerers",
-            "warlocks",
-            "wizards"
+            "bard",
+            "cleric",
+            "sorcerer",
+            "warlock",
+            "wizard"
         ]
     },
     {
@@ -7902,10 +7902,10 @@ const spellsJSON = `[
         "level": 0,
         "school": "divination",
         "classes": [
-            "bards",
-            "sorcerers",
-            "warlocks",
-            "wizards"
+            "bard",
+            "sorcerer",
+            "warlock",
+            "wizard"
         ]
     },
     {
@@ -7921,7 +7921,7 @@ const spellsJSON = `[
         "level": 8,
         "school": "conjuration",
         "classes": [
-            "druids"
+            "druid"
         ]
     },
     {
@@ -7937,7 +7937,7 @@ const spellsJSON = `[
         "level": 1,
         "school": "illusion",
         "classes": [
-            "bards"
+            "bard"
         ]
     },
     {
@@ -7954,9 +7954,9 @@ const spellsJSON = `[
         "level": 1,
         "school": "conjuration",
         "classes": [
-            "bards",
-            "warlocks",
-            "wizards"
+            "bard",
+            "warlock",
+            "wizard"
         ]
     },
     {
@@ -7973,8 +7973,8 @@ const spellsJSON = `[
         "level": 3,
         "school": "necromancy",
         "classes": [
-            "warlocks",
-            "wizards"
+            "warlock",
+            "wizard"
         ]
     },
     {
@@ -7990,7 +7990,7 @@ const spellsJSON = `[
         "level": 0,
         "school": "enchantment",
         "classes": [
-            "bards"
+            "bard"
         ]
     },
     {
@@ -8006,7 +8006,7 @@ const spellsJSON = `[
         "level": 0,
         "school": "abjuration",
         "classes": [
-            "clerics"
+            "cleric"
         ]
     },
     {
@@ -8024,8 +8024,8 @@ const spellsJSON = `[
         "level": 4,
         "school": "evocation",
         "classes": [
-            "sorcerers",
-            "wizards"
+            "sorcerer",
+            "wizard"
         ]
     },
     {
@@ -8043,9 +8043,9 @@ const spellsJSON = `[
         "level": 4,
         "school": "evocation",
         "classes": [
-            "druids",
-            "sorcerers",
-            "wizards"
+            "druid",
+            "sorcerer",
+            "wizard"
         ]
     },
     {
@@ -8062,7 +8062,7 @@ const spellsJSON = `[
         "level": 5,
         "school": "evocation",
         "classes": [
-            "wizards"
+            "wizard"
         ]
     },
     {
@@ -8080,7 +8080,7 @@ const spellsJSON = `[
         "level": 6,
         "school": "evocation",
         "classes": [
-            "wizards"
+            "wizard"
         ]
     },
     {
@@ -8098,9 +8098,9 @@ const spellsJSON = `[
         "level": 5,
         "school": "evocation",
         "classes": [
-            "sorcerers",
-            "warlocks",
-            "wizards"
+            "sorcerer",
+            "warlock",
+            "wizard"
         ]
     },
     {
@@ -8117,7 +8117,7 @@ const spellsJSON = `[
         "level": 3,
         "school": "evocation",
         "classes": [
-            "wizards"
+            "wizard"
         ]
     },
     {
@@ -8134,9 +8134,9 @@ const spellsJSON = `[
         "level": 5,
         "school": "evocation",
         "classes": [
-            "druids",
-            "sorcerers",
-            "wizards"
+            "druid",
+            "sorcerer",
+            "wizard"
         ]
     },
     {
@@ -8154,7 +8154,7 @@ const spellsJSON = `[
         "level": 6,
         "school": "conjuration",
         "classes": [
-            "druids"
+            "druid"
         ]
     },
     {
@@ -8171,9 +8171,9 @@ const spellsJSON = `[
         "level": 3,
         "school": "evocation",
         "classes": [
-            "druids",
-            "sorcerers",
-            "wizards"
+            "druid",
+            "sorcerer",
+            "wizard"
         ]
     },
     {
@@ -8190,7 +8190,7 @@ const spellsJSON = `[
         "level": 2,
         "school": "abjuration",
         "classes": [
-            "clerics"
+            "cleric"
         ]
     },
     {
@@ -8206,10 +8206,10 @@ const spellsJSON = `[
         "level": 2,
         "school": "evocation",
         "classes": [
-            "bards",
-            "druids",
-            "sorcerers",
-            "wizards"
+            "bard",
+            "druid",
+            "sorcerer",
+            "wizard"
         ]
     },
     {
@@ -8226,10 +8226,10 @@ const spellsJSON = `[
         "level": 3,
         "school": "transmutation",
         "classes": [
-            "druids",
-            "rangers",
-            "sorcerers",
-            "wizards"
+            "druid",
+            "ranger",
+            "sorcerer",
+            "wizard"
         ]
     },
     {
@@ -8245,10 +8245,10 @@ const spellsJSON = `[
         "level": 3,
         "school": "transmutation",
         "classes": [
-            "clerics",
-            "druids",
-            "rangers",
-            "sorcerers"
+            "cleric",
+            "druid",
+            "ranger",
+            "sorcerer"
         ]
     },
     {
@@ -8265,9 +8265,9 @@ const spellsJSON = `[
         "level": 4,
         "school": "conjuration",
         "classes": [
-            "druids",
-            "sorcerers",
-            "wizards"
+            "druid",
+            "sorcerer",
+            "wizard"
         ]
     },
     {
@@ -8284,8 +8284,8 @@ const spellsJSON = `[
         "level": 2,
         "school": "conjuration",
         "classes": [
-            "sorcerers",
-            "wizards"
+            "sorcerer",
+            "wizard"
         ]
     },
     {
@@ -8301,7 +8301,7 @@ const spellsJSON = `[
         "level": 9,
         "school": "illusion",
         "classes": [
-            "wizards"
+            "wizard"
         ]
     },
     {
@@ -8318,9 +8318,9 @@ const spellsJSON = `[
         "level": 7,
         "school": "evocation",
         "classes": [
-            "druids",
-            "sorcerers",
-            "wizards"
+            "druid",
+            "sorcerer",
+            "wizard"
         ]
     },
     {
@@ -8336,8 +8336,8 @@ const spellsJSON = `[
         "level": 1,
         "school": "transmutation",
         "classes": [
-            "druids",
-            "rangers"
+            "druid",
+            "ranger"
         ]
     },
     {
@@ -8354,7 +8354,7 @@ const spellsJSON = `[
         "level": 6,
         "school": "transmutation",
         "classes": [
-            "druids"
+            "druid"
         ]
     },
     {
@@ -8371,8 +8371,8 @@ const spellsJSON = `[
         "level": 3,
         "school": "evocation",
         "classes": [
-            "druids",
-            "rangers"
+            "druid",
+            "ranger"
         ]
     },
     {
@@ -8388,8 +8388,8 @@ const spellsJSON = `[
         "level": 9,
         "school": "conjuration",
         "classes": [
-            "sorcerers",
-            "wizards"
+            "sorcerer",
+            "wizard"
         ]
     },
     {
@@ -8407,9 +8407,9 @@ const spellsJSON = `[
         "level": 1,
         "school": "evocation",
         "classes": [
-            "sorcerers",
-            "warlocks",
-            "wizards"
+            "sorcerer",
+            "warlock",
+            "wizard"
         ]
     },
     {
@@ -8426,7 +8426,7 @@ const spellsJSON = `[
         "level": 0,
         "school": "evocation",
         "classes": [
-            "clerics"
+            "cleric"
         ]
     },
     {
@@ -8442,7 +8442,7 @@ const spellsJSON = `[
         "level": 6,
         "school": "conjuration",
         "classes": [
-            "clerics"
+            "cleric"
         ]
     },
     {
@@ -8458,8 +8458,8 @@ const spellsJSON = `[
         "level": 5,
         "school": "evocation",
         "classes": [
-            "druids",
-            "rangers"
+            "druid",
+            "ranger"
         ]
     },
     {
@@ -8475,7 +8475,7 @@ const spellsJSON = `[
         "level": 1,
         "school": "evocation",
         "classes": [
-            "paladins"
+            "paladin"
         ]
     },
     {
@@ -8491,7 +8491,7 @@ const spellsJSON = `[
         "level": 1,
         "school": "transmutation",
         "classes": [
-            "rangers"
+            "ranger"
         ]
     },
     {
@@ -8507,9 +8507,9 @@ const spellsJSON = `[
         "level": 2,
         "school": "enchantment",
         "classes": [
-            "bards",
-            "clerics",
-            "paladins"
+            "bard",
+            "cleric",
+            "paladin"
         ]
     }
 ]`;
