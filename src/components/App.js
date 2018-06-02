@@ -1,9 +1,10 @@
 import React from "react";
 import styled from "styled-components";
-import { Glyphicon, Navbar } from "react-bootstrap";
+import { Glyphicon } from "react-bootstrap";
 import SpellList from "./SpellList";
 import SpellModal from "./SpellModal";
 import SpellData from "./SpellData";
+import SpellNav from "./SpellNav";
 import { filtered } from "../util/list";
 
 const filterText = (spells, text) => filtered(spells, spell => {
@@ -19,14 +20,6 @@ const filterText = (spells, text) => filtered(spells, spell => {
     }
 })
 
-const SearchBar = styled.input`
-    background: #c53023;
-    color: white;
-    border: 0px;
-    padding: 5px;
-    border-radius: 5px;
-`;
-
 const Select = styled.select`
     margin-left: 10px;
     background: #c53023;
@@ -34,24 +27,6 @@ const Select = styled.select`
     border: 0px;
     padding: 5px;
     border-radius: 5px;
-`;
-
-const NavbarLabel = styled.span`
-    color: white;
-    font-size: 150%;
-    font-weight: bold;
-    margin-right: 20px;
-`;
-
-const NavbarStyled = styled(Navbar) `
-    border-radius: 0px;
-    border: 0;
-    background: #db4437;
-    padding: 10px;
-    text-align: left;
-    margin: 0px;
-    color: white;
-    border-bottom: 3px solid #c53023;
 `;
 
 const DisplayedSpell = (props) => props.spell
@@ -98,10 +73,7 @@ export default class App extends React.Component {
     render() {
         return (
             <span>
-                <NavbarStyled fixedTop>
-                    <NavbarLabel>D&D Spellbook</NavbarLabel>
-                    <SearchBar type="text" onChange={this.handleFilterTextChanged} />
-                </NavbarStyled>
+                <SpellNav handleFilterTextChanged={this.handleFilterTextChanged} />
                 <Content>
                     {/* we should make the spell names all lowercase, and capitalize them only once for the row */}
                     <SpellList spells={SpellData} onSpellClick={this.selectSpell} filterText={this.state.filterText} />
