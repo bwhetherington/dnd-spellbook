@@ -20,7 +20,7 @@ const filterText = (spells, text) => filtered(spells, spell => {
 })
 
 const SearchBar = styled.input`
-    background: rgba(64, 0, 0, 0.2);
+    background: #c53023;
     color: white;
     border: 0px;
     padding: 5px;
@@ -42,6 +42,7 @@ const NavbarStyled = styled(Navbar) `
     text-align: left;
     margin: 0px;
     color: white;
+    border-bottom: 3px solid #c53023;
 `;
 
 const DisplayedSpell = (props) => props.spell

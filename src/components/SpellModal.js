@@ -6,6 +6,13 @@ import { SpellTags } from "./App";
 
 import { formatLevelAndSchool, formatLevel, formatClasses } from "../util/text";
 
+const StyledModal = styled(Modal) `
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+`;
+
 const LeftColumn = styled.div`
     float: left;
     text-align: center;
