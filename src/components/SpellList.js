@@ -1,11 +1,11 @@
 import React from "react";
 import styled from "styled-components";
 import { Table } from "react-bootstrap";
-import { SpellTags } from "./App";
 import { sorted } from "../util/list";
 import { formatJustLevel, capitalize } from "../util/text";
 import { levelColor } from "../util/color";
 import SpellModal from "./SpellModal";
+import SpellTag from "./SpellTag";
 
 const DirectionIndicatorInternal = styled.span`
     font-size: 80%;
@@ -51,7 +51,7 @@ const createFilterOptions = ({
     concentration: concentration
 });
 
-const TagHolderList = styled.span``;
+const SpellTagHolder = styled.small``;
 
 const LevelCol = styled.td`
     text-align: center;
@@ -65,7 +65,7 @@ const NameCol = styled.td`
 const SpellRow = (props) => (
     <tr onClick={() => props.onSpellClick(props.spell)} >
         <LevelCol level={props.spell.level}>{capitalize(formatJustLevel(props.spell.level))}</LevelCol>
-        <NameCol>{props.spell.name}<small><SpellTags ritual={props.spell.ritual} concentration={props.spell.concentration} TagHolder={TagHolderList} /></small></NameCol>
+        <NameCol>{props.spell.name}<SpellTagHolder><SpellTag ritual={props.spell.ritual} concentration={props.spell.concentration} /></SpellTagHolder></NameCol>
     </tr>
 );
 

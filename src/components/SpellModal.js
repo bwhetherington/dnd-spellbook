@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { Modal } from "react-bootstrap";
 import ReactHtmlParser from "react-html-parser";
-import { SpellTags } from "./App";
+import SpellTag from "./SpellTag";
 
 import { formatLevelAndSchool, formatLevel, formatClasses } from "../util/text";
 
@@ -42,7 +42,7 @@ const HigherLevel = (props) => props.higherLevel
     ? <span><b><i>At Higher Levels.</i></b> {ReactHtmlParser(props.higherLevel)}</span>
     : <span />;
 
-const TagHolderModal = styled.span`
+const SpellTagHolder = styled.small`
     float: right;
 `;
 
@@ -64,7 +64,7 @@ const SpellModal = (props) => {
         <StyledModal show={props.show} onHide={props.onHide}>
             <Modal.Header>
                 <Modal.Title>
-                    <span className="really-big">{spell.name}</span><small><SpellTags ritual={spell.ritual} concentration={spell.concentration} TagHolder={TagHolderModal} /></small>
+                    <span className="really-big">{spell.name}</span><SpellTagHolder><SpellTag ritual={spell.ritual} concentration={spell.concentration} /></SpellTagHolder>
                     <div />
                     <small><i>{formatLevelAndSchool(spell.level, spell.school)}</i></small>
                 </Modal.Title>
