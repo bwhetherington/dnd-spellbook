@@ -55,7 +55,10 @@ const SpellNavbar = styled(Navbar) `
     text-align: left;
     margin: 0px;
     color: white;
-    border-bottom: 3px solid #c53023;
+    width: 200%;
+    margin-left: -50%;
+    margin-right: 50%;
+    box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
 `;
 
 const StyledCheckbox = styled(Checkbox) `
@@ -87,8 +90,9 @@ const SpellNav = (props) => {
             <SearchBar type="text" placeholder="Classes..." onChange={props.handleFilterClassChanged} />
             <SearchBar type="text" placeholder="Schools..." onChange={props.handleFilterSchoolChanged} />
             <br />
-            <Checkbox label="Rituals Only" onChange={props.handleFilterRitualChanged} />
-            <Checkbox label="Exclude Concentration" onChange={props.handleFilterConcentrationChanged} />
+            <Checkbox label="Include Rituals" onChange={props.handleFilterRitualChanged} />
+            <Checkbox label="Include Concentration" onChange={props.handleFilterConcentrationChanged} />
+            <Checkbox label="Include Other" onChange={props.handleFilterNonRCChanged} />
             {/* <StyledCheckbox inline onChange={props.handleFilterRitualChanged} >Rituals only</StyledCheckbox>
             <StyledCheckbox inline onChange={props.handleFilterConcentrationChanged} >Exclude concentration</StyledCheckbox> */}
         </SpellNavbar>
