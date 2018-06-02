@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { Table, Glyphicon} from "react-bootstrap";
 import { sorted } from "../util/list";
 import { formatJustLevel, capitalize } from "../util/text";
-import { levelColor } from "../util/color";
+import { levelColor, grayTextColor } from "../util/color";
 import SpellModal from "./SpellModal";
 import SpellTag from "./SpellTag";
 
@@ -11,7 +11,7 @@ const DirectionIndicatorInternal = styled.span`
     font-size: 80%;
     padding-left: 5px;
     padding-right: 5px;
-    color: rgb(192, 192, 192);
+    color: ${ grayTextColor };
 `;
 
 
@@ -64,7 +64,7 @@ const NameCol = styled.td`
 
 const SourceHolder = styled.small`
     float: right;
-    color: rgb(190, 190, 190);
+    color: ${ grayTextColor };
 `;
 
 const SpellRow = (props) => (
