@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { Glyphicon } from "react-bootstrap";
 import SpellList from "./SpellList";
 import SpellModal from "./SpellModal";
-import SpellData from "./SpellData";
+import { spells } from "../util/spells";
 import SpellNav from "./SpellNav";
 import { filtered } from "../util/list";
 
@@ -76,7 +76,7 @@ export default class App extends React.Component {
                 <SpellNav handleFilterTextChanged={this.handleFilterTextChanged} />
                 <Content>
                     {/* we should make the spell names all lowercase, and capitalize them only once for the row */}
-                    <SpellList spells={SpellData} onSpellClick={this.selectSpell} filterText={this.state.filterText} />
+                    <SpellList spells={spells} onSpellClick={this.selectSpell} filterText={this.state.filterText} />
                 </Content>
                 <DisplayedSpell show={this.state.showSpellModal} onHide={this.hideModal} spell={this.state.selectedSpell} />
             </span>
