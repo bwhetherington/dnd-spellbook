@@ -20,7 +20,7 @@ class Checkbox extends React.Component {
             <span className="cbContainer">
                 <label>{this.props.label}</label>
                 <input type="checkbox" checked={this.state.checked} />
-                <span className="checkmark" onClick={this.toggle} />
+                <span className="checkmark" tabIndex="0" onClick={this.toggle} />
             </span>
         );
     }
