@@ -27,6 +27,15 @@ const SearchBar = styled.input`
     border-radius: 5px;
 `;
 
+const Select = styled.select`
+    margin-left: 10px;
+    background: #c53023;
+    color: white;
+    border: 0px;
+    padding: 5px;
+    border-radius: 5px;
+`;
+
 const NavbarLabel = styled.span`
     color: white;
     font-size: 150%;
@@ -53,7 +62,7 @@ const Content = styled.div`
     width: 1000px;
     margin: auto;
     padding: 20px;
-    margin-top: 40px;
+    margin-top: 50px;
     background: white;
 `;
 
@@ -90,7 +99,8 @@ export default class App extends React.Component {
         return (
             <span>
                 <NavbarStyled fixedTop>
-                    <NavbarLabel>D&D Spellbook</NavbarLabel><SearchBar type="text" onChange={this.handleFilterTextChanged} />
+                    <NavbarLabel>D&D Spellbook</NavbarLabel>
+                    <SearchBar type="text" onChange={this.handleFilterTextChanged} />
                 </NavbarStyled>
                 <Content>
                     {/* we should make the spell names all lowercase, and capitalize them only once for the row */}
