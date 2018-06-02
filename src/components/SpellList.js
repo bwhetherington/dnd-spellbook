@@ -138,20 +138,14 @@ export default class SpellList extends React.Component {
         if (this.props.filterRitual) filters.push(spell => spell.spell.ritual);
         if (this.props.filterConcentration) filters.push(spell => !spell.spell.concentration);
         if (filterText !== "") filters.push(spell => spell.name.indexOf(filterText) !== -1);
-        if (filterClass !== "") filters.push(spell => spell.classes.indexOf(filterClass) !== -1);
         if (filterSchool !== "") filters.push(spell => filterSchool.indexOf(spell.spell.school) !== -1);
+        if (filterClass !== "") filters.push(spell => spell.spell.classes.some(c => filterClass.indexOf(c) !== -1));
 
         for(const f of filters) {
             renderThese = renderThese.filter(f);
         }
 
         return renderThese.map(spell => spell.row);
-
-            // .filter(spell => spell.name.indexOf(filterText) !== -1)
-            // .filter(spell => spell.classes.indexOf(filterClass) !== -1)
-            // .filter(spell => this.props.filterRitual ? spell.spell.ritual : true)
-            // .filter(spell => this.props.filterConcentration ? !spell.spell.concentration : true)
-            // .map(spell => spell.row);
     }
 
     handleClick(ordering) {
