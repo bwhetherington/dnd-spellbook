@@ -3,8 +3,8 @@ import styled from "styled-components";
 import { Glyphicon } from "react-bootstrap";
 import SpellList from "./SpellList";
 import SpellModal from "./SpellModal";
-import { spells } from "../util/spells";
 import SpellNav from "./SpellNav";
+import spells from "../util/spells";
 import { filtered } from "../util/list";
 
 const filterText = (spells, text) => filtered(spells, spell => {
@@ -37,7 +37,7 @@ const Content = styled.div`
     width: 1000px;
     margin: auto;
     padding: 20px;
-    margin-top: 50px;
+    margin-top: 70px;
     background: white;
 `;
 
@@ -46,12 +46,16 @@ export default class App extends React.Component {
         super(props, context);
         this.state = {
             filterText: "",
+            filterRitual: false,
+            filterConcentration: false,
             showSpellModal: false,
             selectedSpell: null
         };
         this.hideModal = this.hideModal.bind(this);
         this.selectSpell = this.selectSpell.bind(this);
         this.handleFilterTextChanged = this.handleFilterTextChanged.bind(this);
+        this.handleFilterRitualChanged = this.handleFilterRitualChanged.bind(this);
+        this.handleFilterConcentrationChanged = this.handleFilterConcentrationChanged.bind(this);
     }
 
     selectSpell(spell) {
@@ -67,16 +71,33 @@ export default class App extends React.Component {
         console.log(this.state);
     }
 
+    handleFilterRitualChanged(event) {
+        this.setState({ ...this.state, filterRitual: !this.state.filterRitual });
+    }
+
+    handleFilterConcentrationChanged(event) {
+        this.setState({ ...this.state, filterConcentration: !this.state.filterConcentration });
+    }
+
     /**
      * Renders the App.
      */
     render() {
         return (
             <span>
-                <SpellNav handleFilterTextChanged={this.handleFilterTextChanged} />
+                <SpellNav
+                    handleFilterTextChanged={this.handleFilterTextChanged}
+                    handleFilterRitualChanged={this.handleFilterRitualChanged}
+                    handleFilterConcentrationChanged={this.handleFilterConcentrationChanged}
+                />
                 <Content>
-                    {/* we should make the spell names all lowercase, and capitalize them only once for the row */}
-                    <SpellList spells={spells} onSpellClick={this.selectSpell} filterText={this.state.filterText} />
+                    <SpellList
+                        spells={spells}
+                        onSpellClick={this.selectSpell}
+                        filterText={this.state.filterText}
+                        filterRitual={this.state.filterRitual}
+                        filterConcentration={this.state.filterConcentration}
+                    />
                 </Content>
                 <DisplayedSpell show={this.state.showSpellModal} onHide={this.hideModal} spell={this.state.selectedSpell} />
             </span>

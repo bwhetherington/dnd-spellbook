@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { Navbar } from "react-bootstrap";
+import { Navbar, Checkbox } from "react-bootstrap";
 
 const SearchBar = styled.input`
     background: #c53023;
@@ -42,6 +42,9 @@ const SpellNav = (props) => {
         <SpellNavbar fixedTop>
             <NavbarLabel>D&D Spellbook</NavbarLabel>
             <SearchBar type="text" onChange={props.handleFilterTextChanged} />
+            <br />
+            <Checkbox inline onChange={props.handleFilterRitualChanged} >Rituals only</Checkbox>
+            <Checkbox inline onChange={props.handleFilterConcentrationChanged} >Exclude concentration</Checkbox>
         </SpellNavbar>
     );
 }

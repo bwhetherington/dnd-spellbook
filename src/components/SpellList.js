@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { Table } from "react-bootstrap";
+import { Table, Glyphicon} from "react-bootstrap";
 import { sorted } from "../util/list";
 import { formatJustLevel, capitalize } from "../util/text";
 import { levelColor } from "../util/color";
@@ -123,6 +123,8 @@ export default class SpellList extends React.Component {
             return cmp;
         })
             .filter(spell => spell.name.indexOf(this.props.filterText.toLowerCase()) !== -1)
+            .filter(spell => this.props.filterRitual ? spell.spell.ritual : true)
+            .filter(spell => this.props.filterConcentration ? !spell.spell.concentration : true)
             .map(spell => spell.row);
     }
 
@@ -150,14 +152,6 @@ export default class SpellList extends React.Component {
     handleLevelClick() {
         this.handleClick(Ordering.LEVEL);
     }
-
-    // renderSpells() {
-    //     // return sorted(this.props.spellRows, levelCMPRow);
-    //     return sorted(this.state.renderedSpells, levelCMP)
-    //         .filter(spell => spell.name.indexOf(this.props.filterText.toLowerCase()) !== -1)
-    //         .map(spell => spell.row);
-    //     // return this.state.spells.map(spell => <SpellRow spell={spell} />);
-    // }
 
     selectSpell(spell) {
         this.setState({ selectedSpell: spell, showSpellModal: true, ...this.state });

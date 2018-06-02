@@ -8515,4 +8515,4 @@ const spellsJSON = `[
 ]`;
 
 const spells = JSON.parse(spellsJSON);
-export { spells };
+export default spells;
