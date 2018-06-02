@@ -49,6 +49,7 @@ export default class App extends React.Component {
             filterRitual: false,
             filterConcentration: false,
             filterClass: "",
+            filterSchool:"",
             showSpellModal: false,
             selectedSpell: null
         };
@@ -58,6 +59,7 @@ export default class App extends React.Component {
         this.handleFilterRitualChanged = this.handleFilterRitualChanged.bind(this);
         this.handleFilterConcentrationChanged = this.handleFilterConcentrationChanged.bind(this);
         this.handleFilterClassChanged = this.handleFilterClassChanged.bind(this);
+        this.handleFilterSchoolChanged = this.handleFilterSchoolChanged.bind(this);
     }
 
     selectSpell(spell) {
@@ -85,6 +87,10 @@ export default class App extends React.Component {
         this.setState({ ...this.state, filterClass: event.target.value });
     }
 
+    handleFilterSchoolChanged(event) {
+        this.setState({ ...this.state, filterSchool: event.target.value });
+    }
+
     /**
      * Renders the App.
      */
@@ -96,6 +102,7 @@ export default class App extends React.Component {
                     handleFilterRitualChanged={this.handleFilterRitualChanged}
                     handleFilterConcentrationChanged={this.handleFilterConcentrationChanged}
                     handleFilterClassChanged={this.handleFilterClassChanged}
+                    handleFilterSchoolChanged={this.handleFilterSchoolChanged}
                 />
                 <Content>
                     <SpellList
@@ -105,6 +112,7 @@ export default class App extends React.Component {
                         filterRitual={this.state.filterRitual}
                         filterConcentration={this.state.filterConcentration}
                         filterClass={this.state.filterClass}
+                        filterSchool={this.state.filterSchool}
                     />
                 </Content>
                 <DisplayedSpell show={this.state.showSpellModal} onHide={this.hideModal} spell={this.state.selectedSpell} />

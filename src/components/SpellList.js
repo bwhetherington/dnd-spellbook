@@ -105,6 +105,7 @@ export default class SpellList extends React.Component {
     renderSpells() {
         const filterText = this.props.filterText.toLowerCase();
         const filterClass = this.props.filterClass.toLowerCase();
+        const filterSchool = this.props.filterSchool.toLowerCase();
 
         let renderThese = sorted(this.state.renderedSpells, (a, b) => {
             let cmp;
@@ -133,11 +134,12 @@ export default class SpellList extends React.Component {
         });
 
         let filters = [];
-        
+
         if (this.props.filterRitual) filters.push(spell => spell.spell.ritual);
         if (this.props.filterConcentration) filters.push(spell => !spell.spell.concentration);
         if (filterText !== "") filters.push(spell => spell.name.indexOf(filterText) !== -1);
         if (filterClass !== "") filters.push(spell => spell.classes.indexOf(filterClass) !== -1);
+        if (filterSchool !== "") filters.push(spell => filterSchool.indexOf(spell.spell.school) !== -1);
 
         for(const f of filters) {
             renderThese = renderThese.filter(f);
