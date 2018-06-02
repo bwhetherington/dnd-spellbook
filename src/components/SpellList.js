@@ -62,10 +62,15 @@ const NameCol = styled.td`
     text-align: left;
 `;
 
+const SourceHolder = styled.small`
+    float: right;
+    color: rgb(190, 190, 190);
+`;
+
 const SpellRow = (props) => (
     <tr onClick={() => props.onSpellClick(props.spell)} >
         <LevelCol level={props.spell.level}>{capitalize(formatJustLevel(props.spell.level))}</LevelCol>
-        <NameCol>{props.spell.name}<SpellTagHolder><SpellTag ritual={props.spell.ritual} concentration={props.spell.concentration} /></SpellTagHolder></NameCol>
+        <NameCol>{props.spell.name}<SpellTagHolder><SpellTag ritual={props.spell.ritual} concentration={props.spell.concentration} /></SpellTagHolder><SourceHolder>{props.spell.page}</SourceHolder></NameCol>
     </tr>
 );
 
