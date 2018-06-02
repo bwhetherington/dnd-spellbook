@@ -81,6 +81,7 @@ export default class SpellList extends React.Component {
         const renderedSpells = this.props.spells.map(spell => ({
             name: spell.name.toLowerCase(),
             spell: spell,
+            classes: spell.classes.join(),
             row: <SpellRow key={spell.name} onSpellClick={this.props.onSpellClick} spell={spell} />
         }));
 
@@ -102,7 +103,10 @@ export default class SpellList extends React.Component {
     }
 
     renderSpells() {
-        return sorted(this.state.renderedSpells, (a, b) => {
+        const filterText = this.props.filterText.toLowerCase();
+        const filterClass = this.props.filterClass.toLowerCase();
+
+        let renderThese = sorted(this.state.renderedSpells, (a, b) => {
             let cmp;
             switch (this.state.orderBy) {
                 case Ordering.LEVEL:
@@ -126,11 +130,26 @@ export default class SpellList extends React.Component {
             }
 
             return cmp;
-        })
-            .filter(spell => spell.name.indexOf(this.props.filterText.toLowerCase()) !== -1)
-            .filter(spell => this.props.filterRitual ? spell.spell.ritual : true)
-            .filter(spell => this.props.filterConcentration ? !spell.spell.concentration : true)
-            .map(spell => spell.row);
+        });
+
+        let filters = [];
+        
+        if (this.props.filterRitual) filters.push(spell => spell.spell.ritual);
+        if (this.props.filterConcentration) filters.push(spell => !spell.spell.concentration);
+        if (filterText !== "") filters.push(spell => spell.name.indexOf(filterText) !== -1);
+        if (filterClass !== "") filters.push(spell => spell.classes.indexOf(filterClass) !== -1);
+
+        for(const f of filters) {
+            renderThese = renderThese.filter(f);
+        }
+
+        return renderThese.map(spell => spell.row);
+
+            // .filter(spell => spell.name.indexOf(filterText) !== -1)
+            // .filter(spell => spell.classes.indexOf(filterClass) !== -1)
+            // .filter(spell => this.props.filterRitual ? spell.spell.ritual : true)
+            // .filter(spell => this.props.filterConcentration ? !spell.spell.concentration : true)
+            // .map(spell => spell.row);
     }
 
     handleClick(ordering) {

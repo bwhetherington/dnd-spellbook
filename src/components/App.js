@@ -48,6 +48,7 @@ export default class App extends React.Component {
             filterText: "",
             filterRitual: false,
             filterConcentration: false,
+            filterClass: "",
             showSpellModal: false,
             selectedSpell: null
         };
@@ -56,6 +57,7 @@ export default class App extends React.Component {
         this.handleFilterTextChanged = this.handleFilterTextChanged.bind(this);
         this.handleFilterRitualChanged = this.handleFilterRitualChanged.bind(this);
         this.handleFilterConcentrationChanged = this.handleFilterConcentrationChanged.bind(this);
+        this.handleFilterClassChanged = this.handleFilterClassChanged.bind(this);
     }
 
     selectSpell(spell) {
@@ -79,6 +81,10 @@ export default class App extends React.Component {
         this.setState({ ...this.state, filterConcentration: !this.state.filterConcentration });
     }
 
+    handleFilterClassChanged(event) {
+        this.setState({ ...this.state, filterClass: event.target.value });
+    }
+
     /**
      * Renders the App.
      */
@@ -89,6 +95,7 @@ export default class App extends React.Component {
                     handleFilterTextChanged={this.handleFilterTextChanged}
                     handleFilterRitualChanged={this.handleFilterRitualChanged}
                     handleFilterConcentrationChanged={this.handleFilterConcentrationChanged}
+                    handleFilterClassChanged={this.handleFilterClassChanged}
                 />
                 <Content>
                     <SpellList
@@ -97,6 +104,7 @@ export default class App extends React.Component {
                         filterText={this.state.filterText}
                         filterRitual={this.state.filterRitual}
                         filterConcentration={this.state.filterConcentration}
+                        filterClass={this.state.filterClass}
                     />
                 </Content>
                 <DisplayedSpell show={this.state.showSpellModal} onHide={this.hideModal} spell={this.state.selectedSpell} />

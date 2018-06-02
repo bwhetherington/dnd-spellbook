@@ -64,6 +64,7 @@ const SpellNav = (props) => {
         <SpellNavbar fixedTop>
             <NavbarLabel>D&D Spellbook</NavbarLabel>
             <SearchBar type="text" onChange={props.handleFilterTextChanged} />
+            <SearchBar type="text" onChange={props.handleFilterClassChanged} />
             <br />
             <Checkbox label="Rituals Only" onChange={props.handleFilterRitualChanged} />
             <Checkbox label="Exclude Concentration" onChange={props.handleFilterConcentrationChanged} />
