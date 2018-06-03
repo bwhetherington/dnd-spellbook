@@ -1,0 +1,25 @@
+$primary-color: #d5d5d5;
+
+.spellDesc > h4 {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+
+.really-big {
+    font-size: 150%;
+}
+
+.spellDesc > table, .spellDesc > table th, .spellDesc > table td {
+    padding: 5px;
+    text-align: center;
+}
+
+.spellDesc > table {
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.spellDesc > table td {
+    border: 1px solid $primary-color;
+}

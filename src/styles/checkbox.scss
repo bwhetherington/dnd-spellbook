@@ -1,0 +1,70 @@
+@import "util";
+
+/* Customize the label (the container) */
+.cbContainer {
+    display: inline-block;
+    position: relative;
+    padding: 5px;
+    margin-bottom: -15px;
+    @include user-select(none);
+}
+
+.cbContainer label {
+    padding-left: 10px;
+    font-weight: normal;
+    user-select: none;
+}
+
+.cbContainer input {
+    position: absolute;
+    opacity: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+    background: $primary-color-dark;
+    color: $text-color;
+    border: 0px;
+    padding: 5px;
+    border-radius: 5px;
+    float: left;
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+}
+
+/* On mouse-over, add a grey background color */
+.checkmark:hover {
+    background-color: $primary-color-light;
+}
+
+/* When the checkbox is checked, add a blue background */
+.cbContainer input:checked ~ .checkmark {
+    background-color: $primary-color-light;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.cbContainer input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.cbContainer .checkmark:after {
+    margin: auto;
+    /* left: 5px;
+    top: 5px; */
+    width: 10px;
+    height: 10px;
+    border: solid $text-color;
+    border-width: 5px 5px 5px 5px;
+    border-radius: 5px;
+}
+
+

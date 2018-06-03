@@ -1,0 +1,12 @@
+// Constants
+$primary-color: #db4437;
+$primary-color-dark: #c53023;
+$primary-color-light: #ea9088;
+$text-color: white;
+
+@mixin user-select($value) {
+    -webkit-user-select: $value;
+    -moz-user-select: $value;
+    -ms-user-select: $value;
+    user-select: $value;
+}

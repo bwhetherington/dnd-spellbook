@@ -47,20 +47,25 @@ const NavbarLabel = styled.span`
     font-family: "palatino linotype", palatino, serif;
 `;
 
-const SpellNavbar = styled(Navbar) `
-    border-radius: 0px;
-    border: 0;
-    background: #db4437;
-    padding: 10px;
-    text-align: left;
-    margin: 0px;
-    color: white;
-    ${'' /* border-bottom: 3px solid #c53023; */}
-    width: 200%;
-    margin-left: -50%;
-    margin-right: 50%;
-    box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
-`;
+const SpellNavbar = (props) => (
+    <Navbar className="spellNavbar" fixedTop>
+        {props.children}
+    </Navbar>
+);
+// const SpellNavbar = styled(Navbar) `
+//     border-radius: 0px;
+//     border: 0;
+//     background: #db4437;
+//     padding: 10px;
+//     text-align: left;
+//     margin: 0px;
+//     color: white;
+//     ${'' /* border-bottom: 3px solid #c53023; */}
+//     width: 200%;
+//     margin-left: -50%;
+//     margin-right: 50%;
+//     box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
+// `;
 
 const StyledCheckbox = styled(Checkbox) `
     border-radius: 0px;
