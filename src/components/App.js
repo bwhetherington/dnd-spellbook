@@ -4,6 +4,7 @@ import { Glyphicon } from "react-bootstrap";
 import SpellList from "./SpellList";
 import SpellModal from "./SpellModal";
 import SpellNav from "./SpellNav";
+import AdvancedModal from "./AdvancedModal";
 import spells from "../util/spells";
 import { filtered } from "../util/list";
 
@@ -51,7 +52,8 @@ export default class App extends React.Component {
             filterClass: "",
             filterSchool:"",
             showSpellModal: false,
-            selectedSpell: null
+            selectedSpell: null,
+            showAdvancedModal: false
         };
         this.hideModal = this.hideModal.bind(this);
         this.selectSpell = this.selectSpell.bind(this);
@@ -60,6 +62,8 @@ export default class App extends React.Component {
         this.handleFilterConcentrationChanged = this.handleFilterConcentrationChanged.bind(this);
         this.handleFilterClassChanged = this.handleFilterClassChanged.bind(this);
         this.handleFilterSchoolChanged = this.handleFilterSchoolChanged.bind(this);
+        this.openAdvancedModal = this.openAdvancedModal.bind(this);
+        this.hideAdvancedModal = this.hideAdvancedModal.bind(this);
     }
 
     selectSpell(spell) {
@@ -91,6 +95,14 @@ export default class App extends React.Component {
         this.setState({ ...this.state, filterSchool: event.target.value });
     }
 
+    openAdvancedModal(event) {
+        this.setState({ ...this.state, showAdvancedModal: true})
+    }
+
+    hideAdvancedModal() {
+        this.setState({ ...this.state, showAdvancedModal: false})
+    }
+
     /**
      * Renders the App.
      */
@@ -103,6 +115,7 @@ export default class App extends React.Component {
                     handleFilterConcentrationChanged={this.handleFilterConcentrationChanged}
                     handleFilterClassChanged={this.handleFilterClassChanged}
                     handleFilterSchoolChanged={this.handleFilterSchoolChanged}
+                    handleAdvancedButtonClick={this.openAdvancedModal}
                 />
                 <Content>
                     <SpellList
@@ -116,6 +129,7 @@ export default class App extends React.Component {
                     />
                 </Content>
                 <DisplayedSpell show={this.state.showSpellModal} onHide={this.hideModal} spell={this.state.selectedSpell} />
+                <AdvancedModal show={this.state.showAdvancedModal} onHide={this.hideAdvancedModal} />
             </span>
         );
     }
