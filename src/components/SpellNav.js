@@ -86,7 +86,7 @@ const SpellNav = (props) => {
             <SearchBar placeholder="Spell name..." onChange={props.handleFilterTextChanged} />
             <SearchBar placeholder="Classes..." onChange={props.handleFilterClassChanged} />
             <SearchBar placeholder="Schools..." onChange={props.handleFilterSchoolChanged} />
-            <AdvancedButton handleAdvancedButtonClick={props.handleAdvancedButtonClick} />
+            {/* <AdvancedButton handleAdvancedButtonClick={props.handleAdvancedButtonClick} /> */}
             <br />
             <Checkbox label="Require Ritual" onChange={props.handleFilterRitualChanged} />
             <Checkbox label="Exclude Concentration" onChange={props.handleFilterConcentrationChanged} />

@@ -55,7 +55,7 @@ const materialComponents = (material) => material
     : "";
 
 const HigherLevel = (props) => props.higherLevel
-    ? <span><b><i>At Higher Levels.</i></b> {ReactHtmlParser(props.higherLevel)}</span>
+    ? <span><b>At Higher Levels.</b> {ReactHtmlParser(props.higherLevel)}</span>
     : <span />;
 
 const SpellModal = (props) => {
