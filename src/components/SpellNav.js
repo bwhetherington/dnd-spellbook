@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { Navbar } from "react-bootstrap";
+import { Navbar, Button } from "react-bootstrap";
 import Checkbox from "./Checkbox";
 import SearchBar from "./SearchBar";
 
@@ -60,6 +60,18 @@ const SCheckbox = (props) => (
     </span>
 );
 
+const SButton = styled(Button) `
+    float: right;
+`
+
+const AdvancedButton = (props) => {
+    return (
+        <SButton onClick={props.handleAdvancedButtonClick} >
+            Advanced
+        </SButton>
+    );
+}
+
 const SpellNav = (props) => {
     return (
         <SpellNavbar fixedTop>
@@ -67,6 +79,7 @@ const SpellNav = (props) => {
             <SearchBar placeholder="Spell name..." onChange={props.handleFilterTextChanged} />
             <SearchBar placeholder="Classes..." onChange={props.handleFilterClassChanged} />
             <SearchBar placeholder="Schools..." onChange={props.handleFilterSchoolChanged} />
+            <AdvancedButton handleAdvancedButtonClick={props.handleAdvancedButtonClick} />
             <br />
             <Checkbox label="Require Ritual" onChange={props.handleFilterRitualChanged} />
             <Checkbox label="Exclude Concentration" onChange={props.handleFilterConcentrationChanged} />
