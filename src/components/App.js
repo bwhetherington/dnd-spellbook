@@ -58,17 +58,25 @@ export default class App extends React.Component {
             filterSchool: "",
             showSpellModal: false,
             selectedSpell: null,
-            showAdvancedModal: false
+            showAdvancedModal: false,
+            filterRegex: ""
         };
+
+        // SpellList events
         this.hideModal = this.hideModal.bind(this);
         this.selectSpell = this.selectSpell.bind(this);
+
+        // SpellNav events
         this.handleFilterTextChanged = this.handleFilterTextChanged.bind(this);
         this.handleFilterRitualChanged = this.handleFilterRitualChanged.bind(this);
         this.handleFilterConcentrationChanged = this.handleFilterConcentrationChanged.bind(this);
         this.handleFilterClassChanged = this.handleFilterClassChanged.bind(this);
         this.handleFilterSchoolChanged = this.handleFilterSchoolChanged.bind(this);
+
+        // AdvancedModal events
         this.openAdvancedModal = this.openAdvancedModal.bind(this);
         this.hideAdvancedModal = this.hideAdvancedModal.bind(this);
+        this.handleFilterRegexChanged = this.handleFilterRegexChanged.bind(this);
     }
 
     selectSpell(spell) {
@@ -100,12 +108,16 @@ export default class App extends React.Component {
         this.setState({ ...this.state, filterSchool: event.target.value });
     }
 
-    openAdvancedModal(event) {
-        this.setState({ ...this.state, showAdvancedModal: true })
+    openAdvancedModal() {
+        this.setState({ ...this.state, showAdvancedModal: true });
     }
 
     hideAdvancedModal() {
-        this.setState({ ...this.state, showAdvancedModal: false })
+        this.setState({ ...this.state, showAdvancedModal: false });
+    }
+
+    handleFilterRegexChanged(event) {
+        this.setState({ ...this.state, filterRegex: event.target.value});
     }
 
     /**
@@ -131,10 +143,13 @@ export default class App extends React.Component {
                         filterConcentration={this.state.filterConcentration}
                         filterClass={this.state.filterClass}
                         filterSchool={this.state.filterSchool}
+                        filterRegex={this.state.filterRegex}
                     />
                 </Content>
                 <DisplayedSpell show={this.state.showSpellModal} onHide={this.hideModal} spell={this.state.selectedSpell} />
-                <AdvancedModal show={this.state.showAdvancedModal} onHide={this.hideAdvancedModal} />
+                <AdvancedModal show={this.state.showAdvancedModal} onHide={this.hideAdvancedModal}
+                    handleFilterRegexChanged={this.handleFilterRegexChanged}
+                />
             </span>
         );
     }

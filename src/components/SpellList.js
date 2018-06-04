@@ -112,6 +112,12 @@ export default class SpellList extends React.Component {
         const filterText = this.props.filterText.toLowerCase();
         const filterClass = this.props.filterClass.toLowerCase();
         const filterSchool = this.props.filterSchool.toLowerCase();
+        let filterRegex = null;
+        try {
+            filterRegex = new RegExp(this.props.filterRegex);
+        } catch(e) {
+            console.log("invalid regex: " + filterRegex);
+        }
 
         let renderThese = sorted(this.state.renderedSpells, (a, b) => {
             let cmp;
@@ -146,6 +152,7 @@ export default class SpellList extends React.Component {
         if (filterText !== "") filters.push(spell => spell.name.indexOf(filterText) !== -1);
         if (filterSchool !== "") filters.push(spell => filterSchool.indexOf(spell.spell.school) !== -1);
         if (filterClass !== "") filters.push(spell => spell.spell.classes.some(c => filterClass.indexOf(c) !== -1));
+        if (filterRegex) filters.push(spell => spell.spell.desc.match(filterRegex));
 
         for (const f of filters) {
             renderThese = renderThese.filter(f);
