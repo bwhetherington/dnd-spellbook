@@ -19,28 +19,33 @@ const filterText = (spells, text) => filtered(spells, spell => {
     } else {
         return true;
     }
-})
-
-const Select = styled.select`
-    margin-left: 10px;
-    background: #c53023;
-    color: white;
-    border: 0px;
-    padding: 5px;
-    border-radius: 5px;
-`;
+});
 
 const DisplayedSpell = (props) => props.spell
     ? <SpellModal show={props.show} onHide={props.onHide} spell={props.spell} />
     : <span />;
 
-const Content = styled.div`
-    width: 1000px;
-    margin: auto;
-    padding: 20px;
-    margin-top: 70px;
-    background: white;
-`;
+// const Content = styled.div`
+//     width: 1000px;
+//     margin: auto;
+//     padding: 20px;
+//     margin-top: 70px;
+//     background: white;
+// `;
+
+const ContentInner = (props) => (
+    <div className="contentInner">
+        {props.children}
+    </div>
+);
+
+const Content = (props) => (
+    <div className="content">
+        <ContentInner>
+            {props.children}
+        </ContentInner>
+    </div>
+);
 
 export default class App extends React.Component {
     constructor(props, context) {
@@ -50,7 +55,7 @@ export default class App extends React.Component {
             filterRitual: false,
             filterConcentration: false,
             filterClass: "",
-            filterSchool:"",
+            filterSchool: "",
             showSpellModal: false,
             selectedSpell: null,
             showAdvancedModal: false
@@ -96,11 +101,11 @@ export default class App extends React.Component {
     }
 
     openAdvancedModal(event) {
-        this.setState({ ...this.state, showAdvancedModal: true})
+        this.setState({ ...this.state, showAdvancedModal: true })
     }
 
     hideAdvancedModal() {
-        this.setState({ ...this.state, showAdvancedModal: false})
+        this.setState({ ...this.state, showAdvancedModal: false })
     }
 
     /**

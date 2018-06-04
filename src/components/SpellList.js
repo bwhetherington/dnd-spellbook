@@ -1,17 +1,23 @@
 import React from "react";
 import styled from "styled-components";
-import { Table, Glyphicon} from "react-bootstrap";
+import { Table, Glyphicon } from "react-bootstrap";
 import { sorted } from "../util/list";
 import { formatJustLevel, capitalize } from "../util/text";
 import { levelColor, grayTextColor } from "../util/color";
 import SpellModal from "./SpellModal";
 import SpellTag from "./SpellTag";
 
+const TableWrapper = (props) => (
+    <div className="spellTable">
+        {props.children}
+    </div>
+);
+
 const DirectionIndicatorInternal = styled.span`
     font-size: 80%;
     padding-left: 5px;
     padding-right: 5px;
-    color: ${ grayTextColor };
+    color: ${ grayTextColor};
 `;
 
 
@@ -64,7 +70,7 @@ const NameCol = styled.td`
 
 const SourceHolder = styled.small`
     float: right;
-    color: ${ grayTextColor };
+    color: ${ grayTextColor};
 `;
 
 const SpellRow = (props) => (
@@ -141,7 +147,7 @@ export default class SpellList extends React.Component {
         if (filterSchool !== "") filters.push(spell => filterSchool.indexOf(spell.spell.school) !== -1);
         if (filterClass !== "") filters.push(spell => spell.spell.classes.some(c => filterClass.indexOf(c) !== -1));
 
-        for(const f of filters) {
+        for (const f of filters) {
             renderThese = renderThese.filter(f);
         }
 
@@ -179,28 +185,29 @@ export default class SpellList extends React.Component {
 
     render() {
         return (
-            <Table striped bordered condensed hover>
-                <col width="80" />
-                <thead>
-                    <tr>
-                        <th onClick={this.handleLevelClick} style={{ "text-align": "left" }}>
-                            Level  <DirectionIndicator
-                                show={this.state.orderBy === Ordering.LEVEL}
-                                direction={this.state.orderDirection}
-                            />
-                        </th>
-                        <th onClick={this.handleNameClick}>
-                            Name  <DirectionIndicator
-                                show={this.state.orderBy === Ordering.NAME}
-                                direction={this.state.orderDirection}
-                            />
-                        </th>
-                    </tr>
-                </thead>
-                <tbody>
-                    {this.renderSpells()}
-                </tbody>
-            </Table>
+            <TableWrapper>
+                <Table striped bordered condensed hover>
+                    <thead>
+                        <tr>
+                            <th className="levelCol" onClick={this.handleLevelClick} style={{ "text-align": "left" }}>
+                                Level  <DirectionIndicator
+                                    show={this.state.orderBy === Ordering.LEVEL}
+                                    direction={this.state.orderDirection}
+                                />
+                            </th>
+                            <th className="nameCol" onClick={this.handleNameClick}>
+                                Name  <DirectionIndicator
+                                    show={this.state.orderBy === Ordering.NAME}
+                                    direction={this.state.orderDirection}
+                                />
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {this.renderSpells()}
+                    </tbody>
+                </Table>
+            </TableWrapper>
         );
     }
 }

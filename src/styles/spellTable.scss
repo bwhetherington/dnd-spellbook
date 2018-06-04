@@ -1,0 +1,34 @@
+// .spellList table tr td:first-child {
+//     width: 10px;
+// }
+
+.spellList table {
+    table-layout: fixed;
+    white-space: nowrap;
+}
+
+.spellList td {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.levelCol {
+    @media screen and (max-width: $break-small) {
+        width: 20%;
+    }
+
+    @media screen and (min-width: $break-large) {
+        width: 10%;
+    }
+}
+
+.nameCol {
+    @media screen and (max-width: $break-small) {
+        width: 80%;
+    }
+
+    @media screen and (min-width: $break-large) {
+        width: 90%;
+    }
+}

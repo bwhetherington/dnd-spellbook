@@ -1,3 +1,33 @@
+@import "responsive";
 @import "checkbox";
 @import "spellDesc";
 @import "spellNavbar";
+@import "spellTable";
+@import "spellModal";
+
+.content {
+    margin: auto;
+    margin-top: 70px;
+
+    // @media screen and (max-width: $break-small) {
+    //     width: 100%;
+    //     margin-top: 150px;
+    //     // font-size: 150%;
+    // }
+
+    // @media screen and (min-width: $break-large) {
+        width: 1000px;
+        padding: 20px;
+    // }
+}
+
+.contentInner {
+    background-color: white;
+}
+
+body {
+    background-color: #eeeeee;
+    // @media screen and (max-width: $break-small) {
+    //     font-size: 200%;    
+    // }
+}
