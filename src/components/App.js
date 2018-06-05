@@ -124,7 +124,7 @@ export default class App extends React.Component {
      */
     render() {
         return (
-            <div>
+            <div className="slide-up-fade-in">
                 <SpellNav
                     handleFilterTextChanged={this.handleFilterTextChanged}
                     handleFilterRitualChanged={this.handleFilterRitualChanged}
