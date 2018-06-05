@@ -193,7 +193,7 @@ export default class SpellList extends React.Component {
     render() {
         return (
             <TableWrapper>
-                <Table striped bordered hover>
+                <Table striped bordered hover condensed>
                     <thead>
                         <tr>
                             <th className="levelCol" onClick={this.handleLevelClick} style={{ "text-align": "left" }}>
