@@ -1,5 +1,5 @@
 import React from "react";
-import { Row, FormGroup, FormControl, ControlLabel, Button } from "react-bootstrap";
+import { Alert, Row, FormGroup, FormControl, ControlLabel, Button } from "react-bootstrap";
 
 import { readText, getSavedUrl } from "../util/io";
 import Page from "./Page";
@@ -21,13 +21,12 @@ export default class Loader extends React.Component {
             ? State.WILL_LOAD
             : State.UNSET;
 
-        console.log(this.localStorage);
-
         this.state = {
             savedUrl: savedUrl,
             enteredText: "",
             readyState: readyState,
-            loadedData: []
+            loadedData: null,
+            errorMessage: null
         };
 
         this.handleInputChange = this.handleInputChange.bind(this);
@@ -35,17 +34,40 @@ export default class Loader extends React.Component {
         this.renderUnset = this.renderUnset.bind(this);
         this.renderLoading = this.renderLoading.bind(this);
         this.renderLoaded = this.renderLoaded.bind(this);
+        this.renderError = this.renderError.bind(this);
     }
 
     loadUrl(url) {
-        readText(url, (data) => {
-            const parsed = JSON.parse(data);
+        readText(url, (data, err) => {
+            let parsed;
+            try {
+                parsed = JSON.parse(data);
+            } catch (ex) {
+                // Failed to parse data.
+                this.setState({
+                    ...this.state,
+                    loadedData: null,
+                    errorMessage: `Could not parse data from ${url}.`,
+                    readyState: State.UNSET
+                });
+                return;
+            }
             window.localStorage.setItem("savedUrl", url);
             this.setState({
                 ...this.state,
                 loadedData: parsed,
-                readyState: State.LOADED
+                readyState: State.LOADED,
+                errorMessage: null
             });
+        }, (err) => {
+            // Failed to read file.
+            this.setState({
+                ...this.state,
+                loadedData: null,
+                errorMessage: `File could not be read from ${url}.`,
+                readyState: State.UNSET
+            });
+            return;
         });
     }
 
@@ -63,6 +85,20 @@ export default class Loader extends React.Component {
             readyState: State.LOADING
         });
         this.loadUrl(this.state.enteredText);
+    }
+
+    renderError() {
+        if (this.state.errorMessage) {
+            return (
+                <Alert bsStyle="danger">
+                    {this.state.errorMessage}
+                </Alert>
+            );
+        } else {
+            return (
+                <span />
+            );
+        }
     }
 
     renderUnset() {
@@ -83,6 +119,7 @@ export default class Loader extends React.Component {
                             <Button bsStyle="primary" onClick={this.handleInputSave}>Load</Button>
                         </FormGroup>
                     </form>
+                    {this.renderError()}
                 </div>
             </Page>
         );
