@@ -7,9 +7,15 @@ export const readText = (url, then) => {
 	const req = new XMLHttpRequest();
 	req.open("GET", url, true);
 	req.send();
-	req.onreadystatechange = () => {
-		if (req.readyState === 4 && req.status == 200) {
-			then(req.requestText);
+	req.onreadystatechange = function () {
+		console.log(this);
+		if (this.readyState === 4 && this.status == 200) {
+			then(this.responseText);
 		}
 	}
+}
+
+export const getSavedUrl = () => {
+	const storage = window.localStorage;
+	return storage.getItem("savedUrl");
 }

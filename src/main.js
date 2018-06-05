@@ -1,9 +1,10 @@
 import React from "react";
 import { render } from "react-dom";
 import App from "./components/App";
-import Page from "./components/Page";
 import { sorted } from "./util/list";
+import Page from "./components/Page";
+import Loader from "./components/Loader";
 
 import './styles/index.scss';
 
-render(<Page><App /></Page>, document.getElementById("app"));
+render(<Loader />, document.getElementById("app"));

@@ -115,7 +115,7 @@ export default class SpellList extends React.Component {
         let filterRegex = null;
         try {
             filterRegex = new RegExp(this.props.filterRegex);
-        } catch(e) {
+        } catch (e) {
             console.log("invalid regex: " + filterRegex);
         }
 
@@ -193,7 +193,7 @@ export default class SpellList extends React.Component {
     render() {
         return (
             <TableWrapper>
-                <Table striped bordered condensed hover>
+                <Table striped bordered hover>
                     <thead>
                         <tr>
                             <th className="levelCol" onClick={this.handleLevelClick} style={{ "text-align": "left" }}>

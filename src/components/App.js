@@ -5,7 +5,6 @@ import SpellList from "./SpellList";
 import SpellModal from "./SpellModal";
 import SpellNav from "./SpellNav";
 import AdvancedModal from "./AdvancedModal";
-import spells from "../util/spells";
 import { filtered } from "../util/list";
 
 const filterText = (spells, text) => filtered(spells, spell => {
@@ -117,7 +116,7 @@ export default class App extends React.Component {
     }
 
     handleFilterRegexChanged(event) {
-        this.setState({ ...this.state, filterRegex: event.target.value});
+        this.setState({ ...this.state, filterRegex: event.target.value });
     }
 
     /**
@@ -125,7 +124,7 @@ export default class App extends React.Component {
      */
     render() {
         return (
-            <span>
+            <div>
                 <SpellNav
                     handleFilterTextChanged={this.handleFilterTextChanged}
                     handleFilterRitualChanged={this.handleFilterRitualChanged}
@@ -136,7 +135,7 @@ export default class App extends React.Component {
                 />
                 <Content>
                     <SpellList
-                        spells={spells}
+                        spells={this.props.spellData}
                         onSpellClick={this.selectSpell}
                         filterText={this.state.filterText}
                         filterRitual={this.state.filterRitual}
@@ -150,7 +149,7 @@ export default class App extends React.Component {
                 <AdvancedModal show={this.state.showAdvancedModal} onHide={this.hideAdvancedModal}
                     handleFilterRegexChanged={this.handleFilterRegexChanged}
                 />
-            </span>
+            </div>
         );
     }
 }
