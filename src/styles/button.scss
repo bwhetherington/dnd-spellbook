@@ -1,0 +1,22 @@
+@import "util";
+
+.rightContainer {
+    float: right;
+}
+
+.sbButton {
+    background-color: rgba(255, 192, 192, 0.2);
+    // background-color: rgba(0, 0, 0, 0);
+    border-radius: 5px;
+    border: 0px;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: white;
+    margin-right: 10px;
+}
+
+.sbButton:hover {
+    // background-color: rgba(64, 0, 0, 0.1);
+    background-color: $primary-color-dark;
+}

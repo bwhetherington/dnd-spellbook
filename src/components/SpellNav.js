@@ -1,8 +1,9 @@
 import React from "react";
 import styled from "styled-components";
-import { Navbar, Button } from "react-bootstrap";
+import { Glyphicon, Navbar } from "react-bootstrap";
 import Checkbox from "./Checkbox";
 import SearchBar from "./SearchBar";
+import Button from "./Button";
 
 const Logo = styled.span`
     
@@ -67,15 +68,17 @@ const SCheckbox = (props) => (
     </span>
 );
 
-const SButton = styled(Button) `
-    float: right;
-`
+// const SButton = styled(Button) `
+//     float: right;
+// `
 
 const AdvancedButton = (props) => {
     return (
-        <SButton onClick={props.handleAdvancedButtonClick} >
-            Advanced
-        </SButton>
+        <span className="rightContainer">
+            <Button onClick={props.handleAdvancedButtonClick} >
+                Advanced
+            </Button>
+        </span>
     );
 }
 
