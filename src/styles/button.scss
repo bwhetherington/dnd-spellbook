@@ -5,9 +5,9 @@
 }
 
 .sbButton {
-    background-color: rgba(255, 192, 192, 0.2);
+    background-color: $primary-color-light;
     // background-color: rgba(0, 0, 0, 0);
-    border-radius: 5px;
+    border-radius: $roundness;
     border: 0px;
     padding: 5px;
     padding-left: 10px;
@@ -17,6 +17,9 @@
 }
 
 .sbButton:hover {
-    // background-color: rgba(64, 0, 0, 0.1);
+    background-color: $primary-color-lightest;
+}
+
+.sbButton:active {
     background-color: $primary-color-dark;
 }

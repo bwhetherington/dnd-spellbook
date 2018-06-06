@@ -1,0 +1,45 @@
+@import "util";
+
+.searchBar {
+    background: $primary-color-dark;
+    color: white;
+    border: 0px;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: $roundness;
+    margin-right: 10px;
+
+    // ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    //     color: $primary-color-light;
+    //     opacity: 1; /* Firefox */
+    // }
+
+    // ::-ms-input-placeholder { /* Internet Explorer 10-11 */
+    //     color: $primary-color-light;
+    // }
+
+    // ::-ms-input-placeholder { /* Microsoft Edge */
+    //     color: $primary-color-light;
+    // }
+}
+
+.searchBar::-webkit-input-placeholder {
+    color: $primary-color-lightest;
+    opacity: 1;
+}
+
+.searchBar::-moz-placeholder {
+    color: $primary-color-lightest;
+    opacity: 1;
+}
+
+.searchBar::-ms-placeholder {
+    color: $primary-color-lightest;
+    opacity: 1;
+}
+
+.searchBar::placeholder {
+    color: $primary-color-lightest;
+    opacity: 1;
+}

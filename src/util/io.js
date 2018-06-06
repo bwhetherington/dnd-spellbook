@@ -3,7 +3,7 @@
  * @param url The URL to read from
  * @param then A callback to handle the data when it is read
  */
-export const readText = (url, then, err) => {
+export const readText = (url, then) => {
 	const req = new XMLHttpRequest();
 	req.open("GET", url, true);
 	req.send();

@@ -1,8 +1,11 @@
 // Constants
-$primary-color: #db4437;
-$primary-color-dark: #c53023;
-$primary-color-light: #ea9088;
+$primary-color: rgb(192, 64, 48);
+$primary-color-light: rgba(255, 160, 128, 0.2);
+$primary-color-lightest: rgba(255, 160, 128, 0.4);
+$primary-color-dark: rgba(64, 0, 0, 0.2);
+$primary-color-darkest: rgba(64, 0, 0, 0.4);
 $text-color: white;
+$roundness: 3px;
 
 @mixin user-select($value) {
     -webkit-user-select: $value;
