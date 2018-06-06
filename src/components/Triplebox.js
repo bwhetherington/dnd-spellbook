@@ -1,6 +1,6 @@
 import React from "react";
 
-const Box = {
+const State = {
     INDETERMINATE: 0,
     UNCHECKED: 1,
     CHECKED: 2
@@ -10,13 +10,13 @@ class Triplebox extends React.Component {
     constructor(props, context) {
         super(props, context);
         this.state = {
-            checked: Box.INDETERMINATE // todo: make settable on initialization
+            checked: State.INDETERMINATE // todo: make settable on initialization
         };
         this.toggle = this.toggle.bind(this);
     }
 
     toggle() {
-        this.setState({ ...this.state, checked: (this.state.checked === Box.CHECKED ? Box.INDETERMINATE : (this.state.checked === Box.INDETERMINATE ? Box.UNCHECKED : Box.CHECKED)) });
+        this.setState({ ...this.state, checked: (this.state.checked === State.CHECKED ? State.INDETERMINATE : (this.state.checked === State.INDETERMINATE ? State.UNCHECKED : State.CHECKED)) });
         // this.props.onChange(this.state.checked);
         console.log("Triple Toggle?" + this.state.checked);
     }
