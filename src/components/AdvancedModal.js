@@ -14,25 +14,45 @@ const ComponentButtons = (props) => {
     );
 }
 
-const AdvancedModal = (props) => {
-    return (
+class AdvancedModal extends React.Component {
+
+    constructor(props) {
+        super(props);
+        this.state = {
+            filterRegex: ""
+        };
+
+        this.updateFilter = this.updateFilter.bind(this);
+    }
+
+    updateFilter(props) {
+        this.props.handleFilterRegexChanged(props);
+        this.setState({filterRegex: props.target.value});
+    };
+
+    render() {
+        return (
         <div className="modalWrapper">
-            <Modal show={props.show} onHide={props.onHide}>
+            <Modal show={this.props.show} onHide={this.props.onHide}>
                 <Modal.Header>
                     <Modal.Title>
                         Advanced
                     </Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
-                    Search descriptions <SearchBar placeholder="Regex search..." onChange={props.handleFilterRegexChanged} />
+                    Search descriptions <SearchBar
+                        placeholder="Regex search..."
+                        onChange={this.updateFilter}
+                        initialText={this.state.filterRegex}
+                    />
                     <br />
                     Components <ComponentButtons />
                     <br />
                     test <Triplebox />
                 </Modal.Body>
             </Modal>
-        </div>
-    );
+        </div>);
+    }
 }
 
 export default AdvancedModal;

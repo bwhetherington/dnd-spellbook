@@ -25,7 +25,13 @@ const Input = styled.input`
 
 const SearchBar = (props) => {
     return (
-        <input className="searchBar" type="text" placeholder={props.placeholder} onChange={props.onChange} />
+        <input
+            className="searchBar"
+            type="text"
+            placeholder={props.placeholder}
+            onChange={props.onChange}
+            value={props.initialText? props.initialText : ""}
+        />
     );
 };
 
