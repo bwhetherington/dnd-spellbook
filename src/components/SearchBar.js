@@ -30,7 +30,7 @@ const SearchBar = (props) => {
             type="text"
             placeholder={props.placeholder}
             onChange={props.onChange}
-            value={props.initialText? props.initialText : ""}
+            // value={props.initialText? props.initialText : ""}
         />
     );
 };
