@@ -151,7 +151,13 @@ export default class SpellList extends React.Component {
         if (this.props.filterConcentration) filters.push(spell => !spell.spell.concentration);
         if (filterText !== "") filters.push(spell => spell.name.indexOf(filterText) !== -1);
         if (filterSchool !== "") filters.push(spell => filterSchool.indexOf(spell.spell.school) !== -1);
-        if (filterClass !== "") filters.push(spell => spell.spell.classes.some(c => filterClass.indexOf(c) !== -1));
+        if (filterClass !== "") filters.push(spell => spell.spell.classes.some(c => {
+            for (let fc of filterClass.split(" ")) {
+                if (fc !== "" && c.indexOf(fc) !== -1)
+                    return true;
+            }
+            return false;
+        }));
         if (filterRegex) filters.push(spell => spell.spell.desc.match(filterRegex));
 
         for (const f of filters) {
