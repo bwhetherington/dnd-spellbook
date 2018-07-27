@@ -149,15 +149,9 @@ export default class SpellList extends React.Component {
 
         if (this.props.filterRitual) filters.push(spell => spell.spell.ritual);
         if (this.props.filterConcentration) filters.push(spell => !spell.spell.concentration);
-        if (filterText !== "") filters.push(spell => spell.name.indexOf(filterText) !== -1);
-        if (filterSchool !== "") filters.push(spell => filterSchool.indexOf(spell.spell.school) !== -1);
-        if (filterClass !== "") filters.push(spell => spell.spell.classes.some(c => {
-            for (let fc of filterClass.split(" ")) {
-                if (fc !== "" && c.indexOf(fc) !== -1)
-                    return true;
-            }
-            return false;
-        }));
+        if (filterText !== "") filters.push(spell => checkFilterText(filterText, spell.name));
+        if (filterSchool !== "") filters.push(spell => checkFilterText(filterSchool, spell.spell.school));
+        if (filterClass !== "") filters.push(spell => spell.spell.classes.some(c => checkFilterText(filterClass, c)));
         if (filterRegex) filters.push(spell => spell.spell.desc.match(filterRegex));
 
         for (const f of filters) {
@@ -166,6 +160,8 @@ export default class SpellList extends React.Component {
 
         return renderThese.map(spell => spell.row);
     }
+
+
 
     handleClick(ordering) {
         let state;
@@ -223,4 +219,12 @@ export default class SpellList extends React.Component {
             </TableWrapper>
         );
     }
+}
+
+function checkFilterText(inputString, compareToString) {
+    for (let fc of inputString.split(" ")) {
+        if (fc !== "" && compareToString.indexOf(fc) !== -1)
+            return true;
+    }
+    return false;
 }
